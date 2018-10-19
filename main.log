@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.10)  9 OCT 2018 13:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.10)  19 OCT 2018 17:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1224,12 +1224,12 @@ Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 7.
 \c@theorem=\count135
 
 Excluding comment 'screenonly' Include comment 'printonly'
-Include comment 'anonsuppress'
-No file main.aux.
+Include comment 'anonsuppress' (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/nxlmi/m/it on input line 7.
 LaTeX Font Info:    Try loading font information for OML+nxlmi on input line 7.
+
 
 (f:/texlive/2016/texmf-dist/tex/latex/newtx/omlnxlmi.fd
 File: omlnxlmi.fd 2013/11/19 Fontinst v1.933 font definitions for OML/nxlmi.
@@ -1410,6 +1410,8 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 7.
 LaTeX Info: Redefining \pageref on input line 7.
 LaTeX Info: Redefining \nameref on input line 7.
+
+(./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
@@ -1550,91 +1552,102 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 8.0pt on input line 35.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 8.0pt on input line 35.
-
-
-LaTeX Warning: Reference `TotPages' on page 1 undefined on input line 35.
-
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 35.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 6.2pt on input line 35.
 
-LaTeX Warning: Reference `sec:related' on page 1 undefined on input line 56.
-
-
-LaTeX Warning: Reference `sec:architecture' on page 1 undefined on input line 5
-6.
-
-
-LaTeX Warning: Reference `sec:experiment' on page 1 undefined on input line 56.
-
-
-
-LaTeX Warning: Reference `sec:conclusion' on page 1 undefined on input line 56.
-
-
 
 Package natbib Warning: Citation `Colton2012Full' on page 1 undefined on input 
-line 59.
+line 69.
 
 
 Package natbib Warning: Citation `Oliveira2015Tra' on page 1 undefined on input
- line 59.
+ line 69.
 
 
 Package natbib Warning: Citation `Ghazvininejad2016Generating' on page 1 undefi
-ned on input line 59.
+ned on input line 69.
 
 
 Package natbib Warning: Citation `Yi2017Generating' on page 1 undefined on inpu
-t line 59.
+t line 69.
 
 
 Package natbib Warning: Citation `Zhang2014Chinese' on page 1 undefined on inpu
-t line 59.
+t line 69.
 
 
 Package natbib Warning: Citation `wang2016chinese' on page 1 undefined on input
- line 59.
+ line 69.
 
 
 Package natbib Warning: Citation `Kalchbrenner2016Neural' on page 1 undefined o
-n input line 59.
+n input line 69.
 
 
 Package natbib Warning: Citation `Zhou2016Deep' on page 1 undefined on input li
-ne 59.
+ne 69.
 
 
 Package natbib Warning: Citation `Wu2016Google' on page 1 undefined on input li
-ne 59.
+ne 69.
 
 [1.1{f:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
 
-LaTeX Warning: Reference `fig:system-architecture' on page 2 undefined on input
- line 63.
+Package natbib Warning: Citation `vig2009tagsplanations' on page 2 undefined on
+ input line 71.
+
+
+Package natbib Warning: Citation `sigurbjornsson2008flickr' on page 2 undefined
+ on input line 71.
+
+
+Package natbib Warning: Citation `herlocker2000explaining' on page 2 undefined 
+on input line 71.
+
+
+Package natbib Warning: Citation `gedikli2014should' on page 2 undefined on inp
+ut line 71.
+
+
+Package natbib Warning: Citation `sarwar2001item' on page 2 undefined on input 
+line 71.
+
+
+Package natbib Warning: Citation `wu2015flame' on page 2 undefined on input lin
+e 71.
+
+
+Package natbib Warning: Citation `zhang2017entity' on page 2 undefined on input
+ line 71.
+
+
+Package natbib Warning: Citation `ozbal2013brainsup' on page 2 undefined on inp
+ut line 71.
+
+
+Package natbib Warning: Citation `munigala2018persuaide' on page 2 undefined on
+ input line 71.
 
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 63.
+(Font)              scaled to size 9.0pt on input line 74.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 63.
+(Font)              scaled to size 7.3pt on input line 74.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 63.
-<system-architecture.jpg, id=25, 412.54124pt x 295.1025pt>
+(Font)              scaled to size 5.5pt on input line 74.
+<system-architecture.jpg, id=89, 412.54124pt x 295.1025pt>
 File: system-architecture.jpg Graphic file (type jpg)
 
 <use system-architecture.jpg>
-Package pdftex.def Info: system-architecture.jpg used on input line 67.
+Package pdftex.def Info: system-architecture.jpg used on input line 78.
 (pdftex.def)             Requested size: 227.62228pt x 142.26448pt.
 
 
 Package natbib Warning: Citation `ratner2017snorkel' on page 2 undefined on inp
-ut line 77.
-
-
-LaTeX Warning: Reference `table:LF' on page 2 undefined on input line 77.
+ut line 88.
 
 (f:/texlive/2016/texmf-dist/tex/latex/cjk/texinput/utf8/UTF8.bdg
 File: UTF8.bdg 2015/04/18 4.8.4
@@ -1645,8 +1658,8 @@ File: UTF8.enc 2015/04/18 4.8.4
 (f:/texlive/2016/texmf-dist/tex/latex/cjk/texinput/utf8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-LaTeX Font Info:    Try loading font information for C70+gbsn on input line 92.
-
+LaTeX Font Info:    Try loading font information for C70+gbsn on input line 103
+.
 
 (f:/texlive/2016/texmf-dist/tex/latex/cjk/texinput/utf8/c70gbsn.fd
 File: c70gbsn.fd 2015/04/18 4.8.4
@@ -1654,12 +1667,12 @@ File: c70gbsn.fd 2015/04/18 4.8.4
 (f:/texlive/2016/texmf-dist/tex/latex/cjk/texinput/utf8/c70gbsn.fdx
 File: c70gbsn.fdx 2015/04/18 4.8.4
 )
-Underfull \hbox (badness 10000) in paragraph at lines 90--95
+Underfull \hbox (badness 10000) in paragraph at lines 101--106
 []\T1/LinuxLibertineT-TLF/m/n/9 (+20) The comma is fol-lowed by
  []
 
 
-Underfull \hbox (badness 1281) in paragraph at lines 95--97
+Underfull \hbox (badness 1281) in paragraph at lines 106--108
 []\T1/LinuxLibertineT-TLF/m/n/9 (+20) Sentence ends with an ex-cla-ma-tion
  []
 
@@ -1669,53 +1682,33 @@ File: UTF8.enc 2015/04/18 4.8.4
 (f:/texlive/2016/texmf-dist/tex/latex/cjk/texinput/utf8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-
-LaTeX Warning: Reference `table:LabelMatrix' on page 2 undefined on input line 
-109.
-
-
-Overfull \hbox (4.30391pt too wide) in paragraph at lines 123--123
+Overfull \hbox (4.30391pt too wide) in paragraph at lines 134--134
 []\T1/LinuxLibertineT-TLF/m/n/9 (-20) end_exclamation| 
  []
 
 
-Overfull \hbox (2.22365pt too wide) in paragraph at lines 125--125
+Overfull \hbox (2.22365pt too wide) in paragraph at lines 136--136
 []\T1/LinuxLibertineT-TLF/m/n/9 (-20) no_adj_and_adv| 
  []
 
 
 Package natbib Warning: Citation `vaswani2017attention' on page 2 undefined on 
-input line 135.
+input line 146.
 
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 142.
+(Font)              scaled to size 9.0pt on input line 155.
 [2.2 <./system-architecture.jpg>]
-
-LaTeX Warning: Reference `fig:model' on page 3 undefined on input line 143.
-
-
-LaTeX Warning: Reference `fig:model' on page 3 undefined on input line 147.
-
-<model2.jpg, id=54, 919.93687pt x 544.28343pt>
+<model2.jpg, id=118, 919.93687pt x 544.28343pt>
 File: model2.jpg Graphic file (type jpg)
  <use model2.jpg>
-Package pdftex.def Info: model2.jpg used on input line 150.
+Package pdftex.def Info: model2.jpg used on input line 161.
 (pdftex.def)             Requested size: 341.43813pt x 227.61748pt.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
-(Font)              scaled to size 9.0pt on input line 155.
+(Font)              scaled to size 9.0pt on input line 166.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
-(Font)              scaled to size 7.3pt on input line 155.
+(Font)              scaled to size 7.3pt on input line 166.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
-(Font)              scaled to size 5.5pt on input line 155.
-
-
-LaTeX Warning: Reference `fig:model' on page 3 undefined on input line 166.
-
-
-LaTeX Warning: Reference `fig:model' on page 3 undefined on input line 166.
-
-
-LaTeX Warning: Reference `table:format' on page 3 undefined on input line 191.
+(Font)              scaled to size 5.5pt on input line 166.
 
 (f:/texlive/2016/texmf-dist/tex/latex/cjk/texinput/utf8/UTF8.enc
 File: UTF8.enc 2015/04/18 4.8.4
@@ -1731,53 +1724,37 @@ File: UTF8.chr 2015/04/18 4.8.4
 )
 
 Package natbib Warning: Citation `lin2004rouge' on page 3 undefined on input li
-ne 215.
+ne 230.
 
 
 Package natbib Warning: Citation `papineni2002bleu' on page 3 undefined on inpu
-t line 215.
-
-
-LaTeX Warning: Reference `table:evaluation' on page 3 undefined on input line 2
-15.
-
-
-LaTeX Warning: Reference `table:evaluation-rule' on page 3 undefined on input l
-ine 215.
-
-
-Package natbib Warning: Citation `wang2016chinese' on page 3 undefined on input
- line 224.
-
-
-Package natbib Warning: Citation `munigala2018persuaide' on page 3 undefined on
- input line 225.
-
-
-Package natbib Warning: Citation `munigala2018persuaide' on page 3 undefined on
- input line 226.
-
-
-Overfull \hbox (16.47453pt too wide) in paragraph at lines 237--264
- [] 
- []
+t line 230.
 
 [3.3]
 
-LaTeX Warning: Reference `table:evaluation-automatic' on page 4 undefined on in
-put line 270.
+Package natbib Warning: Citation `wang2016chinese' on page 4 undefined on input
+ line 239.
 
 
-LaTeX Warning: Reference `table:evaluation-manual' on page 4 undefined on input
- line 294.
+Package natbib Warning: Citation `munigala2018persuaide' on page 4 undefined on
+ input line 240.
 
-[4.4 <./model2.jpg>]
-Overfull \hbox (5.7621pt too wide) in paragraph at lines 299--310
- [][] 
+
+Package natbib Warning: Citation `munigala2018persuaide' on page 4 undefined on
+ input line 241.
+
+
+Overfull \hbox (16.47453pt too wide) in paragraph at lines 252--279
+ [] 
  []
 
 
-LaTeX Warning: Reference `table:case' on page 5 undefined on input line 312.
+Underfull \vbox (badness 6188) has occurred while \output is active []
+
+ [4.4 <./model2.jpg>]
+Overfull \hbox (5.7621pt too wide) in paragraph at lines 314--325
+ [][] 
+ []
 
 (f:/texlive/2016/texmf-dist/tex/latex/cjk/texinput/utf8/UTF8.enc
 File: UTF8.enc 2015/04/18 4.8.4
@@ -1831,14 +1808,12 @@ No file main.bbl.
 
 Package natbib Warning: There were undefined citations.
 
-[5.5
-
-] [6.6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 362.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 362.
+[5.5] [6.6]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 377.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 377.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 362.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 362.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 377.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 377.
 
 
 Package rerunfilecheck Warning: File `main.out' has changed.
@@ -1846,23 +1821,20 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  2CB25D469C94C7721DA739AD9DE9813E;2057.
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Before: 2CB25D469C94C7721DA739AD9DE9813E;2057
+(rerunfilecheck)             After:  6189B7A409957B9C2C4A7BB9495E8258;2231.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 20026 strings out of 493013
- 294717 string characters out of 6136992
- 419007 words of memory out of 5000000
- 22518 multiletter control sequences out of 15000+600000
+ 20057 strings out of 493013
+ 295180 string characters out of 6136992
+ 416146 words of memory out of 5000000
+ 22542 multiletter control sequences out of 15000+600000
  178475 words of font info for 330 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 60i,11n,94p,1031b,1021s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,11n,94p,1157b,1021s stack positions out of 5000i,500n,10000p,200000b,80000s
 {f:/texlive/2016/texmf-dist/fonts/enc/dvips/newtx/libertinealt.enc}{f:/texliv
 e/2016/texmf-dist/fonts/enc/dvips/libertine/lbtn_ehpgim.enc}{f:/texlive/2016/te
 xmf-dist/fonts/enc/dvips/libertine/lbtn_c7kyj5.enc}{f:/texlive/2016/texmf-dist/
@@ -1927,10 +1899,10 @@ t/fonts/type1/public/txfonts/rtxmi.pfb><f:/texlive/2016/texmf-dist/fonts/type1/
 public/txfonts/rtxr.pfb><f:/texlive/2016/texmf-dist/fonts/type1/public/newtx/tx
 exs.pfb><f:/texlive/2016/texmf-dist/fonts/type1/public/newtx/txsys.pfb><f:/texl
 ive/2016/texmf-dist/fonts/type1/public/newtx/zxlri.pfb>
-Output written on main.pdf (6 pages, 943384 bytes).
+Output written on main.pdf (6 pages, 946104 bytes).
 PDF statistics:
- 495 PDF objects out of 1000 (max. 8388607)
- 286 compressed objects within 3 object streams
- 39 named destinations out of 1000 (max. 500000)
- 46323 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 561 PDF objects out of 1000 (max. 8388607)
+ 351 compressed objects within 4 object streams
+ 40 named destinations out of 1000 (max. 500000)
+ 46443 words of extra memory for PDF output out of 51595 (max. 10000000)
 
