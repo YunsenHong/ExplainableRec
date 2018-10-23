@@ -7,21 +7,7 @@
 \begin{document}
 \title{Persuasively Explainable Recommendation}
 
-\author{Lingting Lin}
-\affiliation{%
-  \institution{Department of Computer Science, Xiamen University}
-  \city{Xiamen}
-  \state{China}
-}
-\email{linlingting@stu.xmu.edu.cn}
-
-\author{Chen Lin}
-\affiliation{%
-  \institution{Department of Computer Science, Xiamen University}
-  \city{Xiamen}
-  \state{China}
-}
-\email{chenlin@xmu.edu.cn}
+\author{Submission }
 
 
 \begin{abstract}
@@ -36,11 +22,37 @@ In the e-commerce environment, it is a personalized service to recommend suitabl
 
 \section{INTRODUCTION}
 %1.可解释推荐在电商很重要
+
+Explainable recommendation in E-commerce. ~\cite{SIGIR}
 %2.persuasive在可解释推荐中很重要，举例子：容易买单
+
+Persuasive explanation
 %3.现有工作对可解释推荐的persuasive很少，呈现形式有图片，概念等，没人考虑用句子解释
+
+On one hand, existing work on explainable recommendation, pursuasiveness,  mostly on enhancing transparency 
 %4.与最新工作的差别
+
+On the other hand, there is a recent trend on generating pursuasive texts,
 %5.我们的目标，为什么能做，根据用户当前行为+淘宝场景图谱，生成推荐，我们是第一篇这么做的
+
+To the best of our knowledge, we are the first. input: user behavior. 
+
+relavance
+
 %6.挑战
+challenge (1) lack of training data (2) relevance (3) pursuasive 
+
+%solution
+
+(1) weak supervision (2) 
+
+contribution
+(1) model
+(2) application
+(3) evaluation
+
+
+
 
 With the rapid development of e-commerce, more and more customers choose to purchase goods on the Internet. In mass goods, how to attract customers' attention through product description and strive for customers' stay time is a means to stand out from a large number of merchants. At present, the generation of product descriptions mainly relies on manual generation, and there is a problem that the amount of products covered is small and the cost is high. In recent years, deep learning has made breakthroughs in many fields such as image, natural language processing, and information retrieval. If we can generate persuasive product descriptions through deep learning, we can save costs and also improve the quality of content. Because a person's knowledge is limited, the generated vocabulary is limited. By learning a large amount of data, the machine-generated content can far exceed one's information.
 
@@ -63,12 +75,14 @@ Our contributions are three folds. (1) We take the problem of generating persuas
 This paper is organized as follows. We briefly survey the related work in Sec.~\ref{sec:related}. In Sec.~\ref{sec:architecture}, we first introduce the architecture of our system and describe the weak supervision and our global-local-copy model. We present and analyze the experimental results on a real data set in Sec.~\ref{sec:experiment}. We conclude our work and suggest future directions in Sec.~\ref{sec:conclusion}.
 
 \section{RELATED WORK}\label{sec:related}
-%1.explainable recommendation
-%2.persuasive argue
+\subsection{Explainable Recommendation}
 
 In recent years, there have been many studies on natural language processing, including poetry creation \cite{Colton2012Full,Oliveira2015Tra,Ghazvininejad2016Generating,Yi2017Generating,Zhang2014Chinese,wang2016chinese},machine translation \cite{Kalchbrenner2016Neural,Zhou2016Deep,Wu2016Google}, and so on. A persuasive and explainable recommendation reason for the generation of goods, similar to the above two questions, is a sequence model. In fact, most ML research usually focuses on predictive tasks, but rarely provides explanations for them. However, many customers need to rely on the recommendation reasons provided by the system to be firm in their determination to purchase the item.
 
 The traditional explainable recommendation method has content-based recommendation and collaborative filtering. \cite{vig2009tagsplanations,sigurbjornsson2008flickr} used tags as content features for recommendations and generate corresponding explanations. Collaborative filtering is divided into user-based collaborative filtering and item-based collaborative filtering. \cite{herlocker2000explaining, gedikli2014should,sarwar2001item} provided an explanation using the ratings of its neighbors or its similar items. In recent years, many models have attempted to use textual information to generate textual explanations for recommendations. One is to extract commodity features as an explanation, such as \cite{wu2015flame} used topic models to explain recommendations, \cite{zhang2017entity} found the related entities and gave conceptual explanation, the other is to generate complete sentences as an explanation, such as \cite{ozbal2013brainsup} generated textual explanation based on fixed templates, \cite{munigala2018persuaide} based on linguistic creativity to generate various forms of sentences. 
+
+\subsection{Creative Text Generation}
+
 
 \section{SYSTEM ARCHITECTURE}\label{sec:architecture}
 We take the corpus of product as the input of our system, and produces a persuasive sentence with the scene description of the product. Fig.~\ref{fig:system-architecture} shows an overview of the proposed system architecture with two major steps: (1) Given the corpus of product,the first step is to select the persuasive sentences as the training data of our model, (2) identify the scene name, product name, cpv data \footnote{Cpv is a collection of values of the attributes of the product. Here, only the value of the product attributes is in the sentence it can be extracted.} from the selected sentence as the input of our model,then yield persuasive sentence. In this section, we first introduce the weak supervision method for selecting the persuasive sentences. We then present our global-local-copy model in detail.  
