@@ -21,13 +21,27 @@ In the e-commerce environment, it is a personalized service to recommend suitabl
 \maketitle
 
 \section{INTRODUCTION}
-%1.可解释推荐在电商很重要
+%1.explainable recommendation: importance
+%shall we restrict motivation in industry?
+To provide accurate recommendation, state-of-the-art recommendation systems depend on complex machine learning models (i.e. deep neural networks) on heterogeneous data sources. 
+These models function as black boxes, which is a major obstacle to improving user experience and increasing user stickness. 
+Aiming to overcome this obstacle, there is growing interest in devoloping \textit{explainable recommendation} systems to provide intuitive explanations of the recommendation results. 
+In particular,motivated by the success of promoting sales using manually-written recommendation reasons, recently many E-commerce sites such as Alibaba and Amazon invest heavily in providing automated recommendation explanations~\cite{}. 
 
-Explainable recommendation in E-commerce. ~\cite{SIGIR}
-%2.persuasive在可解释推荐中很重要，举例子：容易买单
+%explainable recommendation: persuasiveness and effectiveness
+Explanations can benefit recommender systems on a number of aspects. As defined in~\cite{Tintarev2011Designing}, there are seven categories of recommendation explanations.  
+From the viewpoint of E-commerce sites, \textit{pursuasiveness} and \textit{effectiveness} are the two most desirable aspects.
+\textit{Persuasiveness} is the ability to convinces users to buy the recommended items. 
+\textit{Effectiveness} is the power to help users make better decisions.
+As these are properties that directly associat to conversion rates, an industry-level explainable recommendation system must focus on generating persuasive and effective explanations. 
 
+Existing explanable 
+ 
 Persuasive explanation
 %3.现有工作对可解释推荐的persuasive很少，呈现形式有图片，概念等，没人考虑用句子解释
+For example, explaining how the system works can in
+Pursuasive explanation 
+ If users understand how the item suits under different contexts, he/she will make better decisions.  
 
 On one hand, existing work on explainable recommendation, pursuasiveness,  mostly on enhancing transparency 
 %4.与最新工作的差别
@@ -69,6 +83,8 @@ Our goal is to generate persuasive recommendation reason containing scene descri
 To solve the second challenge, we propose a global local module: a specific module that focuses on the description of the scene. It has two parts, the global part is to learn the text description of all products on all texts, and the local part is to learn the scene-specific description through the local module. Through the weighted sum of these two parts, the generated sentence also has a description of the scene while describing the product.
 
 %contributions
+In academia, explainable recommendation belongs to a broader branch of explainable AI, which is an important and urgent issue in the whole artificial intelligence community.
+
 Our contributions are three folds. (1) We take the problem of generating persuasive descriptions as sequence to sequence model . The source text are scene and attribute about the product, the target text are persuasive description within scene about the product. (2) we use a weak supervision framework to select persuasive sentences as the training set of the model, which avoids a lot of manual labeling work. (3) Our system introduces a global-local module, so that the automatically generated description sentences for products can be described with scenes. 
 
 %paper structure
@@ -81,6 +97,7 @@ In recent years, there have been many studies on natural language processing, in
 
 The traditional explainable recommendation method has content-based recommendation and collaborative filtering. \cite{vig2009tagsplanations,sigurbjornsson2008flickr} used tags as content features for recommendations and generate corresponding explanations. Collaborative filtering is divided into user-based collaborative filtering and item-based collaborative filtering. \cite{herlocker2000explaining, gedikli2014should,sarwar2001item} provided an explanation using the ratings of its neighbors or its similar items. In recent years, many models have attempted to use textual information to generate textual explanations for recommendations. One is to extract commodity features as an explanation, such as \cite{wu2015flame} used topic models to explain recommendations, \cite{zhang2017entity} found the related entities and gave conceptual explanation, the other is to generate complete sentences as an explanation, such as \cite{ozbal2013brainsup} generated textual explanation based on fixed templates, \cite{munigala2018persuaide} based on linguistic creativity to generate various forms of sentences. 
 
+%not related to model
 \subsection{Creative Text Generation}
 
 
