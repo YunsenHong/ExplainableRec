@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.10)  29 OCT 2018 10:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.10)  29 OCT 2018 16:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1539,10 +1539,6 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 8.0pt on input line 21.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 8.0pt on input line 21.
-
-
-LaTeX Warning: Reference `TotPages' on page 1 undefined on input line 21.
-
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 21.
 Package microtype Info: Loading generic settings for font family
@@ -1551,6 +1547,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 6.2pt on input line 21.
+
 (f:/texlive/2016/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
@@ -1604,21 +1601,6 @@ LaTeX Warning: Reference `' on page 1 undefined on input line 57.
 ]
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 9.0pt on input line 65.
-
-
-LaTeX Warning: Reference `sec:related' on page 2 undefined on input line 79.
-
-
-LaTeX Warning: Reference `sec:architecture' on page 2 undefined on input line 7
-9.
-
-
-LaTeX Warning: Reference `sec:experiment' on page 2 undefined on input line 79.
-
-
-
-LaTeX Warning: Reference `sec:conclusion' on page 2 undefined on input line 79.
-
 
 
 Package natbib Warning: Citation `Colton2012Full' on page 2 undefined on input 
@@ -1696,15 +1678,11 @@ Package natbib Warning: Citation `munigala2018persuaide' on page 2 undefined on
 Package natbib Warning: Citation `Chen2018Neural' on page 2 undefined on input 
 line 94.
 
-
-LaTeX Warning: Reference `fig:system-architecture' on page 2 undefined on input
- line 100.
-
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 7.3pt on input line 100.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 5.5pt on input line 100.
-<system-architecture.jpg, id=25, 412.54124pt x 295.1025pt>
+<system-architecture.jpg, id=102, 412.54124pt x 295.1025pt>
 File: system-architecture.jpg Graphic file (type jpg)
 
 <use system-architecture.jpg>
@@ -1716,9 +1694,6 @@ LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
 
 Package natbib Warning: Citation `ratner2017snorkel' on page 3 undefined on inp
 ut line 114.
-
-
-LaTeX Warning: Reference `table:LF' on page 3 undefined on input line 114.
 
 (f:/texlive/2016/texmf-dist/tex/latex/cjk/texinput/utf8/UTF8.bdg
 File: UTF8.bdg 2015/04/18 4.8.4
@@ -1753,11 +1728,6 @@ File: UTF8.enc 2015/04/18 4.8.4
 (f:/texlive/2016/texmf-dist/tex/latex/cjk/texinput/utf8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-
-LaTeX Warning: Reference `table:LabelMatrix' on page 3 undefined on input line 
-146.
-
-
 Overfull \hbox (4.30391pt too wide) in paragraph at lines 160--160
 []\T1/LinuxLibertineT-TLF/m/n/9 (-20) end_exclamation| 
  []
@@ -1771,13 +1741,7 @@ Overfull \hbox (2.22365pt too wide) in paragraph at lines 162--162
 Package natbib Warning: Citation `vaswani2017attention' on page 3 undefined on 
 input line 172.
 
-
-LaTeX Warning: Reference `fig:model' on page 3 undefined on input line 180.
-
-
-LaTeX Warning: Reference `fig:model' on page 3 undefined on input line 184.
-
-<model2.jpg, id=44, 919.93687pt x 544.28343pt>
+<model2.jpg, id=122, 919.93687pt x 544.28343pt>
 File: model2.jpg Graphic file (type jpg)
  <use model2.jpg>
 Package pdftex.def Info: model2.jpg used on input line 187.
@@ -1789,15 +1753,6 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
 (Font)              scaled to size 7.3pt on input line 192.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
 (Font)              scaled to size 5.5pt on input line 192.
-
-
-LaTeX Warning: Reference `fig:model' on page 4 undefined on input line 203.
-
-
-LaTeX Warning: Reference `fig:model' on page 4 undefined on input line 203.
-
-
-LaTeX Warning: Reference `table:format' on page 4 undefined on input line 228.
 
 (f:/texlive/2016/texmf-dist/tex/latex/cjk/texinput/utf8/UTF8.enc
 File: UTF8.enc 2015/04/18 4.8.4
@@ -1820,14 +1775,6 @@ Package natbib Warning: Citation `papineni2002bleu' on page 4 undefined on inpu
 t line 256.
 
 
-LaTeX Warning: Reference `table:evaluation' on page 4 undefined on input line 2
-56.
-
-
-LaTeX Warning: Reference `table:evaluation-rule' on page 4 undefined on input l
-ine 256.
-
-
 Package natbib Warning: Citation `wang2016chinese' on page 4 undefined on input
  line 265.
 
@@ -1844,24 +1791,12 @@ Overfull \hbox (16.47453pt too wide) in paragraph at lines 278--305
  [] 
  []
 
-
-LaTeX Warning: Reference `table:evaluation-automatic' on page 4 undefined on in
-put line 311.
-
 [4.4]
-
-LaTeX Warning: Reference `table:evaluation-manual' on page 5 undefined on input
- line 335.
-
-
 Overfull \hbox (5.7621pt too wide) in paragraph at lines 340--351
  [][] 
  []
 
 [5.5 <./model2.jpg>]
-
-LaTeX Warning: Reference `table:case' on page 6 undefined on input line 353.
-
 (f:/texlive/2016/texmf-dist/tex/latex/cjk/texinput/utf8/UTF8.enc
 File: UTF8.enc 2015/04/18 4.8.4
 )
@@ -1922,28 +1857,19 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 403.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 403.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 403.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: D193665A4C566E881FFEEDB33AA502F9;2652.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  D193665A4C566E881FFEEDB33AA502F9;2652.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 20061 strings out of 493013
- 295427 string characters out of 6136992
- 419079 words of memory out of 5000000
- 22516 multiletter control sequences out of 15000+600000
- 182105 words of font info for 340 fonts, out of 8000000 for 9000
+ 20084 strings out of 493013
+ 295812 string characters out of 6136992
+ 419224 words of memory out of 5000000
+ 22535 multiletter control sequences out of 15000+600000
+ 182470 words of font info for 342 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  60i,12n,94p,1157b,1021s stack positions out of 5000i,500n,10000p,200000b,80000s
 {f:/texlive/2016/texmf-dist/fonts/enc/dvips/newtx/libertinealt.enc}{f:/texliv
@@ -2010,10 +1936,10 @@ t/fonts/type1/public/txfonts/rtxmi.pfb><f:/texlive/2016/texmf-dist/fonts/type1/
 public/txfonts/rtxr.pfb><f:/texlive/2016/texmf-dist/fonts/type1/public/newtx/tx
 exs.pfb><f:/texlive/2016/texmf-dist/fonts/type1/public/newtx/txsys.pfb><f:/texl
 ive/2016/texmf-dist/fonts/type1/public/newtx/zxlri.pfb>
-Output written on main.pdf (7 pages, 960284 bytes).
+Output written on main.pdf (7 pages, 962421 bytes).
 PDF statistics:
- 506 PDF objects out of 1000 (max. 8388607)
- 296 compressed objects within 3 object streams
+ 580 PDF objects out of 1000 (max. 8388607)
+ 369 compressed objects within 4 object streams
  44 named destinations out of 1000 (max. 500000)
- 46323 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 46467 words of extra memory for PDF output out of 51595 (max. 10000000)
 

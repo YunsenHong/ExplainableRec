@@ -49,16 +49,16 @@ In addition, effectiveness and persuasiveness are highly correlated.  As found i
 \caption{An illustrative example which is the real output of our system.}
 \end{figure}
 
-However, existing explainable recommendation systems mostly concentrate on aspects other than persuasiveness and effectiveness.  The majority of previous work aims to improve system transparency by devising interpretable models (i.e. factor models~\cite{Zhang2014Explicit,Zhang2015Daily,Wu2015FLAME}) which lead to feature level explanation. Explanations have been offered as charts~\cite{}, word clouds~\cite{Wu2015FLAME}, merged phrases in a textual template~\cite{Zhang2014Explicit,Zhang2015Daily}, or selected highly useful reviews~\cite{Chen2018Neural}. 
+However, existing explainable recommendation systems mostly concentrate on aspects other than persuasiveness and effectiveness.  The majority of previous work aims to improve system transparency by devising interpretable models (i.e. factor models~\cite{Zhang2014Explicit,Zhang2015Daily,Wu2015FLAME}) which lead to feature level explanation. Explanations have been offered as charts~\cite{Zhao2016Exploring}, word clouds~\cite{Wu2015FLAME}, merged phrases in a textual template~\cite{Zhang2014Explicit,Zhang2015Daily}, or selected highly useful reviews~\cite{Chen2018Neural}. 
 It is widely accepted that computers which convey personality are more persuasive~\cite{Yoo2011Creating}. The lack of free text makes an explainable recommendation system less humanly, thus weakens its power to be persuasive. 
 
-We notice that there is an emerging trend in studying persuasive systems, including a recent work on transforming given specification of an item to persuasive descriptions~\cite{}. Although they have been been useful in E-commerce sites to attract consumers, they do not satisfy the personalized demands in recommendation systems. They are not able to tailor both persuasive and informative explanations that are relevant to specific user needs, which is precisely the goal of our work.
+We notice that there is an emerging trend in studying persuasive systems, including a recent work on transforming given specification of an item to persuasive descriptions~\cite{munigala2018persuaide}. Although they have been been useful in E-commerce sites to attract consumers, they do not satisfy the personalized demands in recommendation systems. They are not able to tailor both persuasive and informative explanations that are relevant to specific user needs, which is precisely the goal of our work.
 
 In this paper we propose an explainable recommendation system. Given a user's historical behavior, an item's profile, and an in-house scene taxonomy, we provide a  \textbf{persuasive} and \textbf{effective} recommendation reason. The explanation is post-hoc, as it is not generated from the recommendation model. We allow the flexibility of adopting any recommendation model, which is not discussed throughout the paper. Our explanations describe several key features extracted from the item's profile and elaborate that these features are charming under the user's intended scene. As shown in Figure.~\ref{}, the explanation "the one-piece's very low neckline gives it extra sex appeal on the beach" relates the item feature "low neckline" to the intended scene "beach" in a very persuasive style.  
 
 To develop such a system, we face two challenges.  The first challenge arises from the insufficiency of training data. Deep sequence models have made remarkable success in generating readable texts in natural language. However, such success has been fueled by large-scale supervision. It is prohibitively expensive to label persuasive sentences due to the extremely subjective and diverse nature of persuasiveness. Persuasiveness is subjective, because different human judges have varying standards. It is costly to derive a gold standard that is approved by domain experts. Persuasiveness is diverse, because a persuasive sentence can be written in different styles.  It is impossible to list all variants of persuasive sentences.   
  
-To address the first challenge, we turn to a framework with weak supervision. We program a set of rules with high coverage and low accuracy to generate training sets with noisy labels from external data source that are accessible on the Internet. To resolve the potentially conflicts among rules we adopt a gnerative model with faroring weights that corresponding to imbalanced scene distribution. We experimentally show that weak supervision from externeal blogs outperforms unsupervised methods~\cite{}. %work here?
+To address the first challenge, we turn to a framework with weak supervision. We program a set of rules with high coverage and low accuracy to generate training sets with noisy labels from external data source that are accessible on the Internet. To resolve the potentially conflicts among rules we adopt a gnerative model with faroring weights that corresponding to imbalanced scene distribution. We experimentally show that weak supervision from externeal blogs outperforms unsupervised methods~\cite{munigala2018persuaide}. %work here?
 
 The second challenge arises from the structure of dependency between item features and scenes. Some features are universally perceived to be persuasive while some features are attractive only under specific scenes. For example, given a swimsuit, being ``high quality and cheap'' is good despite of any scene, , having. ``a low neckline'' under scene ``summer beach'' is good, under scene ``swim competition'' is bad. 
 A naive solution is to construct training set for each scene.
@@ -70,30 +70,43 @@ To address the second challenge, we design a deep network following the encoder 
 Our contributions are three folds.
 \begin{itemize}
 \item In the application level, we present a novel explainable recommendation system. To the best of our knowledge, we are the first to target directly on persuasive and effective explanations in natural language by explaining how well the item suits user preferences under different scenes.
-\item In the model level, we present a novel deep sequence model with a global module to learn universal persuasive patterns and a local module to learn scene-specific persuasive patterns.
-\item In the evaluation level, we present a novel scheme as well as some easy-to-implement merits to evaluate the persuasiveness and effectiveness of our explanations. 
+\item In the model level, we propose a deep network model with a global module to learn universal persuasive patterns and a local module to learn scene-specific persuasive patterns.
+\item In the evaluation level, we design the experimental scheme as well as some easy-to-implement merits to evaluate the persuasiveness and effectiveness of our explanations. 
 \end{itemize}
 
 
 %paper structure
-This paper is organized as follows. We briefly survey the related work in Sec.~\ref{sec:related}. In Sec.~\ref{sec:architecture}, we first introduce the architecture of our system and describe the weak supervision and our global-local-copy model. We present and analyze the experimental results on a real data set in Sec.~\ref{sec:experiment}. We conclude our work and suggest future directions in Sec.~\ref{sec:conclusion}.
+This paper is organized as follows. We introduce the related work in Sec.~\ref{sec:related}. In Sec.~\ref{sec:architecture}, we first introduce the architecture of our system and describe the weak supervision and our global-local-copy model. We present and analyze the experimental results on a real data set in Sec.~\ref{sec:experiment}. We conclude our work and suggest future directions in Sec.~\ref{sec:conclusion}.
 
 \section{RELATED WORK}\label{sec:related}
 We briefly survey two lines of related work: explainable recommendation systems and creative text generation systems.
 
 \subsection{Explainable Recommendation}
+%explainable AI in general
+Explainable recommendation belongs to the broader research topic of explainable AI, which has 
 
-In recent years, there have been many studies on natural language processing, including poetry creation \cite{Colton2012Full,Oliveira2015Tra,Ghazvininejad2016Generating,Yi2017Generating,Zhang2014Chinese,wang2016chinese},machine translation \cite{Kalchbrenner2016Neural,Zhou2016Deep,Wu2016Google}, and so on. A persuasive and explainable recommendation reason for the generation of goods, similar to the above two questions, is a sequence model. In fact, most ML research usually focuses on predictive tasks, but rarely provides explanations for them. However, many customers need to rely on the recommendation reasons provided by the system to be firm in their determination to purchase the item.
-
+%explainable models:.
+Explainable latent factor models, explainable neural models, explainable sequential models~\cite{Chen2018Sequential}
+memory-augmented neural network (MANN) integrated with the insights of collaborative filtering for recommendation. By leveraging the external memory matrix in MANN, we store and update users» historical records explicitly, 
 The traditional explainable recommendation method has content-based recommendation and collaborative filtering. \cite{vig2009tagsplanations,sigurbjornsson2008flickr} used tags as content features for recommendations and generate corresponding explanations. Collaborative filtering is divided into user-based collaborative filtering and item-based collaborative filtering. \cite{herlocker2000explaining, gedikli2014should,sarwar2001item} provided an explanation using the ratings of its neighbors or its similar items. In recent years, many models have attempted to use textual information to generate textual explanations for recommendations. One is to extract commodity features as an explanation, such as \cite{wu2015flame} used topic models to explain recommendations, \cite{zhang2017entity} found the related entities and gave conceptual explanation, the other is to generate complete sentences as an explanation, such as \cite{ozbal2013brainsup} generated textual explanation based on fixed templates, \cite{munigala2018persuaide} based on linguistic creativity to generate various forms of sentences. 
 
-In this sense, Peake and Wang [2018] can be considered as a pointwise
+%post-hoc explanations
+In this sense, ~\cite{Peake2018Explanation} can be considered as a pointwise
 post-hoc explanation model, while Singh and Anand [2018] can be
 considered as a pair-wise or list-wise post-hoc explanation model.
 
+%explanation types
+new types of explanations. sentence explanations 
 very few in natural language. select highly useful reviews~\cite{Chen2018Neural} Costa et al. [2017] Li et al. [2017]
+
 %not related to model
 \subsection{Creative Text Generation}
+%text generation
+In recent years, there have been many studies on natural language processing, including poetry creation \cite{Colton2012Full,Oliveira2015Tra,Ghazvininejad2016Generating,Yi2017Generating,Zhang2014Chinese,wang2016chinese},machine translation \cite{Kalchbrenner2016Neural,Zhou2016Deep,Wu2016Google}, and so on. A persuasive and explainable recommendation reason for the generation of goods, similar to the above two questions, is a sequence model. In fact, most ML research usually focuses on predictive tasks, but rarely provides explanations for them. However, many customers need to rely on the recommendation reasons provided by the system to be firm in their determination to purchase the item
+
+%creative: poem, persuasive
+
+%for E-commerce
 
 
 \section{SYSTEM ARCHITECTURE}\label{sec:architecture}
