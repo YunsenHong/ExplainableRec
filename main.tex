@@ -23,69 +23,57 @@ In the e-commerce environment, it is a personalized service to recommend suitabl
 \section{INTRODUCTION}
 %1.explainable recommendation: importance
 %shall we restrict motivation in industry?
-To provide accurate recommendation, state-of-the-art recommendation systems depend on complex machine learning models (i.e. deep neural networks) on heterogeneous data sources. 
+To provide accurate recommendation, state-of-the-art recommendation systems depend on complex machine learning models on heterogeneous data sources. 
 These models function as black boxes, which is a major obstacle to improving user experience and increasing user stickness. 
-Aiming to overcome this obstacle, there is growing interest in devoloping \textit{explainable recommendation} systems to provide intuitive explanations of the recommendation results. 
-In particular,motivated by the success of promoting sales using manually-written recommendation reasons, recently many E-commerce sites such as Alibaba and Amazon invest heavily in providing automated recommendation explanations~\cite{}. 
+Aiming to overcome this obstacle, there is growing interest in developing \textit{explainable recommendation} systems to provide intuitive explanations of the recommendation results. 
+In particular, recently many E-commerce sites such as Alibaba and Amazon invest heavily in providing automated recommendation explanations~\cite{}, motivated by the success of promoting sales using manually-written recommendation reasons. 
 
 %explainable recommendation: persuasiveness and effectiveness
-Explanations can benefit recommender systems on a number of aspects. As defined in~\cite{Tintarev2011Designing}, there are seven categories of recommendation explanations.  
-From the viewpoint of E-commerce sites, \textit{pursuasiveness} and \textit{effectiveness} are the two most desirable aspects.
-\textit{Persuasiveness} is the ability to convinces users to buy the recommended items. 
-\textit{Effectiveness} is the power to help users make better decisions.
-As these are properties that directly associat to conversion rates, an industry-level explainable recommendation system must focus on generating persuasive and effective explanations. 
+Explanations can benefit recommender systems on a number of aspects. As defined in~\cite{Tintarev2011Designing}, there are seven categories of recommendation explanations, working respectively to improve the degree of system transparency, scrutability, trust, effectiveness, persuasiveness, efficiency and satisfaction. 
+From the viewpoint of E-commerce sites, \textit{persuasiveness} and \textit{effectiveness} are the most desirable aspects.
 
-Existing explanable 
+
+\textit{Persuasiveness} is the ability to convince users to buy the recommended items. 
+An ideal example of \textit{persuasiveness explanation} for each item is to compose creatively a catchy and appealing sentence that is enjoyable to read.
+As it directly associates with conversion rates, an industry-level explainable recommendation system must focus primarily on generating persuasive explanations.  
+
+\textit{Effectiveness} is the power to help users make better purchase decisions.
+Ultimately, custom need is the driver of purchase decision. 
+A practical and efficient way to describe customer needs is to categorize them into different \textit{scenes}, under which customers purchase products or services to function.
+An example scene takes place on the beach in summer, which prompts swimsuit purchases. 
+With the help of a taxonomy of scenes, \textit{effective explanation} describes the utility of each item in a manner of how the item suits user preference under the user's intended scene.
+This type of effective explanation can facilitate user decision process. It will reduce E-commerce product return rate and reduce enterprise cost.
+In addition, effectiveness and persuasiveness are highly correlated.  As found in many surveys in advertising, information can have a powerful impact on liking~\cite{}. Infusing explanation with information on how the user can utilize an item strengthens the explainability power of the recommendation system.  
+
+\begin{figure}\label{fig:example}
+\caption{An illustrative example which is the real output of our system.}
+\end{figure}
+
+However, existing explainable recommendation systems mostly concentrate on aspects other than persuasiveness and effectiveness.  The majority of previous work aims to improve system transparency by devising interpretable models (i.e. factor models~\cite{Zhang et al. [2014a] and Zhang [2015]}) which lead to feature level explanation. Explanations have been offered as charts~\cite{Hou et al. [2018] u}, word clouds~\cite{Wu and Ester [2015] }, highlighted regions of the product images (Chen et al. [2018c), or merged phrases in a textual template~\cite{Zhang et al. }. 
+It is widely accepted that computers which convey personality are more persuasive~\cite{Yoo2011Creating}. The lack of free text makes an explainable recommendation system less humanly, thus weakens its power to be persuasive. 
+
+We notice that there is an emerging trend in studying persuasive systems, including  a recent work on transforming given specification of an item to persuasive descriptions~\cite{}. Although they have been been useful in E-commerce sites to attract consumers, they do not satisfy the personalized demands in recommendation systems. They are not able to tailor both persuasive and informative explanations that are relevant to specific user needs, which is precisely the goal of our work.
+
+In this paper we propose an explainable recommendation system. Given a user's historical behavior, an item's profile, and an in-house scene taxonomy, we provide a  \textbf{persuasive} and \textbf{effective} recommendation reason. The explanation is post-hoc, as it is not generated from the recommendation model. We allow the flexibility of adopting any recommendation model, which is not discussed throughout the paper. Our explanations describe several key features extracted from the item's profile and elaborate that these features are charming under the user's intended scene. As shown in Figure.~\ref{}, the explanation "the one-piece's very low neckline gives it extra sex appeal on the beach" relates the item feature "low neckline" to the intended scene "beach" in a very persuasive style.  
+
+To develop such a system, we face two challenges.  The first challenge arises from the insufficiency of training data. Deep sequence models have made remarkable success in generating readable texts in natural language. However, such success has been fueled by large-scale supervision. It is prohibitively expensive to label persuasive sentences due to the extremely subjective and diverse nature of persuasiveness. Persuasiveness is subjective, because different human judges have varying standards. It is costly to derive a gold standard that is approved by domain experts. Persuasiveness is diverse, because a persuasive sentence can be written in different styles.  It is impossible to list all variants of persuasive sentences.   
  
-Persuasive explanation
-%3.现有工作对可解释推荐的persuasive很少，呈现形式有图片，概念等，没人考虑用句子解释
-For example, explaining how the system works can in
-Pursuasive explanation 
- If users understand how the item suits under different contexts, he/she will make better decisions.  
+To address the first challenge, we turn to a framework with weak supervision. We program a set of rules with high coverage and low accuracy to generate training sets with noisy labels from external data source. To resolve the potentially conflicts among rules we xxx %work here?
 
-On one hand, existing work on explainable recommendation, pursuasiveness,  mostly on enhancing transparency 
-%4.与最新工作的差别
-
-On the other hand, there is a recent trend on generating pursuasive texts,
-%5.我们的目标，为什么能做，根据用户当前行为+淘宝场景图谱，生成推荐，我们是第一篇这么做的
-
-To the best of our knowledge, we are the first. input: user behavior. 
-
-relavance
-
-%6.挑战
-challenge (1) lack of training data (2) relevance (3) pursuasive 
-
-%solution
-
-(1) weak supervision (2) 
-
-contribution
-(1) model
-(2) application
-(3) evaluation
+The second challenge arises from the structure of dependency between between item features and scenes. Some features are universally perceived to be persuasive while some features are attractive only under specific scenes. For example, given a swimsuit, being ``high quality and cheap'' is good despite of any scene, , having. ``a low neckline'' under scene ``summer beach'' is good, under scene ``swim competition'' is bad. 
+A naive solution is to construct training set for each scene.
+However, the distribution of scenes is highly skew in user needs. For example, in the $30000$ scenes built in our in-house scene taxonomy, only $1\%$ are found to have xxxx. %need data.
 
 
+To address the second challenge, we design to modules: a global module to encode universal persuasive patterns, a local module to encode scene-specific relations between persuasive ness and item features. Through a copying mechanism, we combine the global module and the local module.
 
+Our contributions are three folds.
+\begin{itemize}
+\item In the application level, we present a novel explainable recommendation system. To the best of our knowledge, we are the first to provide persuasive and effective explanation by explaining how well the item suits user preferences under different scenes.
+\item In the model level, we present a novel deep sequence model with a global module to learn universal persuasive patterns and a local module to learn scene-specific persuasive patterns.
+\item In the evaluation level, we present a novel scheme as well as some easy-to-implement merits to evaluate the persuasiveness and effectiveness of our explanations. 
+\end{itemize}
 
-With the rapid development of e-commerce, more and more customers choose to purchase goods on the Internet. In mass goods, how to attract customers' attention through product description and strive for customers' stay time is a means to stand out from a large number of merchants. At present, the generation of product descriptions mainly relies on manual generation, and there is a problem that the amount of products covered is small and the cost is high. In recent years, deep learning has made breakthroughs in many fields such as image, natural language processing, and information retrieval. If we can generate persuasive product descriptions through deep learning, we can save costs and also improve the quality of content. Because a person's knowledge is limited, the generated vocabulary is limited. By learning a large amount of data, the machine-generated content can far exceed one's information.
-
-%challenge
-Two challenges arise in generating persuasive and explainable recommendations for recommended products automatically .
-
-The first challenge lies in getting training data. It is almost impossible to get a tag corpus, the data is a description of the product, and the tag is whether these descriptions are persuasive. Only the corpus contains descriptions of the products, but there is no guarantee that these sentences are persuasive. We need to choose persuasive sentences from these corpus as our training set.
-
-The second challenge is related to the description of the scene. In our corpus, there are many sentences with only product descriptions, no descriptions of related scenes, but with the description of the scene is the sentence we really want. We need to design new module for this purpose.
-
-%idea
-Our goal is to generate persuasive recommendation reason containing scene descriptions when recommending products. To solve the first challenge, we use a weak supervision framework to select persuasive sentences. Weak supervision frameword mark the data without the user to manually mark any training data. In this way, we do not cost time to label mass of data manually.
-
-To solve the second challenge, we propose a global local module: a specific module that focuses on the description of the scene. It has two parts, the global part is to learn the text description of all products on all texts, and the local part is to learn the scene-specific description through the local module. Through the weighted sum of these two parts, the generated sentence also has a description of the scene while describing the product.
-
-%contributions
-In academia, explainable recommendation belongs to a broader branch of explainable AI, which is an important and urgent issue in the whole artificial intelligence community.
-
-Our contributions are three folds. (1) We take the problem of generating persuasive descriptions as sequence to sequence model . The source text are scene and attribute about the product, the target text are persuasive description within scene about the product. (2) we use a weak supervision framework to select persuasive sentences as the training set of the model, which avoids a lot of manual labeling work. (3) Our system introduces a global-local module, so that the automatically generated description sentences for products can be described with scenes. 
 
 %paper structure
 This paper is organized as follows. We briefly survey the related work in Sec.~\ref{sec:related}. In Sec.~\ref{sec:architecture}, we first introduce the architecture of our system and describe the weak supervision and our global-local-copy model. We present and analyze the experimental results on a real data set in Sec.~\ref{sec:experiment}. We conclude our work and suggest future directions in Sec.~\ref{sec:conclusion}.
@@ -97,6 +85,11 @@ In recent years, there have been many studies on natural language processing, in
 
 The traditional explainable recommendation method has content-based recommendation and collaborative filtering. \cite{vig2009tagsplanations,sigurbjornsson2008flickr} used tags as content features for recommendations and generate corresponding explanations. Collaborative filtering is divided into user-based collaborative filtering and item-based collaborative filtering. \cite{herlocker2000explaining, gedikli2014should,sarwar2001item} provided an explanation using the ratings of its neighbors or its similar items. In recent years, many models have attempted to use textual information to generate textual explanations for recommendations. One is to extract commodity features as an explanation, such as \cite{wu2015flame} used topic models to explain recommendations, \cite{zhang2017entity} found the related entities and gave conceptual explanation, the other is to generate complete sentences as an explanation, such as \cite{ozbal2013brainsup} generated textual explanation based on fixed templates, \cite{munigala2018persuaide} based on linguistic creativity to generate various forms of sentences. 
 
+In this sense, Peake and Wang [2018] can be considered as a pointwise
+post-hoc explanation model, while Singh and Anand [2018] can be
+considered as a pair-wise or list-wise post-hoc explanation model.
+
+natural language Costa et al. [2017] Li et al. [2017]
 %not related to model
 \subsection{Creative Text Generation}
 
