@@ -186,4 +186,77 @@ year={2013}
   year={2016}
 }
 
+@InProceedings{Zhang2014Explicit,
+  author    = {Zhang, Yongfeng and Lai, Guokun and Zhang, Min and Zhang, Yi and Liu, Yiqun and Ma, Shaoping},
+  title     = {Explicit Factor Models for Explainable Recommendation Based on Phrase-level Sentiment Analysis},
+  booktitle = {Proceedings of the 37th International ACM SIGIR Conference on Research \&\#38; Development in Information Retrieval},
+  year      = {2014},
+  series    = {SIGIR '14},
+  pages     = {83--92},
+  address   = {New York, NY, USA},
+  publisher = {ACM},
+  abstract  = {Collaborative Filtering(CF)-based recommendation algorithms, such as Latent Factor Models (LFM), work well in terms of prediction accuracy. However, the latent features make it difficulty to explain the recommendation results to the users. Fortunately, with the continuous growth of online user reviews, the information available for training a recommender system is no longer limited to just numerical star ratings or user/item features. By extracting explicit user opinions about various aspects of a product from the reviews, it is possible to learn more details about what aspects a user cares, which further sheds light on the possibility to make explainable recommendations.
+
+In this work, we propose the Explicit Factor Model (EFM) to generate explainable recommendations, meanwhile keep a high prediction accuracy. We first extract explicit product features (i.e. aspects) and user opinions by phrase-level sentiment analysis on user reviews, then generate both recommendations and disrecommendations according to the specific product features to the user's interests and the hidden features learned. Besides, intuitional feature-level explanations about why an item is or is not recommended are generated from the model. Offline experimental results on several real-world datasets demonstrate the advantages of our framework over competitive baseline algorithms on both rating prediction and top-K recommendation tasks. Online experiments show that the detailed explanations make the recommendations and disrecommendations more influential on user's purchasing behavior.
+},
+  acmid     = {2609579},
+  doi       = {10.1145/2600428.2609579},
+  isbn      = {978-1-4503-2257-7},
+  keywords  = {collaborative filtering, recommendation explanation, recommender systems, sentiment analysis},
+  location  = {Gold Coast, Queensland, Australia},
+  numpages  = {10},
+  url       = {http://doi.acm.org/10.1145/2600428.2609579},
+}
+
+@InProceedings{Zhang2015Daily,
+  author    = {Zhang, Yongfeng and Zhang, Min and Zhang, Yi and Lai, Guokun and Liu, Yiqun and Zhang, Honghui and Ma, Shaoping},
+  title     = {Daily-Aware Personalized Recommendation Based on Feature-Level Time Series Analysis},
+  booktitle = {Proceedings of the 24th International Conference on World Wide Web},
+  year      = {2015},
+  series    = {WWW '15},
+  pages     = {1373--1383},
+  address   = {Republic and Canton of Geneva, Switzerland},
+  publisher = {International World Wide Web Conferences Steering Committee},
+  abstract  = {The frequently changing user preferences and/or item profiles have put essential importance on the dynamic modeling of users and items in personalized recommender systems. However, due to the insufficiency of per user/item records when splitting the already sparse data across time dimension, previous methods have to restrict the drifting purchasing patterns to pre-assumed distributions, and were hardly able to model them rather directly with, for example, time series analysis. Integrating content information helps to alleviate the problem in practical systems, but the domain-dependent content knowledge is expensive to obtain due to the large amount of manual efforts.
+
+In this paper, we make use of the large volume of textual reviews for the automatic extraction of domain knowledge, namely, the explicit features/aspects in a specific product domain. We thus degrade the product-level modeling of user preferences, which suffers from the lack of data, to the feature-level modeling, which not only grants us the ability to predict user preferences through direct time series analysis, but also allows us to know the essence under the surface of product-level changes in purchasing patterns. Besides, the expanded feature space also helps to make cold-start recommendations for users with few purchasing records.
+
+Technically, we develop the Fourier-assisted Auto-Regressive Integrated Moving Average (FARIMA) process to tackle with the year-long seasonal period of purchasing data to achieve daily-aware preference predictions, and we leverage the conditional opportunity models for daily-aware personalized recommendation. Extensive experimental results on real-world cosmetic purchasing data from a major e-commerce website (JD.com) in China verified both the effectiveness and efficiency of our approach.
+},
+  acmid     = {2741087},
+  doi       = {10.1145/2736277.2741087},
+  isbn      = {978-1-4503-3469-3},
+  keywords  = {collaborative filtering, recommender systems, sentiment analysis, time series analysis},
+  location  = {Florence, Italy},
+  numpages  = {11},
+  url       = {https://doi.org/10.1145/2736277.2741087},
+}
+
+@InProceedings{Chen2018Neural,
+  author    = {Chen, Chong and Zhang, Min and Liu, Yiqun and Ma, Shaoping},
+  title     = {Neural Attentional Rating Regression with Review-level Explanations},
+  booktitle = {Proceedings of the 2018 World Wide Web Conference},
+  year      = {2018},
+  series    = {WWW '18},
+  pages     = {1583--1592},
+  address   = {Republic and Canton of Geneva, Switzerland},
+  publisher = {International World Wide Web Conferences Steering Committee},
+  abstract  = {Reviews information is dominant for users to make online purchasing decisions in e-commerces. However, the usefulness of reviews is varied. We argue that less-useful reviews hurt model's performance, and are also less meaningful for user's reference. While some existing models utilize reviews for improving the performance of recommender systems, few of them consider the usefulness of reviews for recommendation quality. In this paper, we introduce a novel attention mechanism to explore the usefulness of reviews, and propose a Neural Attentional Regression model with Review-level Explanations (NARRE) for recommendation. Specifically, NARRE can not only predict precise ratings, but also learn the usefulness of each review simultaneously. Therefore, the highly-useful reviews are obtained which provide review-level explanations to help users make better and faster decisions. Extensive experiments on benchmark datasets of Amazon and Yelp on different domains show that the proposed NARRE model consistently outperforms the state-of-the-art recommendation approaches, including PMF, NMF, SVD++, HFT, and DeepCoNN in terms of rating prediction, by the proposed attention model that takes review usefulness into consideration. Furthermore, the selected reviews are shown to be effective when taking existing review-usefulness ratings in the system as ground truth. Besides, crowd-sourcing based evaluations reveal that in most cases, NARRE achieves equal or even better performances than system's usefulness rating method in selecting reviews. And it is flexible to offer great help on the dominant cases in real e-commerce scenarios when the ratings on review-usefulness are not available in the system.},
+  acmid     = {3186070},
+  comment   = {contribution: a Neural Attentional
+Regression model with Review-level Explanations (NARRE)
+
+the attention mechanism to automatically assign
+weights to reviews in a distant supervised manner
+
+review-level explanation, providing users with the highly-useful
+reviews},
+  doi       = {10.1145/3178876.3186070},
+  isbn      = {978-1-4503-5639-8},
+  keywords  = {explainable recommendation, neural attention network, recommender systems, review usefulness},
+  location  = {Lyon, France},
+  numpages  = {10},
+  url       = {https://doi.org/10.1145/3178876.3186070},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
