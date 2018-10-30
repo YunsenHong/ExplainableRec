@@ -259,4 +259,92 @@ reviews},
   url       = {https://doi.org/10.1145/3178876.3186070},
 }
 
+@InProceedings{Zhang2018SIGIR,
+  author    = {Zhang, Yongfeng and Zhang, Yi and Zhang, Min},
+  title     = {SIGIR 2018 Workshop on ExplainAble Recommendation and Search (EARS 2018)},
+  booktitle = {The 41st International ACM SIGIR Conference on Research \&\#38; Development in Information Retrieval},
+  year      = {2018},
+  series    = {SIGIR '18},
+  pages     = {1411--1413},
+  address   = {New York, NY, USA},
+  publisher = {ACM},
+  abstract  = {Explainable recommendation and search attempt to develop models or methods that not only generate high-quality recommendation or search results, but also intuitive explanations of the results for users or system designers, which can help to improve the system transparency, persuasiveness, trustworthiness, and effectiveness, etc. This is even more important in personalized search and recommendation scenarios, where users would like to know why a particular product, web page, news report, or friend suggestion exists in his or her own search and recommendation lists. The motivation of the workshop is to promote the research and application of Explainable Recommendation and Search, under the background of Explainable AI in a more general sense. Early recommendation and search systems adopted intuitive yet easily explainable models to generate recommendation and search lists, such as user-based and item-based collaborative filtering for recommendation, which provide recommendations based on similar users or items, or TF-IDF based retrieval models for search, which provide document ranking lists according to word similarity between different documents. However, state-of-the-art recommendation and search models extensively rely on complex machine learning and latent representation models such as matrix factorization or even deep neural networks, and they work with various types of information sources such as ratings, text, images, audio or video signals. The complexity nature of state-of-the-art models make search and recommendation systems as blank-boxes for end users, and the lack of explainability weakens the persuasiveness and trustworthiness of the system for users, making explainable recommendation and search important research issues to the IR community. In a broader sense, researchers in the whole artificial intelligence community have also realized the importance of Explainable AI, which aims to address a wide range of AI explainability problems in deep learning, computer vision, automatic driving systems, and natural language processing tasks. As an important branch of AI research, this further highlights the importance and urgency for our IR/RecSys community to address the explainability issues of various recommendation and search systems.},
+  acmid     = {3210193},
+  doi       = {10.1145/3209978.3210193},
+  isbn      = {978-1-4503-5657-2},
+  keywords  = {explainable recommendation, explainable search, information retrieval, recommendation systems},
+  location  = {Ann Arbor, MI, USA},
+  numpages  = {3},
+  url       = {http://doi.acm.org/10.1145/3209978.3210193},
+}
+
+@InBook{Yoo2011Creating,
+  pages     = {455--477},
+  title     = {Creating More Credible and Persuasive Recommender Systems: The Influence of Source Characteristics on Recommender System Evaluations},
+  publisher = {Springer US},
+  year      = {2011},
+  author    = {Yoo, Kyung-Hyan and Gretzel, Ulrike},
+  editor    = {Ricci, Francesco and Rokach, Lior and Shapira, Bracha and Kantor, Paul B.},
+  address   = {Boston, MA},
+  isbn      = {978-0-387-85820-3},
+  abstract  = {Whether users are likely to accept the recommendations provided by a recommender system is of utmost importance to system designers and the marketers who implement them. By conceptualizing the advice seeking and giving relationship as a fundamentally social process, important avenues for understanding the persuasiveness of recommender systems open up. Specifically, research regarding the influence of source characteristics, which is abundant in the context of humanhuman relationships, can provide an important framework for identifying potential influence factors. This chapter reviews the existing literature on source characteristics in the context of human-human, human-computer, and human-recommender system interactions. It concludes that many social cues that have been identified as influential in other contexts have yet to be implemented and tested with respect to recommender systems. Implications for recommender system research and design are discussed.},
+  booktitle = {Recommender Systems Handbook},
+  comment   = {persuasiveness related to trust },
+  doi       = {10.1007/978-0-387-85820-3_14},
+  url       = {https://doi.org/10.1007/978-0-387-85820-3_14},
+}
+
+@InBook{Tintarev2011Designing,
+  pages     = {479--510},
+  title     = {Designing and Evaluating Explanations for Recommender Systems},
+  publisher = {Springer US},
+  year      = {2011},
+  author    = {Tintarev, Nava and Masthoff, Judith},
+  editor    = {Ricci, Francesco and Rokach, Lior and Shapira, Bracha and Kantor, Paul B.},
+  address   = {Boston, MA},
+  isbn      = {978-0-387-85820-3},
+  abstract  = {This chapter gives an overview of the area of explanations in recommender systems. We approach the literature from the angle of evaluation: that is, we are interested in what makes an explanation ``good'', and suggest guidelines as how to best evaluate this. We identify seven benefits that explanations may contribute to a recommender system, and relate them to criteria used in evaluations of explanations in existing systems, and how these relate to evaluations with live recommender systems. We also discuss how explanations can be affected by how recommendations are presented, and the role the interaction with the recommender system plays w.r.t. explanations. Finally, we describe a number of explanation styles, and how they may be related to the underlying algorithms. Examples of explanations in existing systems are mentioned throughout.},
+  booktitle = {Recommender Systems Handbook},
+  comment   = {goals: 
+transparency
+scrutability
+trust
+effectiveness
+persuasiveness
+efficiency
+satisfaction},
+  doi       = {10.1007/978-0-387-85820-3_15},
+  url       = {https://doi.org/10.1007/978-0-387-85820-3_15},
+}
+
+@InProceedings{Costa2018Automatic,
+  author    = {Costa, Felipe and Ouyang, Sixun and Dolog, Peter and Lawlor, Aonghus},
+  title     = {Automatic Generation of Natural Language Explanations},
+  booktitle = {Proceedings of the 23rd International Conference on Intelligent User Interfaces Companion},
+  year      = {2018},
+  series    = {IUI '18 Companion},
+  pages     = {57:1--57:2},
+  address   = {New York, NY, USA},
+  publisher = {ACM},
+  acmid     = {3180366},
+  articleno = {57},
+  doi       = {10.1145/3180308.3180366},
+  isbn      = {978-1-4503-5571-1},
+  keywords  = {Explainability, Explanations, Natural Language Generation, Neural Network, Recommender systems},
+  location  = {Tokyo, Japan},
+  numpages  = {2},
+  url       = {http://doi.acm.org/10.1145/3180308.3180366},
+}
+
+@Article{Bengio2003neural,
+  author    = {Yoshua Bengio and Rejean Ducharme and Pascal Vincent and Christian Jauvin},
+  title     = {A neural probabilistic language model},
+  journal   = {Journal of Machine Learning Research},
+  year      = {2003},
+  volume    = {3},
+  number    = {Feb},
+  pages     = {1137-1155},
+  booktitle = {The Thirty-second Annual Conference on Neural Information Processing Systems},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
