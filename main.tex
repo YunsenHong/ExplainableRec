@@ -5,7 +5,7 @@
 \usepackage{multirow}
 
 \begin{document}
-\title{Persuasively Explainable Recommendation}
+\title{Towards Silver-tongued Persuasive Recommendation Explanations}
 
 \author{Submission }
 
@@ -21,33 +21,53 @@ In the e-commerce environment, it is a personalized service to recommend suitabl
 \maketitle
 
 \section{INTRODUCTION}
+
+The sales department in any organization plays a pivotal role in the success of business. 
+With the power of persuasion and deep product knowledge, salespeople bridge the gap between customer needs and the products that fulfill the needs. This brings an interesting yet challenging question: \textit{ Can machines function like a skilled salesman?} 
+
 %1.explainable recommendation: importance
 %shall we restrict motivation in industry?
-To provide accurate recommendation, state-of-the-art recommendation systems depend on complex machine learning models on heterogeneous data sources. 
-These models function as black boxes, which is a major obstacle to improving user experience and increasing user stickness. 
+In E-commerce, recommendation systems have made remarkable achievement by accurately predicting user needs and identifying demanded products. 
+However, state-of-the-art recommendation systems depend on complex machine learning models on heterogeneous data sources. 
+These models function as black boxes, which is a major obstacle towards replacing salesteam. 
 Aiming to overcome this obstacle, there is growing interest in developing \textit{explainable recommendation} systems to provide intuitive explanations of the recommendation results. 
 In particular, recently many E-commerce sites such as Alibaba and Amazon invest heavily in providing automated recommendation explanations~\cite{}, motivated by the success of promoting sales using manually-written recommendation reasons. 
 
+
 %explainable recommendation: persuasiveness and effectiveness
-Explanations can benefit recommender systems on a number of aspects. As defined in~\cite{Tintarev2011Designing}, there are seven categories of recommendation explanations, working respectively to improve the degree of system transparency, scrutability, trust, effectiveness, persuasiveness, efficiency and satisfaction. 
-From the viewpoint of E-commerce sites, \textit{persuasiveness} and \textit{effectiveness} are the most desirable aspects.
+To to improving user experience and increasing user stickness, it is necessary to make explainable recommendation like a salesman.
 
 
-\textit{Persuasiveness} is the ability to convince users to buy the recommended items. 
+A good salesperson must be \textit{persuasive}. The ability to convince users to buy the recommended items. 
 An ideal example of \textit{persuasiveness explanation} for each item is to compose creatively a catchy and appealing sentence that is enjoyable to read.
 As it directly associates with conversion rates, an industry-level explainable recommendation system must focus primarily on generating persuasive explanations.  
 
-\textit{Effectiveness} is the power to help users make better purchase decisions.
-Ultimately, custom need is the driver of purchase decision. 
+A good salesperson must also be \textit{knowledgable}. %ensure they highlight each product?s strongest features. Deep product knowledge is honestly one of the few things that separates the top 1% of reps from the rest
+Therefore a \texit{knowledge aware} system. 
 A practical and efficient way to describe customer needs is to categorize them into different \textit{scenes}, under which customers purchase products or services to function.
 An example scene takes place on the beach in summer, which prompts swimsuit purchases. 
 With the help of a taxonomy of scenes, \textit{effective explanation} describes the utility of each item in a manner of how the item suits user preference under the user's intended scene.
 This type of effective explanation can facilitate user decision process. It will reduce E-commerce product return rate and reduce enterprise cost.
 In addition, effectiveness and persuasiveness are highly correlated.  As found in many surveys in advertising, information can have a powerful impact on liking~\cite{}. Infusing explanation with information on how the user can utilize an item strengthens the explainability power of the recommendation system.  
 
-\begin{figure}\label{fig:example}
-\caption{An illustrative example which is the real output of our system.}
-\end{figure}
+\begin{table*}
+  \caption{An illustrative example which is the real output of our system}
+  \label{table:example}
+  \begin{tabular}{p{8cm} p{8cm}}
+    \toprule
+    Input: item bookcase,scene modern house decor,feature log & input: item bookcase,scene luxury house decor,feature log \\
+    \midrule
+    \begin{CJK*}{UTF8}{gbsn}
+        ??\textcolor{blue}{??}????????????\textcolor{red}{??}??????????????????????????????????????????????????????
+    \end{CJK*} & 
+    \begin{CJK*}{UTF8}{gbsn}
+        ????????????????\textcolor{red}{??}?????????????????????\textcolor{blue}{??}??????????????? 
+    \end{CJK*}\\
+    A \textcolor{blue}{modern} and simple wooden bookcase with a classic \textcolor{red}{log} design, made of original wood and spliced, which makes the natural wood touch, green and versatile, to meet your different storage needs, so that your home is neat and beautiful.  &
+    This bookcase is made of solid wood and is made of natural \textcolor{red}{logs}. It is of high quality and durable. There is no decoration that is too much decoration, \textcolor{blue}{luxury} and not ostentatious, but also shows the extraordinary taste.\\
+    \bottomrule
+\end{tabular}
+\end{table*}
 
 However, existing explainable recommendation systems mostly concentrate on aspects other than persuasiveness and effectiveness.  The majority of previous work aims to improve system transparency by devising interpretable models (i.e. factor models~\cite{Zhang2014Explicit,Zhang2015Daily,Wu2015FLAME}) which lead to feature level explanation. Explanations have been offered as charts~\cite{Zhao2016Exploring}, word clouds~\cite{Wu2015FLAME}, merged phrases in a textual template~\cite{Zhang2014Explicit,Zhang2015Daily}, or selected highly useful reviews~\cite{Chen2018Neural}. 
 It is widely accepted that computers which convey personality are more persuasive~\cite{Yoo2011Creating}. The lack of free text makes an explainable recommendation system less humanly, thus weakens its power to be persuasive. 
@@ -89,6 +109,10 @@ The importance and urgence of explainable recommendation is assured for the fore
 A strategy that departs from the explainable models is to provide post-hoc explanations, which are not generated by the recommendation model itself. Hence, the predictive accuracy of the black-box recommendation model is maintained, whilst the user experience is optimized. The explanations often utilize intermediate results of the recommendation model, for example, explanations in~\cite{Peake2018Explanation} are extracted by training association rules on the outputs of a latent factor model.
 
 %benefits
+Explanations can benefit recommender systems on a number of aspects. As defined in~\cite{Tintarev2011Designing}, there are seven categories of recommendation explanations, working respectively to improve the degree of system transparency, scrutability, trust, effectiveness, persuasiveness, efficiency and satisfaction. 
+From the viewpoint of E-commerce sites, \textit{persuasiveness} and \textit{effectiveness} are the most desirable aspects. \textit{Effectiveness} is the power to help users make better purchase decisions.
+Ultimately, custom need is the driver of purchase decision. 
+
 According to the milestone work~\cite{Tintarev2011Designing}, explanations in recommendation systems serve different aims. The majority of existing literature (i.e. explainable models) improves transparency by exposing the way the recommendation engine works. Post-hoc explanations are not necessarily transparent. It is a relatively unexplored area as how to generate explanations that persuade consumers to try a recommended item (persuasiveness) and explain why they may or may not want to have a try (effectiveness). Our work distinguishes with previous work in that we concentrate on effectiveness and persuasiveness, which are critical in E-commerce. 
 
 Though existing methods present various types of explaination, most of them are based on predefined forms, which are considered secondary to natural language explanations. Generating explanations in natural language is still in its initial phase. The recent work~\cite{Costa2018Automatic} generates text reviews that combine user opinions on different factors of an item. Our work is more personalized as our description targets to the user's intended consumption scene. 
