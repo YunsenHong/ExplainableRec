@@ -23,60 +23,76 @@ In the e-commerce environment, it is a personalized service to recommend suitabl
 \section{INTRODUCTION}
 
 The sales department in any organization plays a pivotal role in the success of business. 
-With the power of persuasion and deep product knowledge, salespeople bridge the gap between customer needs and the products that fulfill the needs. This brings an interesting yet challenging question: \textit{ Can machines function like a skilled salesman?} 
+With the power of persuasion and deep product knowledge, salespeople bridge the gap between customer needs and the products that fulfill the needs. 
+We've seen many vivid examples of top salesperson who single-handedly boost company-wise sales.
+This brings an interesting yet challenging question: \textit{ Can machines function like a skilled salesman?} 
 
 %1.explainable recommendation: importance
 %shall we restrict motivation in industry?
-In E-commerce, recommendation systems have made remarkable achievement by accurately predicting user needs and identifying demanded products. 
-However, state-of-the-art recommendation systems depend on complex machine learning models on heterogeneous data sources. 
-These models function as black boxes, which is a major obstacle towards replacing salesteam. 
+In E-commerce, recommendation systems have made remarkable achievements by accurately predicting user needs and identifying demanded products. 
+State-of-the-art recommendation systems depend on complex machine learning models on heterogeneous data sources. 
+These models function as black boxes, which is a major obstacle towards efficient selling. 
 Aiming to overcome this obstacle, there is growing interest in developing \textit{explainable recommendation} systems to provide intuitive explanations of the recommendation results. 
-In particular, recently many E-commerce sites such as Alibaba and Amazon invest heavily in providing automated recommendation explanations~\cite{}, motivated by the success of promoting sales using manually-written recommendation reasons. 
-
+In particular, recently many E-commerce sites such as Alibaba and Amazon invest heavily in providing automated recommendation explanations~\cite{Hua2018Shakespeare}, motivated by the success of promoting sales using manually-written recommendation reasons. 
+However, these explainable systems are still in the initial stage.
 
 %explainable recommendation: persuasiveness and effectiveness
-To to improving user experience and increasing user stickness, it is necessary to make explainable recommendation like a salesman.
+No behavior on earth is more human than selling. 
+To improve user experience and increase user stickness, it is necessary to embody the best sales techniques in explainable recommendations: persuasiveness and knowledge-awareness.
+
+A good salesperson must be \textit{persuasive}, i.e. the ability to convince users to buy or try the recommended items. 
+As persuasiveness directly associates with conversion rates, it should be the primary goal for an explainable recommendation system. 
+To maximize the persuasiveness, it is desirable to compose for each item a catchy and appealing sentence that is enjoyable to read.
+%Generating persuasive sentences involves a highly creative and cognive process.  
+
+A good salesperson must also be \textit{knowledgable}, i.e. comprehend consumer needs and infuse with deep knowledge of products.
+Knowledge awareness facilitates consumer decision process, leading to increased sales, lower product return rates and reduced enterprise costs.
+%As found by many studies in advertising and marketing, information can have a powerful impact on liking. 
+An ideal \textit{knowledge-aware} system highlights each product's strongest features according to different user needs. 
+%Generating knowledge aware explanations involves   
+
+In this paper we propose a persuasive and knowledge-aware explainable recommendation system. Given a user's historical behavior and an item's profile, we provide the recommendation reason in natural language. 
+The recommendation reason is persuasive in text style.
+Knowledge is incorporated through the ceoncept of consumption scenes.  
+A consumption scene is a category of user needs which may take place at a certain place and a certain time.
+Our explanations describe several key features extracted from the item's profile and elaborate that these features are charming under the user's intended scene in a persuasive manner.
+Table~\ref{tab:example} presents a real output from our system. We can see that for the same wooden bookcase, the generated explanation differ for two distinguished user needs. 
+For example, when the user is looking for modern style house decor, our system decides that the user emphasizes more on functional requirements (printed in blue), such as the storage needs, making the house neat, and so on. 
+Hence, the generated explanation selects features (printed in red) that are highly relevant to such needs, e.g. versatile.
+On the contrary, when the user is looking for luxury house decor, our system uses key phrases such as extraordinary taste to match specific user needs.
+The generated explanation selects relevant features such as natural logs and high quality and durable.  
 
 
-A good salesperson must be \textit{persuasive}. The ability to convince users to buy the recommended items. 
-An ideal example of \textit{persuasiveness explanation} for each item is to compose creatively a catchy and appealing sentence that is enjoyable to read.
-As it directly associates with conversion rates, an industry-level explainable recommendation system must focus primarily on generating persuasive explanations.  
+It is worthy to clarify that the explanation is post-hoc, as it is not generated from the recommendation model. We allow the flexibility of adopting any recommendation model that runs on a knowledge base of consumption scenes. Construction of the knowledge base  is not discussed throughout the paper. The recommendation model delievers recommendations by mapping user intent to a consumption scene. 
 
-A good salesperson must also be \textit{knowledgable}. %ensure they highlight each product?s strongest features. Deep product knowledge is honestly one of the few things that separates the top 1% of reps from the rest
-Therefore a \texit{knowledge aware} system. 
-A practical and efficient way to describe customer needs is to categorize them into different \textit{scenes}, under which customers purchase products or services to function.
-An example scene takes place on the beach in summer, which prompts swimsuit purchases. 
-With the help of a taxonomy of scenes, \textit{effective explanation} describes the utility of each item in a manner of how the item suits user preference under the user's intended scene.
-This type of effective explanation can facilitate user decision process. It will reduce E-commerce product return rate and reduce enterprise cost.
-In addition, effectiveness and persuasiveness are highly correlated.  As found in many surveys in advertising, information can have a powerful impact on liking~\cite{}. Infusing explanation with information on how the user can utilize an item strengthens the explainability power of the recommendation system.  
 
-\begin{table*}
-  \caption{An illustrative example which is the real output of our system}
+\begin{table*}\label{tab:example}
+  \caption{An illustrative example}
   \label{table:example}
   \begin{tabular}{p{8cm} p{8cm}}
     \toprule
-    Input: item bookcase,scene modern house decor,feature log & input: item bookcase,scene luxury house decor,feature log \\
+    Input: item profile wooden bookcase,scene modern house decor & input: item profile wooden bookcase,scene luxury house decor \\
     \midrule
     \begin{CJK*}{UTF8}{gbsn}
-        ??\textcolor{blue}{??}????????????\textcolor{red}{??}??????????????????????????????????????????????????????
+        一款\textcolor{blue}{现代}简约木质书架，采用\textcolor{red}{经典的原木设计}，由原生态\textcolor{red}{木材拼接}而成，成就了\textcolor{red}{天然原木触感}，\textcolor{red}{绿色环保}，\textcolor{red}{功能多样}，满足您不同的\textcolor{blue}{收纳需求}，让您的家\textcolor{blue}{整洁}漂亮。
     \end{CJK*} & 
     \begin{CJK*}{UTF8}{gbsn}
-        ????????????????\textcolor{red}{??}?????????????????????\textcolor{blue}{??}??????????????? 
+        这款书架采用\textcolor{red}{好实木}打造，选用天然原木，\textcolor{red}{品质优良}，\textcolor{red}{坚固耐用}。没有过多修饰的装饰，\textcolor{red}{奢华}而不张扬，更彰显了\textcolor{blue}{不凡的品味}。 
     \end{CJK*}\\
-    A \textcolor{blue}{modern} and simple wooden bookcase with a classic \textcolor{red}{log} design, made of original wood and spliced, which makes the natural wood touch, green and versatile, to meet your different storage needs, so that your home is neat and beautiful.  &
-    This bookcase is made of solid wood and is made of natural \textcolor{red}{logs}. It is of high quality and durable. There is no decoration that is too much decoration, \textcolor{blue}{luxury} and not ostentatious, but also shows the extraordinary taste.\\
+    A \textcolor{blue}{modern} and simple wooden bookcase with a \textcolor{red}{classic log design}, made of original \textcolor{red}{wood spliced}, which makes the \textcolor{red}{ natural wood touch}, \textcolor{red}{environmental friendly}, \textcolor{red}{versatile} to meet your different \textcolor{blue}{storage needs}, so that your home is \textcolor{blue}{neat} and beautiful.  &
+    This bookcase is made of solid wood and is made of\textcolor{red}{ natural logs}. It is of \textcolor{red}{ high quality and durable}. There is no too much decoration, \textcolor{red}{luxury} without being ostentatious, shows the \textcolor{blue}{extraordinary taste}.\\
     \bottomrule
 \end{tabular}
 \end{table*}
 
-However, existing explainable recommendation systems mostly concentrate on aspects other than persuasiveness and effectiveness.  The majority of previous work aims to improve system transparency by devising interpretable models (i.e. factor models~\cite{Zhang2014Explicit,Zhang2015Daily,Wu2015FLAME}) which lead to feature level explanation. Explanations have been offered as charts~\cite{Zhao2016Exploring}, word clouds~\cite{Wu2015FLAME}, merged phrases in a textual template~\cite{Zhang2014Explicit,Zhang2015Daily}, or selected highly useful reviews~\cite{Chen2018Neural}. 
+
+Our work distinguishes from existing explainable recommendation systems. The majority of previous work aims to improve system transparency by devising interpretable models (i.e. factor models~\cite{Zhang2014Explicit,Zhang2015Daily,Wu2015FLAME}) which lead to feature level explanation. Explanations have been offered as charts~\cite{Zhao2016Exploring}, word clouds~\cite{Wu2015FLAME}, merged phrases in a textual template~\cite{Zhang2014Explicit,Zhang2015Daily}, or selected highly useful reviews~\cite{Chen2018Neural}. 
 It is widely accepted that computers which convey personality are more persuasive~\cite{Yoo2011Creating}. The lack of free text makes an explainable recommendation system less humanly, thus weakens its power to be persuasive. 
 
 We notice that there is an emerging trend in studying persuasive systems, including a recent work on transforming given specification of an item to persuasive descriptions~\cite{munigala2018persuaide}. Although they have been been useful in E-commerce sites to attract consumers, they do not satisfy the personalized demands in recommendation systems. They are not able to tailor both persuasive and informative explanations that are relevant to specific user needs, which is precisely the goal of our work.
 
-In this paper we propose an explainable recommendation system. Given a user's historical behavior, an item's profile, and an in-house scene taxonomy, we provide a  \textbf{persuasive} and \textbf{effective} recommendation reason. The explanation is post-hoc, as it is not generated from the recommendation model. We allow the flexibility of adopting any recommendation model, which is not discussed throughout the paper. The  recommendation model delievers recommendations by mapping user intent to a consumption scene. Our explanations describe several key features extracted from the item's profile and elaborate that these features are charming under the user's intended scene. As shown in Figure.~\ref{}, the explanation "the one-piece's very low neckline gives it extra sex appeal on the beach" relates the item feature "low neckline" to the intended scene "beach" in a very persuasive style.  
 
-To develop such a system, we face two challenges.  The first challenge arises from the insufficiency of training data. Deep sequence models have made remarkable success in generating readable texts in natural language. However, such success has been fueled by large-scale supervision. It is prohibitively expensive to label persuasive sentences due to the extremely subjective and diverse nature of persuasiveness. Persuasiveness is subjective, because different human judges have varying standards. It is costly to derive a gold standard that is approved by domain experts. Persuasiveness is diverse, because a persuasive sentence can be written in different styles.  It is impossible to list all variants of persuasive sentences.   
+To develop a persuasive and knowledge-aware system, we face two challenges.  The first challenge arises from the insufficiency of training data. Persuasive sentence generation is a highly creative and cognitive process. Deep models have shown promising results in generating readable texts in natural language. However, such success has been fueled by large-scale supervision. It is prohibitively expensive to label persuasive sentences due to the extremely subjective and diverse nature of persuasiveness. Persuasiveness is subjective, because different human judges have varying standards. It is costly to derive a gold standard that is approved by domain experts. Persuasiveness is diverse, because a persuasive sentence can be written in different styles.  It is impossible to list all variants of persuasive sentences.   
  
 To address the first challenge, we turn to a framework with weak supervision. We program a set of rules with high coverage and low accuracy to generate training sets with noisy labels from external data source that are accessible on the Internet. To resolve the potentially conflicts among rules we adopt a gnerative model with faroring weights that corresponding to imbalanced scene distribution. We experimentally show that weak supervision from externeal blogs outperforms unsupervised methods~\cite{munigala2018persuaide}. %work here?
 
@@ -89,7 +105,7 @@ To address the second challenge, we design a deep network following the encoder 
 
 Our contributions are three folds.
 \begin{itemize}
-\item In the application level, we present a novel explainable recommendation system. To the best of our knowledge, we are the first to target directly on persuasive and effective explanations in natural language by explaining how well the item suits user preferences under different scenes.
+\item In the application level, we present a novel explainable recommendation system. To the best of our knowledge, we are the first to target directly on persuasive and knowledge-aware explanations in natural language by explaining how well the item suits user preferences under different scenes.
 \item In the model level, we propose a deep network model with a global module to learn universal persuasive patterns and a local module to learn scene-specific persuasive patterns.
 \item In the evaluation level, we design the experimental scheme as well as some easy-to-implement merits to evaluate the persuasiveness and effectiveness of our explanations. 
 \end{itemize}
@@ -110,10 +126,8 @@ A strategy that departs from the explainable models is to provide post-hoc expla
 
 %benefits
 Explanations can benefit recommender systems on a number of aspects. As defined in~\cite{Tintarev2011Designing}, there are seven categories of recommendation explanations, working respectively to improve the degree of system transparency, scrutability, trust, effectiveness, persuasiveness, efficiency and satisfaction. 
-From the viewpoint of E-commerce sites, \textit{persuasiveness} and \textit{effectiveness} are the most desirable aspects. \textit{Effectiveness} is the power to help users make better purchase decisions.
-Ultimately, custom need is the driver of purchase decision. 
-
-According to the milestone work~\cite{Tintarev2011Designing}, explanations in recommendation systems serve different aims. The majority of existing literature (i.e. explainable models) improves transparency by exposing the way the recommendation engine works. Post-hoc explanations are not necessarily transparent. It is a relatively unexplored area as how to generate explanations that persuade consumers to try a recommended item (persuasiveness) and explain why they may or may not want to have a try (effectiveness). Our work distinguishes with previous work in that we concentrate on effectiveness and persuasiveness, which are critical in E-commerce. 
+From the viewpoint of E-commerce sites, \textit{persuasiveness} and \textit{effectiveness} are the most desirable aspects. %\textit{Effectiveness} is the power to help users make better purchase decisions.
+The majority of existing literature (i.e. explainable models) improves transparency by exposing the way the recommendation engine works. Post-hoc explanations are not necessarily transparent. It is a relatively unexplored area as how to generate explanations that persuade consumers to try a recommended item (persuasiveness) and explain why they may or may not want to have a try (effectiveness). Our work concentrates directly on effectiveness and persuasiveness. 
 
 Though existing methods present various types of explaination, most of them are based on predefined forms, which are considered secondary to natural language explanations. Generating explanations in natural language is still in its initial phase. The recent work~\cite{Costa2018Automatic} generates text reviews that combine user opinions on different factors of an item. Our work is more personalized as our description targets to the user's intended consumption scene. 
 
