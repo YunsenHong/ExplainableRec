@@ -1,0 +1,87 @@
+\documentclass{article}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,shadows}
+\usepackage{amsmath,bm,times}
+\newcommand{\mx}[1]{\mathbf{\bm{#1}}} % Matrix command
+\newcommand{\vc}[1]{\mathbf{\bm{#1}}} % Vector command
+
+\begin{document}
+% Define the layers to draw the diagram
+\pgfdeclarelayer{background}
+\pgfdeclarelayer{foreground}
+\pgfsetlayers{background,main,foreground}
+
+% Define block styles used later
+
+\tikzstyle{process}=[draw, fill=blue!20, text width=5em, 
+    text centered, minimum height=2.5em,drop shadow]
+\tikzstyle{processon}=[draw, fill=blue!20, text width=8em, 
+    text centered, minimum height=2.5em,drop shadow]
+\tikzstyle{puret} = [above, text width=10em, text centered]
+\tikzstyle{data} = [process, text width=6em, fill=red!20, 
+    minimum height=6em, rounded corners, drop shadow]
+\tikzstyle{dataw} = [process, text width=9em, fill=red!20, 
+    minimum height=6em, rounded corners, drop shadow]
+
+% Define distances for bordering
+\def\blockdist{2.3}
+\def\edgedist{2.5}
+
+\begin{tikzpicture}
+    \node (supervision) [process]  {Weak Supervision Generation, (Sec.4)};
+  \path (supervision.north)+(0,+1.5) node (input1)[puret] {External Weblogs}; 
+ \path [draw, ->] (input1.south) -- node [above] {} (supervision.90) ;
+    \path (supervision.south)+(0,-1.5)  node (training) [data] {Training data \\ sentence 1, $\vc{l_1}$\\ sentence 2, $\vc{l_2}$};
+
+ \path [draw, ->] (supervision.south) -- node [above] {} (training.90) ;
+    \path (training.south)+(0,-1.5)  node (DNN) [process] {Global-Local-Copy Model, (Sec.5)};
+\path [draw, ->] (training.south) -- node [above] {} (DNN.90) ;
+
+  \path (DNN.south)+(+3.5,0) node (parameter)[data] {Estimated Parameters $\vc\theta$}; 
+\path [draw, ->] (DNN.south) -- node [above] {} (parameter.90) ;
+   
+ \path (supervision.north) +(-\blockdist,-\blockdist) node (layer) {Offline};
+
+    \begin{pgfonlayer}{background}
+        \path (supervision.west |- supervision.north)+(-0.5,0.3) node (a) {};
+        \path (DNN.south -| DNN.east)+(+0.5,+0.3) node (b) {};
+        \path (DNN.east |- DNN.east)+(+0.5,-1.5) node (c) {};
+          
+        \path[fill=yellow!20,rounded corners, draw=black!50, dashed]
+            (a) rectangle (c);           
+        \path (supervision.north west)+(-0.2,0.2) node (a) {};
+            
+    \end{pgfonlayer}
+
+ \path (input1.east)+(+5,-0) node (input2)[puret] {User Bahavior Data}; 
+ \path (supervision.east)+(+3.5,-1.5) node (KG)[dataw] {Scene \\ Knowledge Base}; 
+\path [draw, ->] (KG.west) -- node [above] {} (DNN.360) ;
+
+ \path (supervision.east)+(+8,0) node (RS)[processon] {Recommendation Model}; 
+\path [draw, ->] (KG.east) -- node [above] {} (RS.180) ;
+ \path (RS.south)+(0,-1.5)  node (rank) [dataw] {Ranking list \\ scene, item profile $\vc{f_1}$\\ scene, item profile $\vc{f_2}$};
+
+ \path [draw, ->] (RS.south) -- node [above] {} (rank.90) ;
+
+ \path (rank.south)+(0,-3.5)  node (explain) [dataw] {Explanations \\ persuasive sentence };
+
+ \path [draw, ->] (rank.south) -- node [above] {} (explain.90) ;
+\path [draw, ->] (parameter.east) -- node [above] {} (explain.180) ;
+
+
+    \begin{pgfonlayer}{background}
+        \path (RS.west |- RS.north)+(-0.5,0.3) node (a) {};
+        \path (rank.south -| rank.east)+(+0.5,+0.3) node (b) {};
+        \path (rank.east |- rank.east)+(+0.5,-1.5) node (c) {};
+          
+        \path[fill=yellow!20,rounded corners, draw=black!50, dashed]
+            (a) rectangle (c);           
+        \path (RS.north west)+(-0.2,0.2) node (a) {};
+            
+    \end{pgfonlayer}
+
+
+\end{tikzpicture}
+
+\end{document}
