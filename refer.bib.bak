@@ -54,24 +54,6 @@
   author={Wu, Yonghui and Schuster, Mike and Chen, Zhifeng and Le, Quoc V and Norouzi, Mohammad and Macherey, Wolfgang and Krikun, Maxim and Cao, Yuan and Gao, Qin and Macherey, Klaus},
   year={2016},
 }
-
-@inproceedings{sigurbjornsson2008flickr,  
-title={Flickr tag recommendation based on collective knowledge},  
-author={Sigurbj{\"o}rnsson, B{\"o}rkur and Van Zwol, Roelof},  
-booktitle={Proceedings of the 17th international conference on World Wide Web},  
-pages={327--336},  
-year={2008},  
-organization={ACM}  
-}  
-
-@inproceedings{vig2009tagsplanations,  
-title={Tagsplanations: explaining recommendations using tags},  
-author={Vig, Jesse and Sen, Shilad and Riedl, John},  
-booktitle={Proceedings of the 14th international conference on Intelligent user interfaces},  
-pages={47--56},  
-year={2009},  
-organization={ACM}  
-}  
  
  @article{gedikli2014should,  
 title={How should I explain? A comparison of different explanation types for recommender systems},  
@@ -82,15 +64,6 @@ number={4},
 pages={367--382},  
 year={2014},  
 publisher={Elsevier}  
-}  
-  
-@inproceedings{sarwar2001item,  
-title={Item-based collaborative filtering recommendation algorithms},  
-author={Sarwar, Badrul and Karypis, George and Konstan, Joseph and Riedl, John},  
-booktitle={Proceedings of the 10th international conference on World Wide Web},  
-pages={285--295},  
-year={2001},  
-organization={ACM}  
 }  
  
 @inproceedings{wu2015flame,  
@@ -186,28 +159,6 @@ year={2013}
   year={2016}
 }
 
-@InProceedings{Zhang2014Explicit,
-  author    = {Zhang, Yongfeng and Lai, Guokun and Zhang, Min and Zhang, Yi and Liu, Yiqun and Ma, Shaoping},
-  title     = {Explicit Factor Models for Explainable Recommendation Based on Phrase-level Sentiment Analysis},
-  booktitle = {Proceedings of the 37th International ACM SIGIR Conference on Research \&\#38; Development in Information Retrieval},
-  year      = {2014},
-  series    = {SIGIR '14},
-  pages     = {83--92},
-  address   = {New York, NY, USA},
-  publisher = {ACM},
-  abstract  = {Collaborative Filtering(CF)-based recommendation algorithms, such as Latent Factor Models (LFM), work well in terms of prediction accuracy. However, the latent features make it difficulty to explain the recommendation results to the users. Fortunately, with the continuous growth of online user reviews, the information available for training a recommender system is no longer limited to just numerical star ratings or user/item features. By extracting explicit user opinions about various aspects of a product from the reviews, it is possible to learn more details about what aspects a user cares, which further sheds light on the possibility to make explainable recommendations.
-
-In this work, we propose the Explicit Factor Model (EFM) to generate explainable recommendations, meanwhile keep a high prediction accuracy. We first extract explicit product features (i.e. aspects) and user opinions by phrase-level sentiment analysis on user reviews, then generate both recommendations and disrecommendations according to the specific product features to the user's interests and the hidden features learned. Besides, intuitional feature-level explanations about why an item is or is not recommended are generated from the model. Offline experimental results on several real-world datasets demonstrate the advantages of our framework over competitive baseline algorithms on both rating prediction and top-K recommendation tasks. Online experiments show that the detailed explanations make the recommendations and disrecommendations more influential on user's purchasing behavior.
-},
-  acmid     = {2609579},
-  doi       = {10.1145/2600428.2609579},
-  isbn      = {978-1-4503-2257-7},
-  keywords  = {collaborative filtering, recommendation explanation, recommender systems, sentiment analysis},
-  location  = {Gold Coast, Queensland, Australia},
-  numpages  = {10},
-  url       = {http://doi.acm.org/10.1145/2600428.2609579},
-}
-
 @InProceedings{Zhang2015Daily,
   author    = {Zhang, Yongfeng and Zhang, Min and Zhang, Yi and Lai, Guokun and Liu, Yiqun and Zhang, Honghui and Ma, Shaoping},
   title     = {Daily-Aware Personalized Recommendation Based on Feature-Level Time Series Analysis},
@@ -257,25 +208,6 @@ reviews},
   location  = {Lyon, France},
   numpages  = {10},
   url       = {https://doi.org/10.1145/3178876.3186070},
-}
-
-@InProceedings{Zhang2018SIGIR,
-  author    = {Zhang, Yongfeng and Zhang, Yi and Zhang, Min},
-  title     = {SIGIR 2018 Workshop on ExplainAble Recommendation and Search (EARS 2018)},
-  booktitle = {The 41st International ACM SIGIR Conference on Research \&\#38; Development in Information Retrieval},
-  year      = {2018},
-  series    = {SIGIR '18},
-  pages     = {1411--1413},
-  address   = {New York, NY, USA},
-  publisher = {ACM},
-  abstract  = {Explainable recommendation and search attempt to develop models or methods that not only generate high-quality recommendation or search results, but also intuitive explanations of the results for users or system designers, which can help to improve the system transparency, persuasiveness, trustworthiness, and effectiveness, etc. This is even more important in personalized search and recommendation scenarios, where users would like to know why a particular product, web page, news report, or friend suggestion exists in his or her own search and recommendation lists. The motivation of the workshop is to promote the research and application of Explainable Recommendation and Search, under the background of Explainable AI in a more general sense. Early recommendation and search systems adopted intuitive yet easily explainable models to generate recommendation and search lists, such as user-based and item-based collaborative filtering for recommendation, which provide recommendations based on similar users or items, or TF-IDF based retrieval models for search, which provide document ranking lists according to word similarity between different documents. However, state-of-the-art recommendation and search models extensively rely on complex machine learning and latent representation models such as matrix factorization or even deep neural networks, and they work with various types of information sources such as ratings, text, images, audio or video signals. The complexity nature of state-of-the-art models make search and recommendation systems as blank-boxes for end users, and the lack of explainability weakens the persuasiveness and trustworthiness of the system for users, making explainable recommendation and search important research issues to the IR community. In a broader sense, researchers in the whole artificial intelligence community have also realized the importance of Explainable AI, which aims to address a wide range of AI explainability problems in deep learning, computer vision, automatic driving systems, and natural language processing tasks. As an important branch of AI research, this further highlights the importance and urgency for our IR/RecSys community to address the explainability issues of various recommendation and search systems.},
-  acmid     = {3210193},
-  doi       = {10.1145/3209978.3210193},
-  isbn      = {978-1-4503-5657-2},
-  keywords  = {explainable recommendation, explainable search, information retrieval, recommendation systems},
-  location  = {Ann Arbor, MI, USA},
-  numpages  = {3},
-  url       = {http://doi.acm.org/10.1145/3209978.3210193},
 }
 
 @InBook{Yoo2011Creating,
@@ -345,6 +277,237 @@ satisfaction},
   number    = {Feb},
   pages     = {1137-1155},
   booktitle = {The Thirty-second Annual Conference on Neural Information Processing Systems},
+}
+
+@InProceedings{Hua2018Shakespeare,
+  author    = {Qingsong Hua},
+  title     = {Shakespeare of Alibaba: Practice of Intelligent Recommendation Reason Generation in Alibaba},
+  booktitle = {Proceedings of the 41st International ACM SIGIR Conference on Research and Development in Information Retrieval},
+  year      = {2018},
+}
+
+@InProceedings{Wiseman2017Challenges,
+  author    = {Wiseman, Sam and Shieber, Stuart and Rush, Alexander},
+  title     = {Challenges in Data-to-Document Generation},
+  booktitle = {Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing},
+  year      = {2017},
+  pages     = {2253--2263},
+  abstract  = {Recent neural models have shown significant progress on the problem of generating short descriptive texts conditioned on a small number of database records. In this work, we suggest a slightly more difficult data-to-text generation task, and investigate how effective current approaches are on this task. In particular, we introduce a new, large-scale corpus of data records paired with descriptive documents, propose a series of extractive evaluation methods for analyzing performance, and obtain baseline results using current neural generation methods. Experiments show that these models produce fluent text, but fail to convincingly approximate human-generated documents. Moreover, even templated baselines exceed the performance of these neural models on some metrics, though copy- and reconstruction-based extensions lead to noticeable improvements.},
+  timestamp = {2019-01-18},
+}
+
+@InProceedings{Yang2017Reference,
+  author    = {Yang, Zichao and Blunsom, Phil and Dyer, Chris and Ling, Wang},
+  title     = {Reference-Aware Language Models},
+  booktitle = {Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing},
+  year      = {2017},
+  pages     = {1850--1859},
+  abstract  = {We propose a general class of language
+models that treat reference as discrete
+stochastic latent variables. This decision
+allows for the creation of entity mentions
+by accessing external databases of referents
+(required by, e.g., dialogue generation)
+or past internal state (required to explicitly
+model coreferentiality). Beyond
+simple copying, our coreference model
+can additionally refer to a referent using
+varied mention forms (e.g., a reference to
+“Jane” can be realized as “she”), a characteristic
+feature of reference in natural languages.
+Experiments on three representative
+applications show our model variants
+outperform models based on deterministic
+attention and standard language modeling
+baselines.},
+  comment   = { enable
+coreferent mentions to have different forms},
+}
+
+@InProceedings{Lebret2016Neural,
+  author    = {Lebret, R{\'e}mi and Grangier, David and Auli, Michael},
+  title     = {Neural Text Generation from Structured Data with Application to the Biography Domain},
+  booktitle = {Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing},
+  year      = {2016},
+  pages     = {1203--1213},
+  abstract  = {This paper introduces a neural model for
+concept-to-text generation that scales to large,
+rich domains. It generates biographical sentences
+from fact tables on a new dataset of
+biographies from Wikipedia. This set is an
+order of magnitude larger than existing resources
+with over 700k samples and a 400k
+vocabulary. Our model builds on conditional
+neural language models for text generation.
+To deal with the large vocabulary, we extend
+these models to mix a fixed vocabulary
+with copy actions that transfer sample-specific
+words from the input database to the generated
+output sentence. To deal with structured
+data, we allow the model to embed words
+differently depending on the data fields in
+which they occur. Our neural model significantly
+outperforms a Templated Kneser-Ney
+language model by nearly 15 BLEU},
+  comment   = {exploits structured data both globally
+and locally
+
+word embedding, table embedding (global + local), aggregating
+
+feed-forward neural language model},
+}
+
+@Article{Bao2019Text,
+  author    = {J. Bao and D. Tang and N. Duan and Z. Yan and M. Zhou and T. Zhao},
+  title     = {Text Generation From Tables},
+  journal   = {IEEE/ACM Transactions on Audio, Speech, and Language Processing},
+  year      = {2019},
+  volume    = {27},
+  number    = {2},
+  pages     = {311-320},
+  month     = {Feb},
+  issn      = {2329-9290},
+  abstract  = {This paper proposes a neural generative model, namely Table2Seq, to generate a natural language sentence based on a table. Specifically, the model maps a table to continuous vectors and then generates a natural language sentence by leveraging the semantics of a table. Since rare words, e.g., entities and values, usually appear in a table, we develop a flexible copying mechanism that selectively replicates contents from the table to the output sequence. We conduct extensive experiments to demonstrate the effectiveness of our Table2Seq model and the utility of the designed copying mechanism. On the WIKIBIO and SIMPLEQUESTIONS datasets, the Table2Seq model improves the state-of-the-art results from 34.70 to 40.26 and from 33.32 to 39.12 in terms of BLEU-4 scores, respectively. Moreover, we construct an open-domain dataset WIKITABLETEXT that includes 13 318 descriptive sentences for 4962 tables. Our Table2Seq model achieves a BLEU-4 score of 38.23 on WIKITABLETEXT outperforming template-based and language model based approaches. Furthermore, through experiments on 1 M table-query pairs from a search engine, our Table2Seq model considering the structured part of a table, i.e., table attributes and table cells, as additional information outperforms a sequence-to-sequence model considering only the sequential part of a table, i.e., table caption.},
+  comment   = {encoder: just embeddig?
+decoder: rnn
+global-local
+copy a new copy model?
+},
+  doi       = {10.1109/TASLP.2018.2878381},
+  keywords  = {natural language processing;neural nets;text analysis;text generation;continuous vectors;table semantics;flexible copying mechanism;selective content replication;WIKIBIO dataset;SIMPLEQUESTIONS dataset;BLEU-4 scores;WIKITABLETEXT dataset;descriptive sentences;search engine;table-query pairs;language model based approaches;natural language sentence;neural generative model;table caption;table cells;table attributes;Table2Seq model;Natural languages;Task analysis;Search engines;Neural networks;Speech processing;Decoding;Encyclopedias;Table-to-text generation;Table2Seq;neural network;natural language processing;artificial intelligence},
+  timestamp = {2019-01-18},
+}
+
+@InProceedings{Thomaidou2013Automated,
+  author    = {Thomaidou, Stamatina and Lourentzou, Ismini and Katsivelis-Perakis, Panagiotis and Vazirgiannis, Michalis},
+  title     = {Automated snippet generation for online advertising},
+  booktitle = {Proceedings of the 22nd ACM international conference on Conference on information \&\#38; knowledge management},
+  year      = {2013},
+  series    = {CIKM '13},
+  pages     = {1841--1844},
+  address   = {New York, NY, USA},
+  publisher = {ACM},
+  abstract  = {Products, services or brands can be advertised alongside the search results in major search engines, while recently smaller displays on devices like tablets and smartphones have imposed the need for smaller ad texts. In this paper, we propose a method that produces in an automated manner compact text ads (promotional text snippets), given as input a product description webpage (landing page). The challenge is to produce a small comprehensive ad while maintaining at the same time relevance, clarity, and attractiveness. Our method includes the following phases. Initially, it extracts relevant and important n-grams (keywords) given the landing page. The keywords reserved must have a positive meaning in order to have a call-to-action style, thus we attempt sentiment analysis on them. Next, we build an Advertising Language Model to evaluate phrases in terms of their marketing appeal. We experiment with two variations of our method and we show that they outperform all the baseline approaches.},
+  acmid     = {2507876},
+  doi       = {10.1145/2505515.2507876},
+  isbn      = {978-1-4503-2263-8},
+  keywords  = {automated ad-text generation, online advertising, sponsored search, textual advertising},
+  location  = {San Francisco, California, USA},
+  numpages  = {4},
+  url       = {http://doi.acm.org/10.1145/2505515.2507876},
+}
+
+@Article{Kukich1983Knowledge,
+  author     = {Kukich, Karen},
+  title      = {Knowledge-Based Report Generation: A Technique for Automatically Generating Natural Language Reports from Databases},
+  journal    = {SIGIR Forum},
+  year       = {1983},
+  volume     = {17},
+  number     = {4},
+  pages      = {246--250},
+  month      = jun,
+  issn       = {0163-5840},
+  abstract   = {Knowledge-Based Report Generation is a technique for automatically generating natural language summaries from databases. It is so named because it applies the tools of knowledge-based expert systems design to the problem of text generation. The technique is currently being applied to the design of an automatic natural language stock report generator. Examples drawn from the implementation of the stock report generator are used to describe the components of a knowledge-based report generator.},
+  acmid      = {511828},
+  address    = {New York, NY, USA},
+  doi        = {10.1145/1013230.511828},
+  issue_date = {Summer 1983},
+  keywords   = {databases, knowledge-based expert systems, natural language processing, text generation},
+  numpages   = {5},
+  publisher  = {ACM},
+  url        = {http://doi.acm.org/10.1145/1013230.511828},
+}
+
+@InProceedings{Sutskever2011Generating,
+  author    = {Sutskever, Ilya and Martens, James and Hinton, Geoffrey E},
+  title     = {Generating text with recurrent neural networks},
+  booktitle = {Proceedings of the 28th International Conference on Machine Learning (ICML-11)},
+  year      = {2011},
+  pages     = {1017--1024},
+  abstract  = {Recurrent Neural Networks (RNNs) are very
+powerful sequence models that do not enjoy
+widespread use because it is extremely diffi-
+cult to train them properly. Fortunately, recent
+advances in Hessian-free optimization have
+been able to overcome the difficulties associated
+with training RNNs, making it possible to apply
+them successfully to challenging sequence problems.
+In this paper we demonstrate the power
+of RNNs trained with the new Hessian-Free optimizer
+(HF) by applying them to character-level
+language modeling tasks. The standard RNN architecture,
+while effective, is not ideally suited
+for such tasks, so we introduce a new RNN
+variant that uses multiplicative (or “gated”) connections
+which allow the current input character
+to determine the transition matrix from one
+hidden state vector to the next. After training
+the multiplicative RNN with the HF optimizer
+for five days on 8 high-end Graphics Processing
+Units, we were able to surpass the performance
+of the best previous single method for characterlevel
+language modeling – a hierarchical nonparametric
+sequence model. To our knowledge
+this represents the largest recurrent neural network
+application to date.},
+}
+
+@InProceedings{Li2018Point,
+  author    = {Li, Liunian and Wan, Xiaojun},
+  title     = {Point Precisely: Towards Ensuring the Precision of Data in Generated Texts Using Delayed Copy Mechanism},
+  booktitle = {Proceedings of the 27th International Conference on Computational Linguistics},
+  year      = {2018},
+  pages     = {1044--1055},
+  abstract  = {The task of data-to-text generation aims to generate descriptive texts conditioned on a number
+of database records, and recent neural models have shown significant progress on this task. The
+attention based encoder-decoder models with copy mechanism have achieved state-of-the-art
+results on a few data-to-text datasets. However, such models still face the problem of putting
+incorrect data records in the generated texts, especially on some more challenging datasets like
+ROTOWIRE. In this paper, we propose a two-stage approach with a delayed copy mechanism
+to improve the precision of data records in the generated texts. Our approach first adopts an
+encoder-decoder model to generate a template text with data slots to be filled and then leverages
+a proposed delayed copy mechanism to fill in the slots with proper data records. Our delayed
+copy mechanism can take into account all the information of the input data records and the
+full generated template text by using double attention, position-aware attention and a pairwise
+ranking loss. The two models in the two stages are trained separately. Evaluation results on the
+ROTOWIRE dataset verify the efficacy of our proposed approach to generate better templates and
+copy data records more precisely.},
+}
+
+@InProceedings{Marcheggiani2018Deep,
+  author    = {Marcheggiani, Diego and Perez-Beltrachini, Laura},
+  title     = {Deep Graph Convolutional Encoders for Structured Data to Text Generation},
+  booktitle = {Proceedings of the 11th International Conference on Natural Language Generation},
+  year      = {2018},
+  pages     = {1--9},
+}
+
+@InProceedings{Karpathy2015Deep,
+  author    = {Karpathy, Andrej and Fei-Fei, Li},
+  title     = {Deep visual-semantic alignments for generating image descriptions},
+  booktitle = {Proceedings of the IEEE conference on computer vision and pattern recognition},
+  year      = {2015},
+  pages     = {3128--3137},
+}
+
+@InProceedings{Dehghani2017Neural,
+  author    = {Dehghani, Mostafa and Zamani, Hamed and Severyn, Aliaksei and Kamps, Jaap and Croft, W. Bruce},
+  title     = {Neural Ranking Models with Weak Supervision},
+  booktitle = {Proceedings of the 40th International ACM SIGIR Conference on Research and Development in Information Retrieval},
+  year      = {2017},
+  series    = {SIGIR '17},
+  pages     = {65--74},
+  address   = {New York, NY, USA},
+  publisher = {ACM},
+  abstract  = {Despite the impressive improvements achieved by unsupervised deep neural networks in computer vision and NLP tasks, such improvements have not yet been observed in ranking for information retrieval. The reason may be the complexity of the ranking problem, as it is not obvious how to learn from queries and documents when no supervised signal is available. Hence, in this paper, we propose to train a neural ranking model using weak supervision, where labels are obtained automatically without human annotators or any external resources (e.g., click data). To this aim, we use the output of an unsupervised ranking model, such as BM25, as a weak supervision signal. We further train a set of simple yet effective ranking models based on feed-forward neural networks. We study their effectiveness under various learning scenarios (point-wise and pair-wise models) and using different input representations (i.e., from encoding query-document pairs into dense/sparse vectors to using word embedding representation). We train our networks using tens of millions of training instances and evaluate it on two standard collections: a homogeneous news collection (Robust) and a heterogeneous large-scale web collection (ClueWeb). Our experiments indicate that employing proper objective functions and letting the networks to learn the input representation based on weakly supervised data leads to impressive performance, with over 13% and 35% MAP improvements over the BM25 model on the Robust and the ClueWeb collections. Our findings also suggest that supervised neural ranking models can greatly benefit from pre-training on large amounts of weakly labeled data that can be easily obtained from unsupervised IR models.},
+  acmid     = {3080832},
+  doi       = {10.1145/3077136.3080832},
+  isbn      = {978-1-4503-5022-8},
+  keywords  = {ad-hoc retrieval, deep learning, deep neural network, ranking model, weak supervision},
+  location  = {Shinjuku, Tokyo, Japan},
+  numpages  = {10},
+  timestamp = {2019-01-10},
+  url       = {http://doi.acm.org/10.1145/3077136.3080832},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
