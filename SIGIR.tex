@@ -5,7 +5,7 @@
 \usepackage{multirow}
 
 \begin{document}
-\title{Towards Silver-tongued Selling: Product Snippet Generation for Consumption Scene Queries}
+\title{Towards Silver-tongued Selling: Product Snippet Generation for Consumption Context Queries}
 
 \author{Submission }
 
@@ -52,7 +52,6 @@ Finally, the power of persuasion is enhanced by a catchy and appealing sentence 
 %related work
 The problem falls in the broad class of language generation from data. Recently, end-to-end neural frameworks~\cite{Wiseman2017Challenges,Yang2017Reference,Lebret2016Neural,Karpathy2015Deep} have shown promising progress in this field. End-to-end frameworks have the advantage that errors do not accumulate across separate stages, i.e. in choosing the appropriate attributes and expressing the attribute values. However, neural frameworks require massive training data. Since we emphasize particularly on relevance and persuasiveness, we face a major challenge of  insufficient training data. We notice that there is an emerging trend in studying persuasive systems, including a recent work on writing persuasive product descriptions in fashion domain~\cite{munigala2018persuaide}. While their work is the most similar to ours, due to the same data scarcity problem, they propose an unsupervised framework and the performance is secondary.
 
-%data level solution
 %data level 
 To address the insufficiency of training data, \textbf{at the data level}, we turn to a framework with weak supervision. 
 Weak supervised learning implement unsupervised models or/and manually constructed heuristics on unlabelled data.
@@ -73,7 +72,7 @@ Thus our knowledge-rich framework summarizes the connection between consumption 
   \label{table:example}
   \begin{tabular}{p{8cm} p{8cm}}
     \toprule
-    Input: item profile wooden bookcase,scene modern house decor & input: item profile wooden bookcase,scene luxury house decor \\
+    Input: item profile wooden bookcase, scene modern house decor & input: item profile wooden bookcase,scene luxury house decor \\
     \midrule
     \begin{CJK*}{UTF8}{gbsn}
         一款\textcolor{blue}{现代}简约木质书架，采用\textcolor{red}{经典的原木设计}，由原生态\textcolor{red}{木材拼接}而成，成就了\textcolor{red}{天然原木触感}，\textcolor{red}{绿色环保}，\textcolor{red}{功能多样}，满足您不同的\textcolor{blue}{收纳需求}，让您的家\textcolor{blue}{整洁}漂亮。
@@ -435,5 +434,5 @@ For qualitative analysis, we also provide the sentences generated from our syste
 \section{Acknowledgments}
 
 \bibliographystyle{ACM-Reference-Format}
-%\bibliography{refer.bib}
+\bibliography{refer}
 \end{document}

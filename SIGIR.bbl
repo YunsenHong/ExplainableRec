@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{35}
+\begin{thebibliography}{24}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -49,52 +49,6 @@
   (\bibinfo{date}{Feb} \bibinfo{year}{2019}), \bibinfo{pages}{311--320}.
 \newblock
 \showISSN{2329-9290}
-\urldef\tempurl%
-\url{https://doi.org/10.1109/TASLP.2018.2878381}
-\showDOI{\tempurl}
-
-
-\bibitem[\protect\citeauthoryear{Bengio, Ducharme, Vincent, and Jauvin}{Bengio
-  et~al\mbox{.}}{2003}]%
-        {Bengio2003neural}
-\bibfield{author}{\bibinfo{person}{Yoshua Bengio}, \bibinfo{person}{Rejean
-  Ducharme}, \bibinfo{person}{Pascal Vincent}, {and} \bibinfo{person}{Christian
-  Jauvin}.} \bibinfo{year}{2003}\natexlab{}.
-\newblock \showarticletitle{A neural probabilistic language model}.
-\newblock \bibinfo{journal}{\emph{Journal of Machine Learning Research}}
-  \bibinfo{volume}{3}, \bibinfo{number}{Feb} (\bibinfo{year}{2003}),
-  \bibinfo{pages}{1137--1155}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Chen, Zhang, Liu, and Ma}{Chen
-  et~al\mbox{.}}{2018}]%
-        {Chen2018Neural}
-\bibfield{author}{\bibinfo{person}{Chong Chen}, \bibinfo{person}{Min Zhang},
-  \bibinfo{person}{Yiqun Liu}, {and} \bibinfo{person}{Shaoping Ma}.}
-  \bibinfo{year}{2018}\natexlab{}.
-\newblock \showarticletitle{Neural Attentional Rating Regression with
-  Review-level Explanations}. In \bibinfo{booktitle}{\emph{Proceedings of the
-  2018 World Wide Web Conference}} \emph{(\bibinfo{series}{WWW '18})}.
-  \bibinfo{publisher}{International World Wide Web Conferences Steering
-  Committee}, \bibinfo{address}{Republic and Canton of Geneva, Switzerland},
-  \bibinfo{pages}{1583--1592}.
-\newblock
-\showISBNx{978-1-4503-5639-8}
-\urldef\tempurl%
-\url{https://doi.org/10.1145/3178876.3186070}
-\showDOI{\tempurl}
-
-
-\bibitem[\protect\citeauthoryear{Colton, Goodwin, and Veale}{Colton
-  et~al\mbox{.}}{2012}]%
-        {Colton2012Full}
-\bibfield{author}{\bibinfo{person}{Simon Colton}, \bibinfo{person}{Jacob
-  Goodwin}, {and} \bibinfo{person}{Tony Veale}.}
-  \bibinfo{year}{2012}\natexlab{}.
-\newblock \showarticletitle{Full-FACE Poetry Generation}.
-\newblock  (\bibinfo{year}{2012}).
-\newblock
 
 
 \bibitem[\protect\citeauthoryear{Costa, Ouyang, Dolog, and Lawlor}{Costa
@@ -105,15 +59,10 @@
   Lawlor}.} \bibinfo{year}{2018}\natexlab{}.
 \newblock \showarticletitle{Automatic Generation of Natural Language
   Explanations}. In \bibinfo{booktitle}{\emph{Proceedings of the 23rd
-  International Conference on Intelligent User Interfaces Companion}}
-  \emph{(\bibinfo{series}{IUI '18 Companion})}. \bibinfo{publisher}{ACM},
-  \bibinfo{address}{New York, NY, USA}, Article \bibinfo{articleno}{57},
-  \bibinfo{numpages}{2}~pages.
+  International Conference on Intelligent User Interfaces Companion}}.
+  \bibinfo{publisher}{ACM}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{pages}{57:1--57:2}.
 \newblock
-\showISBNx{978-1-4503-5571-1}
-\urldef\tempurl%
-\url{https://doi.org/10.1145/3180308.3180366}
-\showDOI{\tempurl}
 
 
 \bibitem[\protect\citeauthoryear{Dehghani, Zamani, Severyn, Kamps, and
@@ -128,10 +77,6 @@
   \emph{(\bibinfo{series}{SIGIR '17})}. \bibinfo{publisher}{ACM},
   \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{65--74}.
 \newblock
-\showISBNx{978-1-4503-5022-8}
-\urldef\tempurl%
-\url{https://doi.org/10.1145/3077136.3080832}
-\showDOI{\tempurl}
 
 
 \bibitem[\protect\citeauthoryear{Ghazvininejad, Shi, Choi, and
@@ -143,29 +88,6 @@
 \newblock \showarticletitle{Generating Topical Poetry}. In
   \bibinfo{booktitle}{\emph{Conference on Empirical Methods in Natural Language
   Processing}}. \bibinfo{pages}{1183--1191}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Hua}{Hua}{2018}]%
-        {Hua2018Shakespeare}
-\bibfield{author}{\bibinfo{person}{Qingsong Hua}.}
-  \bibinfo{year}{2018}\natexlab{}.
-\newblock \showarticletitle{Shakespeare of Alibaba: Practice of Intelligent
-  Recommendation Reason Generation in Alibaba}. In
-  \bibinfo{booktitle}{\emph{Proceedings of the 41st International ACM SIGIR
-  Conference on Research and Development in Information Retrieval}}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Kalchbrenner, Espeholt, Simonyan, Oord,
-  Graves, and Kavukcuoglu}{Kalchbrenner et~al\mbox{.}}{2016}]%
-        {Kalchbrenner2016Neural}
-\bibfield{author}{\bibinfo{person}{Nal Kalchbrenner}, \bibinfo{person}{Lasse
-  Espeholt}, \bibinfo{person}{Karen Simonyan}, \bibinfo{person}{Aaron Van~Den
-  Oord}, \bibinfo{person}{Alex Graves}, {and} \bibinfo{person}{Koray
-  Kavukcuoglu}.} \bibinfo{year}{2016}\natexlab{}.
-\newblock \showarticletitle{Neural Machine Translation in Linear Time}.
-\newblock  (\bibinfo{year}{2016}).
 \newblock
 
 
@@ -196,7 +118,7 @@
 \bibitem[\protect\citeauthoryear{Lebret, Grangier, and Auli}{Lebret
   et~al\mbox{.}}{2016}]%
         {Lebret2016Neural}
-\bibfield{author}{\bibinfo{person}{R{\'e}mi Lebret}, \bibinfo{person}{David
+\bibfield{author}{\bibinfo{person}{Remi Lebret}, \bibinfo{person}{David
   Grangier}, {and} \bibinfo{person}{Michael Auli}.}
   \bibinfo{year}{2016}\natexlab{}.
 \newblock \showarticletitle{Neural Text Generation from Structured Data with
@@ -242,23 +164,11 @@
 \newblock
 
 
-\bibitem[\protect\citeauthoryear{Oliveira}{Oliveira}{2015}]%
-        {Oliveira2015Tra}
-\bibfield{author}{\bibinfo{person}{Hugo~Gonçalo Oliveira}.}
-  \bibinfo{year}{2015}\natexlab{}.
-\newblock \showarticletitle{Tra-la-Lyrics 2.0: Automatic Generation of Song
-  Lyrics on a Semantic Domain}.
-\newblock \bibinfo{journal}{\emph{Journal of Artificial General Intelligence}}
-  \bibinfo{volume}{6}, \bibinfo{number}{1} (\bibinfo{year}{2015}),
-  \bibinfo{pages}{87--110}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{{\"O}zbal, Pighin, and Strapparava}{{\"O}zbal
+\bibitem[\protect\citeauthoryear{Ozbal, Pighin, and Strapparava}{Ozbal
   et~al\mbox{.}}{2013}]%
         {ozbal2013brainsup}
-\bibfield{author}{\bibinfo{person}{G{\"o}zde {\"O}zbal},
-  \bibinfo{person}{Daniele Pighin}, {and} \bibinfo{person}{Carlo Strapparava}.}
+\bibfield{author}{\bibinfo{person}{Gozde Ozbal}, \bibinfo{person}{Daniele
+  Pighin}, {and} \bibinfo{person}{Carlo Strapparava}.}
   \bibinfo{year}{2013}\natexlab{}.
 \newblock \showarticletitle{BRAINSUP: Brainstorming support for creative
   sentence generation}. In \bibinfo{booktitle}{\emph{Proceedings of the 51st
@@ -342,11 +252,11 @@
 \showDOI{\tempurl}
 
 
-\bibitem[\protect\citeauthoryear{Toma{\v{s}}ic, Znidar{\v{s}}ic, and
-  Papa}{Toma{\v{s}}ic et~al\mbox{.}}{2014}]%
+\bibitem[\protect\citeauthoryear{Tomavsic, Znidarvsic, and Papa}{Tomavsic
+  et~al\mbox{.}}{2014}]%
         {tomavsic2014implementation}
-\bibfield{author}{\bibinfo{person}{Polona Toma{\v{s}}ic}, \bibinfo{person}{M
-  Znidar{\v{s}}ic}, {and} \bibinfo{person}{Gregor Papa}.}
+\bibfield{author}{\bibinfo{person}{Polona Tomavsic}, \bibinfo{person}{M
+  Znidarvsic}, {and} \bibinfo{person}{Gregor Papa}.}
   \bibinfo{year}{2014}\natexlab{}.
 \newblock \showarticletitle{Implementation of a slogan generator}. In
   \bibinfo{booktitle}{\emph{Proceedings of 5th International Conference on
@@ -361,8 +271,8 @@
 \bibfield{author}{\bibinfo{person}{Alessandro Valitutti},
   \bibinfo{person}{Hannu Toivonen}, \bibinfo{person}{Antoine Doucet}, {and}
   \bibinfo{person}{Jukka~M Toivanen}.} \bibinfo{year}{2013}\natexlab{}.
-\newblock \showarticletitle{" Let Everything Turn Well in Your Wife":
-  Generation of Adult Humor Using Lexical Constraints}. In
+\newblock \showarticletitle{"Let Everything Turn Well in Your Wife": Generation
+  of Adult Humor Using Lexical Constraints}. In
   \bibinfo{booktitle}{\emph{Proceedings of the 51st Annual Meeting of the
   Association for Computational Linguistics (Volume 2: Short Papers)}},
   Vol.~\bibinfo{volume}{2}. \bibinfo{pages}{243--248}.
@@ -375,8 +285,8 @@
 \bibfield{author}{\bibinfo{person}{Ashish Vaswani}, \bibinfo{person}{Noam
   Shazeer}, \bibinfo{person}{Niki Parmar}, \bibinfo{person}{Jakob Uszkoreit},
   \bibinfo{person}{Llion Jones}, \bibinfo{person}{Aidan~N Gomez},
-  \bibinfo{person}{{\L}ukasz Kaiser}, {and} \bibinfo{person}{Illia
-  Polosukhin}.} \bibinfo{year}{2017}\natexlab{}.
+  \bibinfo{person}{Lukasz Kaiser}, {and} \bibinfo{person}{Illia Polosukhin}.}
+  \bibinfo{year}{2017}\natexlab{}.
 \newblock \showarticletitle{Attention is all you need}. In
   \bibinfo{booktitle}{\emph{Advances in Neural Information Processing
   Systems}}. \bibinfo{pages}{5998--6008}.
@@ -409,32 +319,6 @@
 \newblock
 
 
-\bibitem[\protect\citeauthoryear{Wu and Ester}{Wu and Ester}{2015}]%
-        {Wu2015FLAME}
-\bibfield{author}{\bibinfo{person}{Yao Wu} {and} \bibinfo{person}{Martin
-  Ester}.} \bibinfo{year}{2015}\natexlab{}.
-\newblock \showarticletitle{Flame: A probabilistic model combining aspect based
-  opinion mining and collaborative filtering}. In
-  \bibinfo{booktitle}{\emph{Proceedings of the Eighth ACM International
-  Conference on Web Search and Data Mining}}. ACM, \bibinfo{pages}{199--208}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Wu, Schuster, Chen, Le, Norouzi, Macherey,
-  Krikun, Cao, Gao, and Macherey}{Wu et~al\mbox{.}}{2016}]%
-        {Wu2016Google}
-\bibfield{author}{\bibinfo{person}{Yonghui Wu}, \bibinfo{person}{Mike
-  Schuster}, \bibinfo{person}{Zhifeng Chen}, \bibinfo{person}{Quoc~V Le},
-  \bibinfo{person}{Mohammad Norouzi}, \bibinfo{person}{Wolfgang Macherey},
-  \bibinfo{person}{Maxim Krikun}, \bibinfo{person}{Yuan Cao},
-  \bibinfo{person}{Qin Gao}, {and} \bibinfo{person}{Klaus Macherey}.}
-  \bibinfo{year}{2016}\natexlab{}.
-\newblock \showarticletitle{Google's Neural Machine Translation System:
-  Bridging the Gap between Human and Machine Translation}.
-\newblock  (\bibinfo{year}{2016}).
-\newblock
-
-
 \bibitem[\protect\citeauthoryear{Yang, Blunsom, Dyer, and Ling}{Yang
   et~al\mbox{.}}{2017}]%
         {Yang2017Reference}
@@ -447,22 +331,6 @@
 \newblock
 
 
-\bibitem[\protect\citeauthoryear{Yoo and Gretzel}{Yoo and Gretzel}{2011}]%
-        {Yoo2011Creating}
-\bibfield{author}{\bibinfo{person}{Kyung-Hyan Yoo} {and}
-  \bibinfo{person}{Ulrike Gretzel}.} \bibinfo{year}{2011}\natexlab{}.
-\newblock \bibinfo{booktitle}{\emph{Creating More Credible and Persuasive
-  Recommender Systems: The Influence of Source Characteristics on Recommender
-  System Evaluations}}.
-\newblock \bibinfo{publisher}{Springer US}, \bibinfo{address}{Boston, MA},
-  \bibinfo{pages}{455--477}.
-\newblock
-\showISBNx{978-0-387-85820-3}
-\urldef\tempurl%
-\url{https://doi.org/10.1007/978-0-387-85820-3_14}
-\showDOI{\tempurl}
-
-
 \bibitem[\protect\citeauthoryear{Zhang and Lapata}{Zhang and Lapata}{2014}]%
         {Zhang2014Chinese}
 \bibfield{author}{\bibinfo{person}{Xingxing Zhang} {and}
@@ -470,38 +338,6 @@
 \newblock \showarticletitle{Chinese Poetry Generation with Recurrent Neural
   Networks}. In \bibinfo{booktitle}{\emph{Conference on Empirical Methods in
   Natural Language Processing}}. \bibinfo{pages}{670--680}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Zhang, Zhang, Zhang, Lai, Liu, Zhang, and
-  Ma}{Zhang et~al\mbox{.}}{2015}]%
-        {Zhang2015Daily}
-\bibfield{author}{\bibinfo{person}{Yongfeng Zhang}, \bibinfo{person}{Min
-  Zhang}, \bibinfo{person}{Yi Zhang}, \bibinfo{person}{Guokun Lai},
-  \bibinfo{person}{Yiqun Liu}, \bibinfo{person}{Honghui Zhang}, {and}
-  \bibinfo{person}{Shaoping Ma}.} \bibinfo{year}{2015}\natexlab{}.
-\newblock \showarticletitle{Daily-Aware Personalized Recommendation Based on
-  Feature-Level Time Series Analysis}. In \bibinfo{booktitle}{\emph{Proceedings
-  of the 24th International Conference on World Wide Web}}
-  \emph{(\bibinfo{series}{WWW '15})}. \bibinfo{publisher}{International World
-  Wide Web Conferences Steering Committee}, \bibinfo{address}{Republic and
-  Canton of Geneva, Switzerland}, \bibinfo{pages}{1373--1383}.
-\newblock
-\showISBNx{978-1-4503-3469-3}
-\urldef\tempurl%
-\url{https://doi.org/10.1145/2736277.2741087}
-\showDOI{\tempurl}
-
-
-\bibitem[\protect\citeauthoryear{Zhou, Cao, Wang, Li, and Xu}{Zhou
-  et~al\mbox{.}}{2016}]%
-        {Zhou2016Deep}
-\bibfield{author}{\bibinfo{person}{Jie Zhou}, \bibinfo{person}{Ying Cao},
-  \bibinfo{person}{Xuguang Wang}, \bibinfo{person}{Peng Li}, {and}
-  \bibinfo{person}{Wei Xu}.} \bibinfo{year}{2016}\natexlab{}.
-\newblock \showarticletitle{Deep Recurrent Models with Fast-Forward Connections
-  for Neural Machine Translation}.
-\newblock  (\bibinfo{year}{2016}).
 \newblock
 
 
@@ -515,10 +351,6 @@
   \bibinfo{volume}{5}, \bibinfo{number}{1} (\bibinfo{year}{2018}),
   \bibinfo{pages}{44--53}.
 \newblock
-\urldef\tempurl%
-\url{https://doi.org/10.1093/nsr/nwx106}
-\showDOI{\tempurl}
-\showeprint{/oup/backfile/content_public/journal/nsr/5/1/10.1093_nsr_nwx106/2/nwx106.pdf}
 
 
 \end{thebibliography}
