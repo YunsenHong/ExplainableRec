@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  22 JAN 2019 19:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  22 JAN 2019 19:19
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**SIGIR.tex
-(./SIGIR.tex
+**main.tex
+(./main.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
 (./acmart.cls
@@ -1165,4 +1165,1086 @@ Now handling font encoding C43 ...
 ... no UTF-8 mapping file for font encoding C43
 Now handling font encoding C50 ...
 ... no UTF-8 mapping file for font encoding C50
-Now handling f
+Now handling font encoding C52 ...
+... no UTF-8 mapping file for font encoding C52
+Now handling font encoding C49 ...
+... no UTF-8 mapping file for font encoding C49
+Now handling font encoding C60 ...
+... no UTF-8 mapping file for font encoding C60
+Now handling font encoding C61 ...
+... no UTF-8 mapping file for font encoding C61
+Now handling font encoding C63 ...
+... no UTF-8 mapping file for font encoding C63
+Now handling font encoding C64 ...
+... no UTF-8 mapping file for font encoding C64
+Now handling font encoding C65 ...
+... no UTF-8 mapping file for font encoding C65
+Now handling font encoding C70 ...
+... no UTF-8 mapping file for font encoding C70
+Now handling font encoding C31 ...
+... no UTF-8 mapping file for font encoding C31
+Now handling font encoding C32 ...
+... no UTF-8 mapping file for font encoding C32
+Now handling font encoding C33 ...
+... no UTF-8 mapping file for font encoding C33
+Now handling font encoding C34 ...
+... no UTF-8 mapping file for font encoding C34
+Now handling font encoding C35 ...
+... no UTF-8 mapping file for font encoding C35
+Now handling font encoding C36 ...
+... no UTF-8 mapping file for font encoding C36
+Now handling font encoding C37 ...
+... no UTF-8 mapping file for font encoding C37
+Now handling font encoding C80 ...
+... no UTF-8 mapping file for font encoding C80
+Now handling font encoding C81 ...
+... no UTF-8 mapping file for font encoding C81
+Now handling font encoding C01 ...
+... no UTF-8 mapping file for font encoding C01
+Now handling font encoding C11 ...
+... no UTF-8 mapping file for font encoding C11
+Now handling font encoding C21 ...
+... no UTF-8 mapping file for font encoding C21
+Now handling font encoding C41 ...
+... no UTF-8 mapping file for font encoding C41
+Now handling font encoding C62 ...
+... no UTF-8 mapping file for font encoding C62
+)
+LaTeX Info: Redefining \selectfont on input line 755.
+\CJK@indent=\box34
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip69
+\multirow@cntb=\count134
+\multirow@dima=\skip70
+\bigstrutjot=\dimen156
+)
+Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 7.
+\c@theorem=\count135
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/preprint/balance.sty
+Package: balance 1999/02/23 4.3 (PWD)
+\oldvsize=\dimen157
+)
+Excluding comment 'screenonly' Include comment 'printonly'
+Include comment 'anonsuppress'
+No file main.aux.
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/nxlmi/m/it on input line 7.
+LaTeX Font Info:    Try loading font information for OML+nxlmi on input line 7.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/newtx/omlnxlmi.fd
+File: omlnxlmi.fd 2013/11/19 Fontinst v1.933 font definitions for OML/nxlmi.
+)
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 7.
+LaTeX Font Info:    Try loading font information for U+ntxexa on input line 7.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/newtx/untxexa.fd
+File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
+)
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 7.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 7.
+LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 7.
+
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/newtx/lmsntxsy.fd
+File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
+)
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 7.
+LaTeX Font Info:    Try loading font information for LMX+ntxexx on input line 7
+.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/newtx/lmxntxexx.fd
+File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
+)
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 7.
+LaTeX Font Info:    Try loading font information for OT1+LinuxLibertineT-TLF on
+ input line 7.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/libertine/OT1LinuxLibertineT-TLF.
+fd
+File: OT1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for OT1/
+LinuxLibertineT-TLF.
+)
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 7.3pt on input line 7.
+<<ot1.cmap>>
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 5.5pt on input line 7.
+<<oml.cmap>>
+LaTeX Font Info:    Try loading font information for U+msa on input line 7.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 7.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+ntxmia on input line 7.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/newtx/untxmia.fd
+File: untxmia.fd 2016/01/31 Fontinst v1.933 font definitions for U/ntxmia.
+)
+LaTeX Font Info:    Try loading font information for U+ntxsym on input line 7.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/newtx/untxsym.fd
+File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
+)
+LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 7.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/newtx/untxsyc.fd
+File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
+)
+LaTeX Info: Redefining \microtypecontext on input line 7.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `basictext'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+Package microtype Info: Loading generic settings for font family
+(microtype)             `LinuxLibertineT-TLF' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+ABD: EveryShipout initializing macros
+\AtBeginShipoutBox=\box35
+Package hyperref Info: Link coloring OFF on input line 7.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count136
+)
+LaTeX Info: Redefining \ref on input line 7.
+LaTeX Info: Redefining \pageref on input line 7.
+LaTeX Info: Redefining \nameref on input line 7.
+\@outlinefile=\write5
+\openout5 = `main.out'.
+
+
+(/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count137
+\scratchdimen=\dimen158
+\scratchbox=\box36
+\nofMPsegments=\count138
+\nofMParguments=\count139
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count140
+\MPscratchDim=\dimen159
+\MPnumerator=\count141
+\makeMPintoPDFobject=\count142
+\everyMPtoPDFconversion=\toks35
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot twoside heightrounded 
+* h-part:(L,W,R)=(54.0pt, 506.295pt, 54.0pt)
+* v-part:(T,H,B)=(57.0pt, 664.96999pt, 73.0pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=506.295pt
+* \textheight=626.0pt
+* \oddsidemargin=-18.26999pt
+* \evensidemargin=-18.26999pt
+* \topmargin=-15.26999pt
+* \headheight=13.0pt
+* \headsep=14.0pt
+* \topskip=10.0pt
+* \footskip=12.0pt
+* \marginparwidth=24.0pt
+* \marginparsep=11.0pt
+* \columnsep=24.0pt
+* \skip\footins=7.0pt plus 11.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\c@mv@tabular=\count143
+\c@mv@boldtabular=\count144
+(/usr/local/texlive/2017/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 17.28pt on input line 21.
+LaTeX Font Info:    Try loading font information for T1+LinuxBiolinumT-TLF on i
+nput line 21.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/libertine/T1LinuxBiolinumT-TLF.fd
+File: T1LinuxBiolinumT-TLF.fd 2017/03/20 (autoinst) Font definitions for T1/Lin
+uxBiolinumT-TLF.
+)
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 17.28pt on input line 21.
+Package microtype Info: Loading generic settings for font family
+(microtype)             `LinuxBiolinumT-TLF' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
+(Font)              scaled to size 17.28pt on input line 21.
+
+
+Class acmart Warning: \vspace should only be used to provide space above/below 
+surrounding objects on input line 21.
+
+
+Class acmart Warning: \vspace should only be used to provide space above/below 
+surrounding objects on input line 21.
+
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 21.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 21.
+
+Class acmart Warning: \vspace should only be used to provide space above/below 
+surrounding objects on input line 21.
+
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 7.0pt on input line 21.
+LaTeX Font Info:    Try loading font information for TS1+LinuxLibertineT-TLF on
+ input line 21.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/libertine/TS1LinuxLibertineT-TLF.
+fd
+File: TS1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/
+LinuxLibertineT-TLF.
+)
+LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 21.
+Package microtype Info: Loading generic settings for font family
+(microtype)             `LinuxLibertineT-TLF' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 9.0pt on input line 21.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 10.95pt on input line 21.
+
+
+Class acmart Warning: \vspace should only be used to provide space above/below 
+surrounding objects on input line 21.
+
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 21.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 8.0pt on input line 21.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 8.0pt on input line 21.
+
+LaTeX Warning: Reference `TotPages' on page 1 undefined on input line 21.
+
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 21.
+Package microtype Info: Loading generic settings for font family
+(microtype)             `LinuxLibertineT-TLF' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 6.2pt on input line 21.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+
+Class acmart Warning: \vspace should only be used to provide space above/below 
+surrounding objects on input line 21.
+
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 9.0pt on input line 28.
+
+Package natbib Warning: Citation `Hua2018Shakespeare' on page 1 undefined on in
+put line 36.
+
+
+LaTeX Warning: Reference `tab:example' on page 1 undefined on input line 59.
+
+
+Class acmart Warning: \vspace should only be used to provide space above/below 
+surrounding objects on input line 69.
+
+
+Class acmart Warning: \vspace should only be used to provide space above/below 
+surrounding objects on input line 69.
+
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 72.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.bdg
+File: UTF8.bdg 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2015/04/18 4.8.4
+)
+LaTeX Font Info:    Try loading font information for C70+gbsn on input line 77.
+
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/c70gbsn.fd
+File: c70gbsn.fd 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/c70gbsn.fdx
+File: c70gbsn.fdx 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2015/04/18 4.8.4
+)
+
+Package natbib Warning: Citation `Zhang2014Explicit' on page 1 undefined on inp
+ut line 89.
+
+
+Package natbib Warning: Citation `Zhang2015Daily' on page 1 undefined on input 
+line 89.
+
+
+Package natbib Warning: Citation `Wu2015FLAME' on page 1 undefined on input lin
+e 89.
+
+
+Package natbib Warning: Citation `Zhao2016Exploring' on page 1 undefined on inp
+ut line 89.
+
+
+Package natbib Warning: Citation `Wu2015FLAME' on page 1 undefined on input lin
+e 89.
+
+
+Package natbib Warning: Citation `Zhang2014Explicit' on page 1 undefined on inp
+ut line 89.
+
+
+Package natbib Warning: Citation `Zhang2015Daily' on page 1 undefined on input 
+line 89.
+
+
+Package natbib Warning: Citation `Chen2018Neural' on page 1 undefined on input 
+line 89.
+
+
+Package natbib Warning: Citation `Yoo2011Creating' on page 1 undefined on input
+ line 90.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1.1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+]
+
+Package natbib Warning: Citation `munigala2018persuaide' on page 2 undefined on
+ input line 92.
+
+
+Package natbib Warning: Citation `munigala2018persuaide' on page 2 undefined on
+ input line 97.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+LaTeX Warning: Reference `sec:related' on page 2 undefined on input line 115.
+
+
+LaTeX Warning: Reference `sec:architecture' on page 2 undefined on input line 1
+15.
+
+
+LaTeX Warning: Reference `sec:experiment' on page 2 undefined on input line 115
+.
+
+
+LaTeX Warning: Reference `sec:conclusion' on page 2 undefined on input line 115
+.
+
+
+Package natbib Warning: Citation `Bao2019Text' on page 2 undefined on input lin
+e 122.
+
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 126.
+[2.2]
+
+Package natbib Warning: Citation `Munigala2018PersuAIDE' on page 3 undefined on
+ input line 127.
+
+
+Package natbib Warning: Citation `Zhou2018brief' on page 3 undefined on input l
+ine 129.
+
+
+Package natbib Warning: Citation `Zhang2018SIGIR' on page 3 undefined on input 
+line 136.
+
+
+Package natbib Warning: Citation `vig2009tagsplanations' on page 3 undefined on
+ input line 136.
+
+
+Package natbib Warning: Citation `sigurbjornsson2008flickr' on page 3 undefined
+ on input line 136.
+
+
+Package natbib Warning: Citation `Zhang2014Explicit' on page 3 undefined on inp
+ut line 136.
+
+
+Package natbib Warning: Citation `Zhang2015Daily' on page 3 undefined on input 
+line 136.
+
+
+Package natbib Warning: Citation `Wu2015FLAME' on page 3 undefined on input lin
+e 136.
+
+
+Package natbib Warning: Citation `Chen2018Neural' on page 3 undefined on input 
+line 136.
+
+
+Package natbib Warning: Citation `Chen2018Sequential' on page 3 undefined on in
+put line 136.
+
+
+Package natbib Warning: Citation `Zhang2014Explicit' on page 3 undefined on inp
+ut line 136.
+
+
+Package natbib Warning: Citation `Zhang2015Daily' on page 3 undefined on input 
+line 136.
+
+
+Package natbib Warning: Citation `Wu2015FLAME' on page 3 undefined on input lin
+e 136.
+
+
+Package natbib Warning: Citation `Chen2018Neural' on page 3 undefined on input 
+line 136.
+
+
+Package natbib Warning: Citation `vig2009tagsplanations' on page 3 undefined on
+ input line 136.
+
+
+Package natbib Warning: Citation `sigurbjornsson2008flickr' on page 3 undefined
+ on input line 136.
+
+
+Package natbib Warning: Citation `Peake2018Explanation' on page 3 undefined on 
+input line 140.
+
+
+Package natbib Warning: Citation `Tintarev2011Designing' on page 3 undefined on
+ input line 143.
+
+
+Package natbib Warning: Citation `Costa2018Automatic' on page 3 undefined on in
+put line 147.
+
+
+Package natbib Warning: Citation `Bengio2003neural' on page 3 undefined on inpu
+t line 151.
+
+
+Package natbib Warning: Citation `Kalchbrenner2016Neural' on page 3 undefined o
+n input line 151.
+
+
+Package natbib Warning: Citation `Zhou2016Deep' on page 3 undefined on input li
+ne 151.
+
+
+Package natbib Warning: Citation `Wu2016Google' on page 3 undefined on input li
+ne 151.
+
+
+Package natbib Warning: Citation `vaswani2017attention' on page 3 undefined on 
+input line 151.
+
+
+Package natbib Warning: Citation `Colton2012Full' on page 3 undefined on input 
+line 154.
+
+
+Package natbib Warning: Citation `Oliveira2015Tra' on page 3 undefined on input
+ line 154.
+
+
+Package natbib Warning: Citation `Ghazvininejad2016Generating' on page 3 undefi
+ned on input line 154.
+
+
+Package natbib Warning: Citation `Yi2017Generating' on page 3 undefined on inpu
+t line 154.
+
+
+Package natbib Warning: Citation `Zhang2014Chinese' on page 3 undefined on inpu
+t line 154.
+
+
+Package natbib Warning: Citation `wang2016chinese' on page 3 undefined on input
+ line 154.
+
+
+Package natbib Warning: Citation `ozbal2013brainsup' on page 3 undefined on inp
+ut line 154.
+
+
+Package natbib Warning: Citation `munigala2018persuaide' on page 3 undefined on
+ input line 154.
+
+
+Package natbib Warning: Citation `slogan' on page 3 undefined on input line 154
+.
+
+
+LaTeX Warning: Reference `fig:system-architecture' on page 3 undefined on input
+ line 160.
+
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 7.3pt on input line 160.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 5.5pt on input line 160.
+
+Class acmart Warning: \vspace should only be used to provide space above/below 
+surrounding objects on input line 163.
+
+
+Class acmart Warning: \vspace should only be used to provide space above/below 
+surrounding objects on input line 163.
+
+<system-architecture.jpg, id=122, 412.54124pt x 295.1025pt>
+File: system-architecture.jpg Graphic file (type jpg)
+
+<use system-architecture.jpg>
+Package pdftex.def Info: system-architecture.jpg used on input line 164.
+(pdftex.def)             Requested size: 227.62228pt x 142.26448pt.
+
+
+Class acmart Warning: A possible image without description on input line 166.
+
+
+Package natbib Warning: Citation `ratner2017snorkel' on page 3 undefined on inp
+ut line 174.
+
+
+LaTeX Warning: Reference `table:LF' on page 3 undefined on input line 174.
+
+[3.3 <./system-architecture.jpg>]
+
+Class acmart Warning: \vspace should only be used to provide space above/below 
+surrounding objects on input line 177.
+
+
+Class acmart Warning: \vspace should only be used to provide space above/below 
+surrounding objects on input line 177.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2015/04/18 4.8.4
+)
+Underfull \hbox (badness 10000) in paragraph at lines 187--192
+[]\T1/LinuxLibertineT-TLF/m/n/9 (+20) The comma is fol-lowed by
+ []
+
+
+Underfull \hbox (badness 1281) in paragraph at lines 192--194
+[]\T1/LinuxLibertineT-TLF/m/n/9 (+20) Sentence ends with an ex-cla-ma-tion
+ []
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2015/04/18 4.8.4
+)
+
+LaTeX Warning: Reference `table:LabelMatrix' on page 4 undefined on input line 
+206.
+
+
+Class acmart Warning: \vspace should only be used to provide space above/below 
+surrounding objects on input line 209.
+
+
+Class acmart Warning: \vspace should only be used to provide space above/below 
+surrounding objects on input line 209.
+
+
+Overfull \hbox (4.30391pt too wide) in paragraph at lines 220--220
+[]\T1/LinuxLibertineT-TLF/m/n/9 (-20) end_exclamation| 
+ []
+
+
+Overfull \hbox (2.22365pt too wide) in paragraph at lines 222--222
+[]\T1/LinuxLibertineT-TLF/m/n/9 (-20) no_adj_and_adv| 
+ []
+
+
+Package natbib Warning: Citation `vaswani2017attention' on page 4 undefined on 
+input line 232.
+
+
+LaTeX Warning: Reference `fig:model' on page 4 undefined on input line 240.
+
+
+LaTeX Warning: Reference `fig:model' on page 4 undefined on input line 244.
+
+
+Class acmart Warning: \vspace should only be used to provide space above/below 
+surrounding objects on input line 246.
+
+
+Class acmart Warning: \vspace should only be used to provide space above/below 
+surrounding objects on input line 246.
+
+<model2.jpg, id=134, 919.93687pt x 544.28343pt>
+File: model2.jpg Graphic file (type jpg)
+ <use model2.jpg>
+Package pdftex.def Info: model2.jpg used on input line 247.
+(pdftex.def)             Requested size: 341.43813pt x 227.61748pt.
+
+
+Class acmart Warning: A possible image without description on input line 249.
+
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
+(Font)              scaled to size 9.0pt on input line 252.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
+(Font)              scaled to size 7.3pt on input line 252.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
+(Font)              scaled to size 5.5pt on input line 252.
+
+LaTeX Warning: Reference `fig:model' on page 4 undefined on input line 263.
+
+
+LaTeX Warning: Reference `fig:model' on page 4 undefined on input line 263.
+
+[4.4]
+
+LaTeX Warning: Reference `table:format' on page 5 undefined on input line 288.
+
+
+Class acmart Warning: \vspace should only be used to provide space above/below 
+surrounding objects on input line 291.
+
+
+Class acmart Warning: \vspace should only be used to provide space above/below 
+surrounding objects on input line 291.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2015/04/18 4.8.4
+)
+
+Package natbib Warning: Citation `lin2004rouge' on page 5 undefined on input li
+ne 316.
+
+
+Package natbib Warning: Citation `papineni2002bleu' on page 5 undefined on inpu
+t line 316.
+
+
+LaTeX Warning: Reference `table:evaluation' on page 5 undefined on input line 3
+16.
+
+
+LaTeX Warning: Reference `table:evaluation-rule' on page 5 undefined on input l
+ine 316.
+
+
+Class acmart Warning: \vspace should only be used to provide space above/below 
+surrounding objects on input line 319.
+
+
+Class acmart Warning: \vspace should only be used to provide space above/below 
+surrounding objects on input line 319.
+
+
+Package natbib Warning: Citation `wang2016chinese' on page 5 undefined on input
+ line 325.
+
+
+Package natbib Warning: Citation `munigala2018persuaide' on page 5 undefined on
+ input line 326.
+
+
+Package natbib Warning: Citation `munigala2018persuaide' on page 5 undefined on
+ input line 327.
+
+
+Class acmart Warning: \vspace should only be used to provide space above/below 
+surrounding objects on input line 336.
+
+
+Class acmart Warning: \vspace should only be used to provide space above/below 
+surrounding objects on input line 336.
+
+
+Overfull \hbox (16.47453pt too wide) in paragraph at lines 338--365
+ [] 
+ []
+
+
+Underfull \vbox (badness 1092) has occurred while \output is active []
+
+ [5.5 <./model2.jpg>]
+
+LaTeX Warning: Reference `table:evaluation-automatic' on page 6 undefined on in
+put line 371.
+
+
+Class acmart Warning: \vspace should only be used to provide space above/below 
+surrounding objects on input line 374.
+
+
+Class acmart Warning: \vspace should only be used to provide space above/below 
+surrounding objects on input line 374.
+
+
+LaTeX Warning: Reference `table:evaluation-manual' on page 6 undefined on input
+ line 395.
+
+
+Class acmart Warning: \vspace should only be used to provide space above/below 
+surrounding objects on input line 398.
+
+
+Class acmart Warning: \vspace should only be used to provide space above/below 
+surrounding objects on input line 398.
+
+
+Overfull \hbox (5.7621pt too wide) in paragraph at lines 400--411
+ [][] 
+ []
+
+
+LaTeX Warning: Reference `table:case' on page 6 undefined on input line 413.
+
+
+Class acmart Warning: \vspace should only be used to provide space above/below 
+surrounding objects on input line 416.
+
+
+Class acmart Warning: \vspace should only be used to provide space above/below 
+surrounding objects on input line 416.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2015/04/18 4.8.4
+)
+No file main.bbl.
+
+Package natbib Warning: There were undefined citations.
+
+
+Class acmart Warning: Some images may lack descriptions.
+
+
+Package balance Warning: You have called \balance in second column
+(balance)                Columns might not be balanced.
+
+[6.6] [7.7]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 463.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 463.
+ (./main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 463.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 463.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  EA3C1BC93841D6D7C411463616D75E2C;2995.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 20336 strings out of 492995
+ 302490 string characters out of 6132704
+ 422368 words of memory out of 5000000
+ 22770 multiletter control sequences out of 15000+600000
+ 184313 words of font info for 346 fonts, out of 8000000 for 9000
+ 1302 hyphenation exceptions out of 8191
+ 60i,12n,94p,1029b,1013s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/newtx/libertinealt.enc}{/
+usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/libertine/lbtn_fygcup.enc}{/u
+sr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texliv
+e/2017/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{/usr/local/texlive
+/2017/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{/usr/local/texlive/
+2017/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{/usr/local/texlive/2
+017/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{/usr/local/texlive/20
+17/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{/usr/local/texlive/201
+7/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}</usr/local/texlive/2017
+/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/local/texlive/2
+017/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/local/t
+exlive/2017/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></usr/lo
+cal/texlive/2017/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/libertine/LinLibertineTZ.pf
+b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/newtx/fxlri-7letters.p
+fb></usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu30.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu4e.pfb></usr/loc
+al/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu4f.pfb></usr/local/tex
+live/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu50.pfb></usr/local/texlive/2
+017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu51.pfb></usr/local/texlive/2017/te
+xmf-dist/fonts/type1/arphic/gbsnu/gbsnu52.pfb></usr/local/texlive/2017/texmf-di
+st/fonts/type1/arphic/gbsnu/gbsnu53.pfb></usr/local/texlive/2017/texmf-dist/fon
+ts/type1/arphic/gbsnu/gbsnu54.pfb></usr/local/texlive/2017/texmf-dist/fonts/typ
+e1/arphic/gbsnu/gbsnu56.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/arp
+hic/gbsnu/gbsnu57.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gb
+snu/gbsnu58.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gb
+snu59.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5b.
+pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5c.pfb></
+usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5d.pfb></usr/lo
+cal/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5f.pfb></usr/local/te
+xlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu60.pfb></usr/local/texlive/
+2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu61.pfb></usr/local/texlive/2017/t
+exmf-dist/fonts/type1/arphic/gbsnu/gbsnu62.pfb></usr/local/texlive/2017/texmf-d
+ist/fonts/type1/arphic/gbsnu/gbsnu63.pfb></usr/local/texlive/2017/texmf-dist/fo
+nts/type1/arphic/gbsnu/gbsnu64.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
+pe1/arphic/gbsnu/gbsnu65.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/ar
+phic/gbsnu/gbsnu66.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/g
+bsnu/gbsnu67.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/g
+bsnu68.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu69
+.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu6b.pfb><
+/usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu6c.pfb></usr/l
+ocal/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu6d.pfb></usr/local/t
+exlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu6e.pfb></usr/local/texlive
+/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu6f.pfb></usr/local/texlive/2017/
+texmf-dist/fonts/type1/arphic/gbsnu/gbsnu70.pfb></usr/local/texlive/2017/texmf-
+dist/fonts/type1/arphic/gbsnu/gbsnu71.pfb></usr/local/texlive/2017/texmf-dist/f
+onts/type1/arphic/gbsnu/gbsnu72.pfb></usr/local/texlive/2017/texmf-dist/fonts/t
+ype1/arphic/gbsnu/gbsnu73.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/a
+rphic/gbsnu/gbsnu75.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/
+gbsnu/gbsnu76.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/
+gbsnu77.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu7
+8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu79.pfb>
+</usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu7b.pfb></usr/
+local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu7c.pfb></usr/local/
+texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu7e.pfb></usr/local/texliv
+e/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu80.pfb></usr/local/texlive/2017
+/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu81.pfb></usr/local/texlive/2017/texmf
+-dist/fonts/type1/arphic/gbsnu/gbsnu82.pfb></usr/local/texlive/2017/texmf-dist/
+fonts/type1/arphic/gbsnu/gbsnu83.pfb></usr/local/texlive/2017/texmf-dist/fonts/
+type1/arphic/gbsnu/gbsnu88.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/
+arphic/gbsnu/gbsnu89.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/arphic
+/gbsnu/gbsnu8b.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu
+/gbsnu8d.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu
+8e.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu8f.pfb
+></usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu90.pfb></usr
+/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu91.pfb></usr/local
+/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu94.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu95.pfb></usr/local/texlive/201
+7/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu97.pfb></usr/local/texlive/2017/texm
+f-dist/fonts/type1/arphic/gbsnu/gbsnu98.pfb></usr/local/texlive/2017/texmf-dist
+/fonts/type1/arphic/gbsnu/gbsnu99.pfb></usr/local/texlive/2017/texmf-dist/fonts
+/type1/arphic/gbsnu/gbsnu9a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1
+/arphic/gbsnu/gbsnuff.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publi
+c/txfonts/rtxmi.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/txfo
+nts/rtxr.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/newtx/txexs
+.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/newtx/txsys.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/newtx/zxlri.pfb>
+Output written on main.pdf (7 pages, 1016381 bytes).
+PDF statistics:
+ 551 PDF objects out of 1000 (max. 8388607)
+ 319 compressed objects within 4 object streams
+ 46 named destinations out of 1000 (max. 500000)
+ 46351 words of extra memory for PDF output out of 51595 (max. 10000000)
+
