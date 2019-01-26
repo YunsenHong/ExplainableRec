@@ -150,89 +150,91 @@ treat weak supervision signals as labels.
 %architecture
 
 %overview
-In this section, we describe in detail the method to generate a training corpus where an input of consumption context and an item profile is associated with an output of relevant, informative and persuasive sentence. As our system is built on an E-commerce platform, we have the fortune to access a large scale product description datasets. That is, a paragraph is associated with each product (name and attributes ). However, this data set does not guarantee that the product description is relative to any consumption context, or informative about the product, or written in a persuasive manner. 
+In this section, we describe in detail the method to generate a corpus of training samples $D=\{<x^i,y^i>\}$ where the pair $<x^i,y^i>$ of input $x^i$ associates consumption context and an item profile with an output $y^i$ of relevant, informative and persuasive sentence. As our system is built on an E-commerce platform, we have the fortune to access a large scale product description datasets. That is, a paragraph is associated with each product (name and attributes ). However, this data set does not guarantee that the product description is relative to any consumption context, or informative about the product, or written in a persuasive manner. 
 
 %relevance 
-We take a boolean retrieval model as our labeler to filter relevant and informative descriptions. First, we build a lexicon consisting of consumption context terms. If the output product description does not contain at least one context term or it does not contain at least one product attribute in the input, the pair is deleted from our corpus. 
+We take a boolean retrieval model as our labeler to filter relevant and informative descriptions $y^i$. First, we build a lexicon consisting of consumption context terms. If the output product description does not contain at least one context term or it does not contain at least one product attribute in the input, the pair is deleted from our corpus. The resulting collection is called Product Description (PD) dataset.
  
 %persuasive
 The identification of persuasive descriptions is more challenging. 
-On one hand, annotating such a massive amount of instances is costly. On the other hand, recognition of persuasive sentences is highly subjective. 
+Annotating such a massive amount of instances is costly. Moreover, recognition of persuasive sentences is highly subjective, i.e. judgements of persuasiveness do not agree with each other.
 Therefore, we adopt ``pseudo-labeling'' by fitting these descriptions to a set of patterns derived from an external data set.
-The data set is crawled from blogs that we beleve to be advertisements? 
-We use a combination of a set of manually constructed heuristics and a set of automatically extracted rules.
-\subsection{Manually Constructed Heuristics}
+Firstly, we crawl headlines from blogs in the ``shopaholic's choice'' section on the same E-commerce platform.
+This section collects recommendations from the opinion leaders in the community.
+We believe that, for the cause of advertising, headlines from famous bloggers are highly persuasive.  
+This collection is called Persuasive Headline (PH) dataset hereafter.
+We next manually construct a set of heuristics and testify them on the PH and PD datasets.
+If a heuristics is verified then it will be included as a persuasive pattern.
+Finally we use the set of patterns to label all relevant and informative descriptions.
+The positive instances are added to the training corpus.
+
+\subsection{Heuristics}
+
+Perceived persuasion is influenced by many factors.  Rhetorical usage is perhaps the most obvious factor, as rhetoric is the art to convince or persuade. Thus it contributes to a foundation  of our pattern set. Table.~\ref{table:LF} explains our implementation to detect some common sentence-level rhetorical technique in Chinese language. For example, antithesis is a traditional and characteristic rhetoric figure of Chinese language. We identify antithesis by identifying sentences with balanced grammar structures. Note that this set is not testified on the PH dataset. If a sentence in the PD dataset implements at least one rhetorical technique, it will be added in the training corpus.
+
+Vocabulary use is also a critical factor. We consider the presence of specific words and marks. We also consider the absence of particular phrases, e.g. words that are difficult to read. The heuristics are based on a comparison between PH dataset and PD dataset. For example, we consider a hypothesis ``\textit{It is more likely that a persuasive headline contains Chinese idioms in four characters }''. The heuristic is verified with significance level $\rho<0.05$. Hence, ``\textit{contains Chinese idioms in four characters}'' is added to the pattern set.  
+
+The third category of factors is the predictive power of syntactic features, i.e. sentence fluency. A syntactic feature measures a sentence from the sentence level, which is at granularities different from the vocabulary level.
+The patterns are mostly quantitate, e.g. ``\textit{parse tree depth $>10$ }''. 
+Hence we first apply the same type of heuristic test as for the vocabulary features.  
+For example, a heuristic ``\textit{Is the parse tree depth larger on PH dataset than on PD dataset? }'' 
+If the heuristic is verified, we then compute the empirical mean $\mu$ and standard variance $\sigma$ on the PH dataset.
+We observe that syntactic features tend to generate inaccurate weak supervisions.
+To increase coverage and reduce  error rate, we use the value $\mu+\sigma$ in the pattern.
+
+We use Snorkel~\cite{ratner2017snorkel}  to generate training data. Rather than hand-labeling training data, users of Snorkel write labeling functions(LF), which allow them to express various weak supervision sources such as patterns, heuristics, external knowledge bases, and more. The coverage (i.e. percentage of training instances generated by the function), overlap (percentage of training instances generated by this function which also satisfy other function) and conflicts (i.e. percentage of training instances generated by the function while conflicting to another function) are shown in Tab.~\ref{table:LF}. 
 
 
-\subsection{Automatically Extracted Rules}
-% Data set
-We use the list of product recommendation reasons as our dataset. The corpus are generated by high quality person.But the quality of the original dataset is far from ideal, there are many recommended reasons are even the original title of the product, so we need to filter the training data.
 
-% Weak Supervision
-Manual labeling is very time consuming, so we use the Snorkel \cite{ratner2017snorkel} weak supervision method to mark the data without the user to manually mark any training data. Rather than hand-labeling training data, users of Snorkel write labeling functions(LF), which allow them to express various weak supervision sources such as patterns, heuristics, external knowledge bases, and more. We wrote ten labeling functions based on the characteristics of persuasive sentences, is shown in Tab.~\ref{table:LF}. Among them, the labels of the first five functions are positive and the rest are negative.
-
-\begin{table}
+\begin{table*}
   \caption{Labeling Functions}
   \label{table:LF}
-  \begin{tabular}{p{2.5cm}p{5cm}}
+  \begin{tabular}{p{2.5cm}|p{2.5cm}p{5cm}ccc}
     \toprule
-    Labeling Functions & Description\\
+    Category&Labeling Functions & Description&Coverage&Overlaps&Conflicts\\
     \midrule
-    %正类
-    is\_neat & Sentence is neat\\
-    has\_modal & Sentence has modal particle\\
-    four\_word & Sentence contains a four-word structure \\
-    dot\_word & The comma is followed by
+\multirow{5}{*}{Rhetoric} & Simile & The sentence directly compares two things using connecting words such as ``
+        \begin{CJK*}{UTF8}{gbsn}
+            ?/??/??
+        \end{CJK*}
+        '' e.t.c. & & & \\
+& Antithesis & The sentence contains two clauses with equal lengths and at least one common word, where the positional indexes of the word within two clauses are similar ($\pm 1$ offset). & & & \\
+& Anadiplosis & The last word of one clause appears at the beginning of the succeeding clause & & & \\
+&  Rhetorical repetition & The sentence contains at leas three clauses with equal lengths and at least one common word & & & \\
+\midrule
+\multirow{4}{*}{Syntactic} &   Tree\_depths & The depth of the dependency tree of the sentence is greater than 10. & 0.004969 & 0.004637 & 0.004564\\
+  &Clause\_num & The sentence has more than 10 clauses. & 0.022300 & 0.022194 & 0.022154\\
+    & Token\_num & The number of fragments is greater than 10& 0.103537 & 0.077849 & 0.056611\\
+ &   Modal\_verb & Sentence has modal particle & 0.022520 & 0.019763 & 0.004743\\
+ \midrule
+\multirow{5}{*}{Vocabulary} &    Idioms & Sentence contains a four-word structure & 0.418368 & 0.333411 & 0.061301 \\
+  &  Causative verb  & The comma is followed by a causative verb such as
         \begin{CJK*}{UTF8}{gbsn}
             "让/使/为/给"
         \end{CJK*}
-        or verbs\\
-    end\_exclamation & Sentence ends with an exclamation point\\
-    %负类
-    no\_adj\_and\_adv & Sentence has no adjectives and adverbs\\
-    other\_words & Sentence contains characters other than Chinese, English, numbers, and specified symbols
-        \begin{CJK*}{UTF8}{gbsn}
-            (。，？！、；：).
-        \end{CJK*}\\
-    tree\_depths & the depth of the dependency tree is greater than 10\\
-    clause\_num & the number of clauses is greater than 10\\
-    token\_num & the number of word segments is greater than 10\\
+        e.t.c. & & & \\
+ &   End\_exclamation & Sentence ends with an exclamation.& 0.070130 & 0.061328 & 0.010403\\
+  &  Adjective\_adverb & Sentence has at least one adjectives and adverbs. & 0.113256 & 0.086246 & 0.063460 \\
+   & No\_foreign\_words & Sentence does not contain characters other than Chinese, English, numbers, and specified symbols. & 0.060238 & 0.052460 & 0.049377\\
   \bottomrule
 \end{tabular}
-\end{table}
+\end{table*}
 
-Next, Snorkel automatically learns a generative model over the labeling functions,the output of Snorkel is a set of probabilistic labels. The statistics about the resulting label matrix is shown in Tab.~\ref{table:LabelMatrix}. \textbf{Coverage} is the fraction of candidates that the labeling function emits a non-zero label for. \textbf{Overlap} is the fraction candidates that the labeling function emits a non-zero label for and that another labeling function emits a non-zero label for. \textbf{Conflict} is the fraction candidates that the labeling function emits a non-zero label for and that another labeling function emits a conflicting non-zero label for. We choose sentences with probabilistic labels are bigger than 0.5 and the words are less than 50 as the training set of our model.
+%Next, Snorkel automatically learns a generative model over the labeling functions, the output of Snorkel is a set of probabilistic labels. The statistics about the resulting label matrix is shown in Tab.~\ref{table:LabelMatrix}. \textbf{Coverage} is the fraction of candidates that the labeling function emits a non-zero label for. \textbf{Overlap} is the fraction candidates that the labeling function emits a non-zero label for and that another labeling function emits a non-zero label for. \textbf{Conflict} is the fraction candidates that the labeling function emits a non-zero label for and that another labeling function emits a conflicting non-zero label for. We choose sentences with probabilistic labels are bigger than 0.5 and the words are less than 50 as the training set of our model.
 
-\begin{table}
-  \caption{Statistics about the resulting label matrix}
-  \label{table:LabelMatrix}
-  \begin{tabular}{p{2cm}p{1.5cm}p{1.5cm}p{1.5cm}}
-    \toprule
-    LFs & Coverage & Overlaps & Conflicts\\
-    \midrule
-    %正类
-    is\_neat & 0.075185 & 0.060664 & 0.040715\\
-    has\_modal & 0.022520 & 0.019763 & 0.004743\\
-    four\_word & 0.418368 & 0.333411 & 0.061301 \\
-    dot\_word & 0.607374 & 0.411911 & 0.118444\\
-    end\_exclamation & 0.070130 & 0.061328 & 0.010403\\
-    %负类
-    no\_adj\_and\_adv & 0.113256 & 0.086246 & 0.063460\\
-    other\_words & 0.060238 & 0.052460 & 0.049377\\
-    tree\_depths & 0.004969 & 0.004637 & 0.004564\\
-    clause\_num & 0.022300 & 0.022194 & 0.022154\\
-    token\_num & 0.103537 & 0.077849 & 0.056611\\
-  \bottomrule
-\end{tabular}
-\end{table}
+\section{Model}\label{sec:model}
 
-\subsection{Background: Transformer}
+\subsection{Network Architecture}
+As with most data-to-document systems, our work follows the encoder-decoder architecture. For each training sample $<x^i,y^i>$, the input $x^i$ flows through the encoder , no dependencies. There are dependencies in the self-attention layer.
+
 Transformer~\cite{vaswani2017attention} is a network architecture based solely on an attention mechanism, dispensing with recurrence and convolutions entirely. Transformer have an encoder-decoder structure and both the encoder and decoder are composed of a stack of $N = 6$ identical layers.
 
 \textbf{Encoder:} Each layer has two sub-layers. The first is a multi-head self-attention mechanism, and the second is a fully connected feed-forward network.
 
 \textbf{Decoder:} In addition to the two sub-layers in each encoder layer, the decoder inserts a third sub-layer, which performs multi-head attention over the output of the encoder stack. 
 
+
+\subsection{Knowledge Representation}
 
 \subsection{Global-Local-Copy Model}
 Global-Local-Copy model is comprised of three modules which is based on Transformer architecture. Fig.~\ref{fig:model} illustrates the detailed model structure. Global-Local-Copy model is also with encoder-decoder structure. The encoder consists of global module and local module and the copy module is in decoder part. 
