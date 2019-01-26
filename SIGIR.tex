@@ -225,18 +225,31 @@ We use Snorkel~\cite{ratner2017snorkel}  to generate training data. Rather than 
 \section{Model}\label{sec:model}
 
 \subsection{Network Architecture}
-As with most data-to-document systems, our work follows the encoder-decoder architecture. For each training sample $<x^i,y^i>$, the input $x^i$ flows through the encoder , no dependencies. There are dependencies in the self-attention layer.
+As with most data-to-document systems, our work follows the encoder-decoder architecture. \textbf{Input.} For each training sample $<x^i,y^i>$, the input $x^i$ is mapped to a fixed size 
+$d$-dimensional (in our work, $d=512$) vector  by a feature function $\phi$, which embeds semantic and knowledge representation. We consider three knowledge representations: (i)
+a conventional bag of words representation that explains product attributes from associated tags, (ii) a
+hierarchical representation that explains product attributes from a taxonomy, and (iii) a meta path explanation from more complex knowledge graphs. This component will be described in detail in Section.~\ref{sec:knowledge}.
 
-Transformer~\cite{vaswani2017attention} is a network architecture based solely on an attention mechanism, dispensing with recurrence and convolutions entirely. Transformer have an encoder-decoder structure and both the encoder and decoder are composed of a stack of $N = 6$ identical layers.
-
-\textbf{Encoder:} Each layer has two sub-layers. The first is a multi-head self-attention mechanism, and the second is a fully connected feed-forward network.
-
-\textbf{Decoder:} In addition to the two sub-layers in each encoder layer, the decoder inserts a third sub-layer, which performs multi-head attention over the output of the encoder stack. 
+\textbf{Encoder.}  The embedding vectors then flows through the encoder layer, which is a Multi-Layer Perceptron (MLP) unit that captures dependencies among the input segments (i.e. consumption context v.s. product attributes). We utilize a global-local component to overcome incompleteness of supervision and structural dependency among context and product attributes. The output of the encoder layer is the hidden states of each input segment. More details will be given in Section~\ref{sec:global}.  
 
 
-\subsection{Knowledge Representation}
+\textbf{Decoder.} Transformer~\cite{vaswani2017attention} is a network architecture based solely on an attention mechanism, dispensing with recurrence and convolutions entirely. The decoder layer follows the Transformer framework, which is composed of a stack of $N = 6$ identical layers. In each layer, there are three sublayers.  The first sublayer is a masked multi-head self-attention mechanism, which encoders one word in the output by looking to earlier positions in the output. The second sublayer performs multi-head attention over the output to the hidden states produced by the encoder layer.  The third sublayer is a fully connected feed-forward network.
 
-\subsection{Global-Local-Copy Model}
+\subsection{Knowledge Representation}\label{sec:knowledge}
+
+The knowledge base is constructed based on search logs on the whole E-commerce platform. We believe that search keywords reflect human knowledge and interpretations of consumption contexts. Therefore, incorporating such knowledge brings in information that is not available in the training corpus. However, the construction and representation of knowledge is still an issue. We explore three knowledge representations.
+
+\textbf{Bag of tag representation.} In this approach we associate each input unit (i.e. either a consumption context or a product attribute) with $n$ tags. Each tag is a keyword that is frequently associated with the input unit in the search logs. Moreover, to perform soft matching between semantically similar tags, tags are not treated as discrete units. Instead, we rely on word embeddings to obtain semantics of tags. The representation function $\phi$ is defined as follows.
+
+
+
+\begin{equation}
+\phi(x_i) = [\varepsilon (x_i)\|\{\mathcal{\Epsilon(t_{i,j})\}_{1\leq j \leq n}}],
+\end{equation}
+
+%where $\mathcal{\Epsilon}: \mathcal{V} \leftarrow \mathcal{R}^d$ is the embedding function that projects $\mathcal{V}$ the vocabulary set to the embedding space with dimension $d$. 
+
+\subsection{Global-Local-Copy Model}\label{sec:global}
 Global-Local-Copy model is comprised of three modules which is based on Transformer architecture. Fig.~\ref{fig:model} illustrates the detailed model structure. Global-Local-Copy model is also with encoder-decoder structure. The encoder consists of global module and local module and the copy module is in decoder part. 
 
 Our goal is to generate persuasive sentences with scene descriptions based on the scenes, products, and attributes given by the user. In our training set, some sentences have only product descriptions, no descriptions of related scenes, and some sentences are product descriptions in different scenarios. We use a global module to learn text descriptions of all products on all texts and learn scene-specific description through local modules. We want the output sentence to contain user-supplied input, so we also add the copy module to our model.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  26 JAN 2019 23:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  27 JAN 2019 07:37
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1563,6 +1563,9 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 8.0pt on input line 21.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 8.0pt on input line 21.
+
+LaTeX Warning: Reference `TotPages' on page 1 undefined on input line 21.
+
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 21.
 Package microtype Info: Loading generic settings for font family
@@ -1590,11 +1593,27 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 5.5pt on input line 40.
 
-Package caption Warning: \label without proper reference on input line 70.
-See the caption package documentation for explanation.
-
-
 LaTeX Warning: Reference `fig:example' on page 1 undefined on input line 46.
+
+
+Package natbib Warning: Citation `Wiseman2017Challenges' on page 1 undefined on
+ input line 53.
+
+
+Package natbib Warning: Citation `Yang2017Reference' on page 1 undefined on inp
+ut line 53.
+
+
+Package natbib Warning: Citation `Lebret2016Neural' on page 1 undefined on inpu
+t line 53.
+
+
+Package natbib Warning: Citation `Karpathy2015Deep' on page 1 undefined on inpu
+t line 53.
+
+
+Package natbib Warning: Citation `munigala2018persuaide' on page 1 undefined on
+ input line 53.
 
 [1.1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -1656,335 +1675,129 @@ File: UTF8.chr 2015/04/18 4.8.4
 Class acmart Warning: A possible image without description on input line 102.
 
 
+LaTeX Warning: Reference `sec:related' on page 2 undefined on input line 116.
+
+
+LaTeX Warning: Reference `sec:weak' on page 2 undefined on input line 116.
+
+
 LaTeX Warning: Reference `sec:model' on page 2 undefined on input line 116.
+
+
+LaTeX Warning: Reference `sec:experiment' on page 2 undefined on input line 116
+.
+
+
+LaTeX Warning: Reference `sec:conclusion' on page 2 undefined on input line 116
+.
 
 
 Package natbib Warning: Citation `dong2017learning' on page 2 undefined on inpu
 t line 124.
 
 
+Package natbib Warning: Citation `Costa2018Automatic' on page 2 undefined on in
+put line 124.
+
+
+Package natbib Warning: Citation `Wiseman2017Challenges' on page 2 undefined on
+ input line 124.
+
+
+Package natbib Warning: Citation `Yang2017Reference' on page 2 undefined on inp
+ut line 124.
+
+
+Package natbib Warning: Citation `Lebret2016Neural' on page 2 undefined on inpu
+t line 124.
+
+
+Package natbib Warning: Citation `Karpathy2015Deep' on page 2 undefined on inpu
+t line 124.
+
+
+Package natbib Warning: Citation `Sutskever2011Generating' on page 2 undefined 
+on input line 126.
+
+
 Package natbib Warning: Citation `dong2017learning' on page 2 undefined on inpu
 t line 126.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 144.
- [2.2]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Package natbib Warning: Citation `Wiseman2017Challenges' on page 2 undefined on
+ input line 126.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3.3]
-
-Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 190.
+Package natbib Warning: Citation `Bao2019Text' on page 2 undefined on input lin
+e 126.
 
 
-Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 190.
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
-File: UTF8.enc 2015/04/18 4.8.4
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-File: UTF8.chr 2015/04/18 4.8.4
-)
-Underfull \hbox (badness 10000) in paragraph at lines 203--203
-[]\T1/LinuxLibertineT-TLF/m/n/9 (+20) Rhetorical rep-e-ti-
- []
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
-File: UTF8.enc 2015/04/18 4.8.4
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-File: UTF8.chr 2015/04/18 4.8.4
-)
-
-Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 244.
+Package natbib Warning: Citation `Yang2017Reference' on page 2 undefined on inp
+ut line 126.
 
 
-Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 244.
-
-<model2.jpg, id=279, 919.93687pt x 544.28343pt>
-File: model2.jpg Graphic file (type jpg)
- <use model2.jpg>
-Package pdftex.def Info: model2.jpg used on input line 245.
-(pdftex.def)             Requested size: 341.43813pt x 227.61748pt.
+Package natbib Warning: Citation `Bao2019Text' on page 2 undefined on input lin
+e 127.
 
 
-Class acmart Warning: A possible image without description on input line 247.
-
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
-(Font)              scaled to size 9.0pt on input line 250.
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
-(Font)              scaled to size 7.3pt on input line 250.
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
-(Font)              scaled to size 5.5pt on input line 250.
-
-Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 289.
+Package natbib Warning: Citation `Wiseman2017Challenges' on page 2 undefined on
+ input line 127.
 
 
-Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 289.
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
-File: UTF8.enc 2015/04/18 4.8.4
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-File: UTF8.chr 2015/04/18 4.8.4
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
-File: UTF8.enc 2015/04/18 4.8.4
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-File: UTF8.chr 2015/04/18 4.8.4
-)
-[4.4] [5.5 <./model2.jpg>]
-
-Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 317.
+Package natbib Warning: Citation `Yang2017Reference' on page 2 undefined on inp
+ut line 127.
 
 
-Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 317.
+Package natbib Warning: Citation `Li2018Point' on page 2 undefined on input lin
+e 127.
 
 
-Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 334.
+Package natbib Warning: Citation `Wiseman2017Challenges' on page 2 undefined on
+ input line 127.
 
 
-Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 334.
+Package natbib Warning: Citation `Yang2017Reference' on page 2 undefined on inp
+ut line 127.
 
 
-Overfull \hbox (16.47453pt too wide) in paragraph at lines 336--363
- [] 
- []
+Package natbib Warning: Citation `Lebret2016Neural' on page 2 undefined on inpu
+t line 128.
 
 
-Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 372.
+Package natbib Warning: Citation `kiddon2011double' on page 2 undefined on inpu
+t line 131.
 
 
-Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 372.
-
-[6.6]
-
-Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 396.
+Package natbib Warning: Citation `valitutti2013let' on page 2 undefined on inpu
+t line 131.
 
 
-Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 396.
+Package natbib Warning: Citation `wang2016chinese' on page 2 undefined on input
+ line 131.
 
 
-Overfull \hbox (5.7621pt too wide) in paragraph at lines 398--409
- [][] 
- []
+Package natbib Warning: Citation `Zhang2014Chinese' on page 2 undefined on inpu
+t line 131.
 
 
-Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 414.
+Package natbib Warning: Citation `Ghazvininejad2016Generating' on page 2 undefi
+ned on input line 131.
 
 
-Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 414.
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
-File: UTF8.enc 2015/04/18 4.8.4
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-File: UTF8.chr 2015/04/18 4.8.4
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
-File: UTF8.enc 2015/04/18 4.8.4
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-File: UTF8.chr 2015/04/18 4.8.4
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
-File: UTF8.enc 2015/04/18 4.8.4
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-File: UTF8.chr 2015/04/18 4.8.4
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
-File: UTF8.enc 2015/04/18 4.8.4
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-File: UTF8.chr 2015/04/18 4.8.4
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
-File: UTF8.enc 2015/04/18 4.8.4
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-File: UTF8.chr 2015/04/18 4.8.4
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
-File: UTF8.enc 2015/04/18 4.8.4
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-File: UTF8.chr 2015/04/18 4.8.4
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
-File: UTF8.enc 2015/04/18 4.8.4
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-File: UTF8.chr 2015/04/18 4.8.4
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
-File: UTF8.enc 2015/04/18 4.8.4
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-File: UTF8.chr 2015/04/18 4.8.4
-)
-(./SIGIR.bbl
-LaTeX Info: Redefining \tempurl on input line 251.
-)
-
-Package natbib Warning: There were undefined citations.
+Package natbib Warning: Citation `tomavsic2014implementation' on page 2 undefin
+ed on input line 132.
 
 
-Class acmart Warning: Some images may lack descriptions.
+Package natbib Warning: Citation `Ghazvininejad2016Generating' on page 2 undefi
+ned on input line 134.
 
 
-Package balance Warning: You have called \balance in second column
-(balance)                Columns might not be balanced.
-
-[7.7] [8.8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 461.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 461.
- (./SIGIR.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 461.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 461.
+Package natbib Warning: Citation `wang2016chinese' on page 2 undefined on input
+ line 134.
 
 
-Package rerunfilecheck Warning: File `SIGIR.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `SIGIR.out':
-(rerunfilecheck)             Before: 773F7004BA1754D79D072A4DEEDAD4E0;2468
-(rerunfilecheck)             After:  D24726F872AE90014629F7E02CA0976A;2535.
-
-LaTeX Warning: There were undefined references.
+Package natbib Warning: Citation `Zhang2014Chinese' on page 2 undefined on inpu
+t line 134.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
-Here is how much of TeX's memory you used:
- 20531 strings out of 492995
- 307543 string characters out of 6132704
- 424209 words of memory out of 5000000
- 22837 multiletter control sequences out of 15000+600000
- 192691 words of font info for 399 fonts, out of 8000000 for 9000
- 1302 hyphenation exceptions out of 8191
- 60i,15n,94p,1141b,1013s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsection.4.5} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.4} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.3} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.3} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.2} has been referenced but does not ex
-ist, replaced by a fixed one
-
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/libertine/lbtn_fygcup.enc}{
-/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/newtx/libertinealt.enc}{/usr
-/local/texlive/2017/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{/usr/
-local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2
-017/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{/usr/local/texlive/20
-17/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{/usr/local/texlive/201
-7/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{/usr/local/texlive/2017
-/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{/usr/local/texlive/2017/
-texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}</usr/local/texlive/2017/t
-exmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/local/texlive/201
-7/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/local/texlive
-/2017/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/local/tex
-live/2017/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></usr/loca
-l/texlive/2017/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb></usr
-/local/texlive/2017/texmf-dist/fonts/type1/public/libertine/LinLibertineTZ.pfb>
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/newtx/fxlri-7letters.pfb
-></usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu30.pfb></usr
-/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu4e.pfb></usr/local
-/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu4f.pfb></usr/local/texli
-ve/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu50.pfb></usr/local/texlive/201
-7/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu51.pfb></usr/local/texlive/2017/texm
-f-dist/fonts/type1/arphic/gbsnu/gbsnu52.pfb></usr/local/texlive/2017/texmf-dist
-/fonts/type1/arphic/gbsnu/gbsnu53.pfb></usr/local/texlive/2017/texmf-dist/fonts
-/type1/arphic/gbsnu/gbsnu54.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1
-/arphic/gbsnu/gbsnu56.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/arphi
-c/gbsnu/gbsnu57.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsn
-u/gbsnu58.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsn
-u59.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5b.pf
-b></usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5c.pfb></us
-r/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5d.pfb></usr/loca
-l/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5f.pfb></usr/local/texl
-ive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu60.pfb></usr/local/texlive/20
-17/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu61.pfb></usr/local/texlive/2017/tex
-mf-dist/fonts/type1/arphic/gbsnu/gbsnu62.pfb></usr/local/texlive/2017/texmf-dis
-t/fonts/type1/arphic/gbsnu/gbsnu63.pfb></usr/local/texlive/2017/texmf-dist/font
-s/type1/arphic/gbsnu/gbsnu64.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
-1/arphic/gbsnu/gbsnu65.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/arph
-ic/gbsnu/gbsnu66.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbs
-nu/gbsnu67.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbs
-nu68.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu69.p
-fb></usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu6b.pfb></u
-sr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu6c.pfb></usr/loc
-al/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu6d.pfb></usr/local/tex
-live/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu6e.pfb></usr/local/texlive/2
-017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu6f.pfb></usr/local/texlive/2017/te
-xmf-dist/fonts/type1/arphic/gbsnu/gbsnu70.pfb></usr/local/texlive/2017/texmf-di
-st/fonts/type1/arphic/gbsnu/gbsnu71.pfb></usr/local/texlive/2017/texmf-dist/fon
-ts/type1/arphic/gbsnu/gbsnu72.pfb></usr/local/texlive/2017/texmf-dist/fonts/typ
-e1/arphic/gbsnu/gbsnu73.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/arp
-hic/gbsnu/gbsnu75.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gb
-snu/gbsnu76.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gb
-snu77.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu78.
-pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu79.pfb></
-usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu7b.pfb></usr/lo
-cal/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu7c.pfb></usr/local/te
-xlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu7e.pfb></usr/local/texlive/
-2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu80.pfb></usr/local/texlive/2017/t
-exmf-dist/fonts/type1/arphic/gbsnu/gbsnu81.pfb></usr/local/texlive/2017/texmf-d
-ist/fonts/type1/arphic/gbsnu/gbsnu82.pfb></usr/local/texlive/2017/texmf-dist/fo
-nts/type1/arphic/gbsnu/gbsnu83.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
-pe1/arphic/gbsnu/gbsnu88.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/ar
-phic/gbsnu/gbsnu89.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/g
-bsnu/gbsnu8b.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/g
-bsnu8d.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu8e
-.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu8f.pfb><
-/usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu90.pfb></usr/l
-ocal/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu91.pfb></usr/local/t
-exlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu94.pfb></usr/local/texlive
-/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu95.pfb></usr/local/texlive/2017/
-texmf-dist/fonts/type1/arphic/gbsnu/gbsnu97.pfb></usr/local/texlive/2017/texmf-
-dist/fonts/type1/arphic/gbsnu/gbsnu98.pfb></usr/local/texlive/2017/texmf-dist/f
-onts/type1/arphic/gbsnu/gbsnu99.pfb></usr/local/texlive/2017/texmf-dist/fonts/t
-ype1/arphic/gbsnu/gbsnu9a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/a
-rphic/gbsnu/gbsnuff.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/
-txfonts/rtxmi.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/txfont
-s/rtxr.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/newtx/txexs.p
-fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr
-/local/texlive/2017/texmf-dist/fonts/type1/public/newtx/zxlri.pfb>
-Output written on SIGIR.pdf (8 pages, 1004947 bytes).
-PDF statistics:
- 710 PDF objects out of 1000 (max. 8388607)
- 477 compressed objects within 5 object streams
- 74 named destinations out of 1000 (max. 500000)
- 46490 words of extra memory for PDF output out of 51595 (max. 10000000)
-
+Package natbib Warning: Citation `valitutti2013l
