@@ -11,8 +11,7 @@
 
 
 \begin{abstract}
-In the e-commerce environment, it is a personalized service to recommend suitable products according to the shopping scene of the user. We hope to provide users with an explainable and persuasive recommendation reason when recommending products, that is, why they should recommend this product, and motivate online purchasers to make successful purchases through persuasive descriptions. In this contribution we present our system by combinning weak supervision frame with generate model.  We first select the persuasive sentences from corpus as the training data of our generate model through weak supervision. Then through our proposed model yield persuasive sentence. We conduct comprehensive experiments on real sets. Compared with state-of-the-art methods, our framework produces sentences with higher ROUGE and BLEU scores and more attractive and persuasive.
-
+In our efforts to make machines more human, we study the problem of generating a persuasive Natural Language description that both conveys product information and delivers explanations related to user needs. This problem might benefit from current research work on end-to-end deep neural networks. However, lack of labelled data and subjective judgements still pose severe challenges for training such a framework. We propose data-level, knowledge-level and model-level solutions to address the problem. At the data level, we propose to generate weak supervision labelled by a set of patterns which are derived from an external data set. At the knowledge level, we explore different representations to incorporate knowledge which is obtained from heterogenous information sources. At the model level, we present a global-local-copy module to overcome incomplete supervision. Our experimental results have demonstrated the possiblity of making a machine function like a skilled salesperson. 
 \end{abstract}
 
 \keywords{persuasive, explainable recommendation, text generation}
@@ -24,7 +23,7 @@ In the e-commerce environment, it is a personalized service to recommend suitabl
 %background
 No behavior on earth is more human than selling.
 Ever since the dawn of economy, salespeople has played a pivotal role in matching customer needs with appropriate products. 
-We have seen, in history, many vivid examples of top salesperson who single-handedly builds a business empire.
+We have seen, in history, many vivid examples of top salespeople who single-handedly build a business empire.
 Having a strong sales team is crucial to the success of a company. 
 This brings an interesting yet challenging question: \textit{ Can a machine function like a skilled salesperson?} 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.8.4)  27 JAN 2019 15:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.8.4)  27 JAN 2019 15:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1195,76 +1195,76 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 21.
+(Font)              scaled to size 17.28pt on input line 20.
 LaTeX Font Info:    Try loading font information for T1+LinuxBiolinumT-TLF on i
-nput line 21.
+nput line 20.
 
 (c:/texlive/2018/texmf-dist/tex/latex/libertine/T1LinuxBiolinumT-TLF.fd
 File: T1LinuxBiolinumT-TLF.fd 2017/03/20 (autoinst) Font definitions for T1/Lin
 uxBiolinumT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 21.
+(Font)              scaled to size 17.28pt on input line 20.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxBiolinumT-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 17.28pt on input line 21.
+(Font)              scaled to size 17.28pt on input line 20.
 
 
 Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 21.
+surrounding objects on input line 20.
 
 
 Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 21.
+surrounding objects on input line 20.
 
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 21.
+(Font)              scaled to size 12.0pt on input line 20.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 21.
+(Font)              scaled to size 10.0pt on input line 20.
 
 Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 21.
+surrounding objects on input line 20.
 
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 7.0pt on input line 21.
+(Font)              scaled to size 7.0pt on input line 20.
 LaTeX Font Info:    Try loading font information for TS1+LinuxLibertineT-TLF on
- input line 21.
+ input line 20.
 (c:/texlive/2018/texmf-dist/tex/latex/libertine/TS1LinuxLibertineT-TLF.fd
 File: TS1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/
 LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 21.
+(Font)              scaled to size 7.0pt on input line 20.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxLibertineT-TLF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 21.
+(Font)              scaled to size 9.0pt on input line 20.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 21.
+(Font)              scaled to size 10.95pt on input line 20.
 
 
 Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 21.
+surrounding objects on input line 20.
 
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 21.
+(Font)              scaled to size 8.0pt on input line 20.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 8.0pt on input line 21.
+(Font)              scaled to size 8.0pt on input line 20.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 8.0pt on input line 21.
+(Font)              scaled to size 8.0pt on input line 20.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 21.
+(Font)              scaled to size 8.0pt on input line 20.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxLibertineT-TLF' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.2pt on input line 21.
+(Font)              scaled to size 6.2pt on input line 20.
 (c:/texlive/2018/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
@@ -1273,53 +1273,53 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 
 Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 21.
+surrounding objects on input line 20.
 
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 29.
+(Font)              scaled to size 9.0pt on input line 28.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 40.
+(Font)              scaled to size 9.0pt on input line 39.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 40.
+(Font)              scaled to size 7.3pt on input line 39.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 40.
+(Font)              scaled to size 5.5pt on input line 39.
 
 Package caption Warning: \label without proper reference on input line 70.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:example' on page 1 undefined on input line 46.
+LaTeX Warning: Reference `fig:example' on page 1 undefined on input line 45.
 
 
 Package natbib Warning: Citation `Wiseman2017Challenges' on page 1 undefined on
- input line 53.
+ input line 52.
 
 
 Package natbib Warning: Citation `Yang2017Reference' on page 1 undefined on inp
-ut line 53.
+ut line 52.
 
 
 Package natbib Warning: Citation `Lebret2016Neural' on page 1 undefined on inpu
-t line 53.
+t line 52.
 
 
 Package natbib Warning: Citation `Karpathy2015Deep' on page 1 undefined on inpu
-t line 53.
+t line 52.
 
 
 Package natbib Warning: Citation `munigala2018persuaide' on page 1 undefined on
- input line 53.
+ input line 52.
 
 [1.1{c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
 
 Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 70.
+surrounding objects on input line 69.
 
 
 Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 70.
+surrounding objects on input line 69.
 
 (c:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.bdg
 File: UTF8.bdg 2015/04/18 4.8.4
@@ -1330,7 +1330,7 @@ File: UTF8.enc 2015/04/18 4.8.4
 (c:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-LaTeX Font Info:    Try loading font information for C70+gbsn on input line 79.
+LaTeX Font Info:    Try loading font information for C70+gbsn on input line 78.
 
 
 (c:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/c70gbsn.fd
@@ -1351,7 +1351,7 @@ File: UTF8.enc 2015/04/18 4.8.4
 (c:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-Overfull \vbox (15.06348pt too high) detected at line 91
+Overfull \vbox (15.06348pt too high) detected at line 90
  []
 
 (c:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
@@ -1367,153 +1367,153 @@ File: UTF8.enc 2015/04/18 4.8.4
 File: UTF8.chr 2015/04/18 4.8.4
 )
 
-Class acmart Warning: A possible image without description on input line 102.
+Class acmart Warning: A possible image without description on input line 101.
 
 
 Package natbib Warning: Citation `dong2017learning' on page 2 undefined on inpu
-t line 124.
+t line 123.
 
 
 Package natbib Warning: Citation `Costa2018Automatic' on page 2 undefined on in
-put line 124.
+put line 123.
 
 
 Package natbib Warning: Citation `Wiseman2017Challenges' on page 2 undefined on
- input line 124.
+ input line 123.
 
 
 Package natbib Warning: Citation `Yang2017Reference' on page 2 undefined on inp
-ut line 124.
+ut line 123.
 
 
 Package natbib Warning: Citation `Lebret2016Neural' on page 2 undefined on inpu
-t line 124.
+t line 123.
 
 
 Package natbib Warning: Citation `Karpathy2015Deep' on page 2 undefined on inpu
-t line 124.
+t line 123.
 
 
 Package natbib Warning: Citation `Sutskever2011Generating' on page 2 undefined 
-on input line 126.
+on input line 125.
 
 
 Package natbib Warning: Citation `dong2017learning' on page 2 undefined on inpu
-t line 126.
+t line 125.
 
 
 Package natbib Warning: Citation `Wiseman2017Challenges' on page 2 undefined on
- input line 126.
+ input line 125.
+
+
+Package natbib Warning: Citation `Bao2019Text' on page 2 undefined on input lin
+e 125.
+
+
+Package natbib Warning: Citation `Yang2017Reference' on page 2 undefined on inp
+ut line 125.
 
 
 Package natbib Warning: Citation `Bao2019Text' on page 2 undefined on input lin
 e 126.
 
 
+Package natbib Warning: Citation `Wiseman2017Challenges' on page 2 undefined on
+ input line 126.
+
+
 Package natbib Warning: Citation `Yang2017Reference' on page 2 undefined on inp
 ut line 126.
 
 
-Package natbib Warning: Citation `Bao2019Text' on page 2 undefined on input lin
-e 127.
-
-
-Package natbib Warning: Citation `Wiseman2017Challenges' on page 2 undefined on
- input line 127.
-
-
-Package natbib Warning: Citation `Yang2017Reference' on page 2 undefined on inp
-ut line 127.
-
-
 Package natbib Warning: Citation `Li2018Point' on page 2 undefined on input lin
-e 127.
+e 126.
 
 
 Package natbib Warning: Citation `Wiseman2017Challenges' on page 2 undefined on
- input line 127.
+ input line 126.
 
 
 Package natbib Warning: Citation `Yang2017Reference' on page 2 undefined on inp
-ut line 127.
+ut line 126.
 
 
 Package natbib Warning: Citation `Lebret2016Neural' on page 2 undefined on inpu
-t line 128.
+t line 127.
 
 
 Package natbib Warning: Citation `kiddon2011double' on page 2 undefined on inpu
-t line 131.
+t line 130.
 
 
 Package natbib Warning: Citation `valitutti2013let' on page 2 undefined on inpu
-t line 131.
+t line 130.
 
 
 Package natbib Warning: Citation `wang2016chinese' on page 2 undefined on input
- line 131.
+ line 130.
 
 
 Package natbib Warning: Citation `Zhang2014Chinese' on page 2 undefined on inpu
-t line 131.
+t line 130.
 
 
 Package natbib Warning: Citation `Ghazvininejad2016Generating' on page 2 undefi
-ned on input line 131.
+ned on input line 130.
 
 
 Package natbib Warning: Citation `tomavsic2014implementation' on page 2 undefin
-ed on input line 132.
+ed on input line 131.
 
 
 Package natbib Warning: Citation `Ghazvininejad2016Generating' on page 2 undefi
-ned on input line 134.
+ned on input line 133.
 
 
 Package natbib Warning: Citation `wang2016chinese' on page 2 undefined on input
- line 134.
+ line 133.
 
 
 Package natbib Warning: Citation `Zhang2014Chinese' on page 2 undefined on inpu
-t line 134.
+t line 133.
 
 
 Package natbib Warning: Citation `valitutti2013let' on page 2 undefined on inpu
-t line 137.
+t line 136.
 
 
 Package natbib Warning: Citation `ozbal2013brainsup' on page 2 undefined on inp
-ut line 137.
+ut line 136.
 
 
 Package natbib Warning: Citation `Thomaidou2013Automated' on page 2 undefined o
-n input line 137.
+n input line 136.
 
 
 Package natbib Warning: Citation `munigala2018persuaide' on page 2 undefined on
- input line 138.
+ input line 137.
 
 
 Package natbib Warning: Citation `Tintarev2011Designing' on page 2 undefined on
- input line 140.
+ input line 139.
 
 
 Package natbib Warning: Citation `Zhou2018brief' on page 2 undefined on input l
-ine 143.
+ine 142.
 
 
 Package natbib Warning: Citation `Dehghani2017Neural' on page 2 undefined on in
-put line 143.
+put line 142.
 
 
 Package natbib Warning: Citation `ratner2017snorkel' on page 2 undefined on inp
-ut line 143.
+ut line 142.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 145.
+(Font)              scaled to size 9.0pt on input line 143.
  [2.2]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1523,15 +1523,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [3.3]
 
 Package natbib Warning: Citation `ratner2017snorkel' on page 4 undefined on inp
-ut line 185.
+ut line 184.
 
 
 Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 190.
+surrounding objects on input line 189.
 
 
 Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 190.
+surrounding objects on input line 189.
 
 (c:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2015/04/18 4.8.4
@@ -1539,7 +1539,7 @@ File: UTF8.enc 2015/04/18 4.8.4
 (c:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-Underfull \hbox (badness 10000) in paragraph at lines 203--203
+Underfull \hbox (badness 10000) in paragraph at lines 202--202
 []\T1/LinuxLibertineT-TLF/m/n/9 (+20) Rhetorical rep-e-ti-
  []
 
@@ -1549,7 +1549,7 @@ File: UTF8.enc 2015/04/18 4.8.4
 (c:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-Overfull \hbox (12.35541pt too wide) in paragraph at lines 228--229
+Overfull \hbox (12.35541pt too wide) in paragraph at lines 227--228
 \T1/LinuxLibertineT-TLF/m/n/9 (-20) For the $\OML/nxlmi/m/it/9 i$\T1/LinuxLiber
 tineT-TLF/m/n/9 (-20) th train-ing sam-ple $\OML/nxlmi/m/it/9 < x[]; y[] >$\T1/
 LinuxLibertineT-TLF/m/n/9 (-20) , the in-put $\OML/nxlmi/m/it/9 x[] \U/ntxmia/m
@@ -1559,42 +1559,38 @@ L/nxlmi/m/it/9 ; x[] \LMS/ntxsy/m/n/9 2
 
 
 Package natbib Warning: Citation `vaswani2017attention' on page 4 undefined on 
-input line 242.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+input line 241.
 
 
 Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 282.
+surrounding objects on input line 281.
 
 
 Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 282.
+surrounding objects on input line 281.
 
 <model2.jpg, id=224, 919.93687pt x 544.28343pt>
 File: model2.jpg Graphic file (type jpg)
 <use model2.jpg>
-Package pdftex.def Info: model2.jpg  used on input line 283.
+Package pdftex.def Info: model2.jpg  used on input line 282.
 (pdftex.def)             Requested size: 341.43813pt x 227.61748pt.
 
-Class acmart Warning: A possible image without description on input line 285.
+Class acmart Warning: A possible image without description on input line 284.
 
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
-(Font)              scaled to size 9.0pt on input line 288.
+(Font)              scaled to size 9.0pt on input line 287.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
-(Font)              scaled to size 7.3pt on input line 288.
+(Font)              scaled to size 7.3pt on input line 287.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
-(Font)              scaled to size 5.5pt on input line 288.
+(Font)              scaled to size 5.5pt on input line 287.
 [4.4] [5.5 <./model2.jpg>]
 
 Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 327.
+surrounding objects on input line 326.
 
 
 Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 327.
+surrounding objects on input line 326.
 
 (c:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2015/04/18 4.8.4
@@ -1610,74 +1606,74 @@ File: UTF8.chr 2015/04/18 4.8.4
 )
 
 Package natbib Warning: Citation `lin2004rouge' on page 6 undefined on input li
-ne 352.
+ne 351.
 
 
 Package natbib Warning: Citation `papineni2002bleu' on page 6 undefined on inpu
-t line 352.
+t line 351.
 
 
 Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 355.
+surrounding objects on input line 354.
 
 
 Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 355.
+surrounding objects on input line 354.
 
 
 Package natbib Warning: Citation `wang2016chinese' on page 6 undefined on input
- line 361.
+ line 360.
+
+
+Package natbib Warning: Citation `munigala2018persuaide' on page 6 undefined on
+ input line 361.
 
 
 Package natbib Warning: Citation `munigala2018persuaide' on page 6 undefined on
  input line 362.
 
 
-Package natbib Warning: Citation `munigala2018persuaide' on page 6 undefined on
- input line 363.
+Class acmart Warning: \vspace should only be used to provide space above/below 
+surrounding objects on input line 371.
 
 
 Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 372.
+surrounding objects on input line 371.
 
 
-Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 372.
-
-
-Overfull \hbox (16.47453pt too wide) in paragraph at lines 374--401
+Overfull \hbox (16.47453pt too wide) in paragraph at lines 373--400
  [] 
  []
 
 [6.6]
 
 Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 410.
+surrounding objects on input line 409.
 
 
 Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 410.
+surrounding objects on input line 409.
 
 
 Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 434.
+surrounding objects on input line 433.
 
 
 Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 434.
+surrounding objects on input line 433.
 
 
-Overfull \hbox (5.7621pt too wide) in paragraph at lines 436--447
+Overfull \hbox (5.7621pt too wide) in paragraph at lines 435--446
  [][] 
  []
 
 
 Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 452.
+surrounding objects on input line 451.
 
 
 Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 452.
+surrounding objects on input line 451.
 
 (c:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2015/04/18 4.8.4
@@ -1739,11 +1735,11 @@ Package balance Warning: You have called \balance in second column
 (balance)                Columns might not be balanced.
 
 [7.7] [8.8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 499.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 499.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 498.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 498.
  (./SIGIR.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 499.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 499.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 498.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 498.
 Package rerunfilecheck Info: File `SIGIR.out' has not changed.
 (rerunfilecheck)             Checksum: 30543DDF5DA4FF9503EA206F9B191D04;2643.
 
@@ -1833,7 +1829,7 @@ c/txfonts/rtxmi.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/newtx/rtxmi7
 e/2018/texmf-dist/fonts/type1/public/newtx/txexs.pfb><c:/texlive/2018/texmf-dis
 t/fonts/type1/public/newtx/txsys.pfb><c:/texlive/2018/texmf-dist/fonts/type1/pu
 blic/newtx/zxlri.pfb>
-Output written on SIGIR.pdf (8 pages, 1004214 bytes).
+Output written on SIGIR.pdf (8 pages, 1004325 bytes).
 PDF statistics:
  640 PDF objects out of 1000 (max. 8388607)
  405 compressed objects within 5 object streams
