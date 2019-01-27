@@ -196,10 +196,10 @@ We use Snorkel~\cite{ratner2017snorkel}  to generate training data. Rather than 
         \begin{CJK*}{UTF8}{gbsn}
             ?/??/??
         \end{CJK*}
-        '' e.t.c. & & & \\
-& Antithesis & The sentence contains two clauses with equal lengths and at least one common word, where the positional indexes of the word within two clauses are similar ($\pm 1$ offset). & & & \\
-& Anadiplosis & The last word of one clause appears at the beginning of the succeeding clause & & & \\
-&  Rhetorical repetition & The sentence contains at leas three clauses with equal lengths and at least one common word & & & \\
+        '' e.t.c. & 0.020418 & 0.003652 & 0.020275 \\
+& Antithesis & The sentence contains two clauses with equal lengths and at least one common word, where the positional indexes of the word within two clauses are similar ($\pm 1$ offset). & 0.033409 & 0.003094 & 0.027692\\
+& Anadiplosis & The last word of one clause appears at the beginning of the succeeding clause & 0.018608 & 0.002571 & 0.018328\\
+&  Rhetorical repetition & The sentence contains at leas three clauses with equal lengths and at least one common word & 0.074857 & 0.006095 & 0.074780\\
 \midrule
 \multirow{4}{*}{Syntactic} &   Tree\_depths & The depth of the dependency tree of the sentence is greater than 10. & 0.004969 & 0.004637 & 0.004564\\
   &Clause\_num & The sentence has more than 10 clauses. & 0.022300 & 0.022194 & 0.022154\\
