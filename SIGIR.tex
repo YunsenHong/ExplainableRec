@@ -225,12 +225,18 @@ We use Snorkel~\cite{ratner2017snorkel}  to generate training data. Rather than 
 \section{Model}\label{sec:model}
 
 \subsection{Network Architecture}
-As with most data-to-document systems, our work follows the encoder-decoder architecture. \textbf{Input.} For each training sample $<x^i,y^i>$, the input $x^i$ is mapped to a fixed size 
-$d$-dimensional (in our work, $d=512$) vector  by a feature function $\phi$, which embeds semantic and knowledge representation. We consider three knowledge representations: (i)
+For the $i$th training sample $<x^i,y^i>$, the input $x^i=\{x^i_1,\cdots,x^i_J\},x^i_j\in \mathcal{V}$ is a set of input segments, each representing a consumption context or a product attribute. The output $y^i=<y^i_1,\cdots,y^i_T>, y^i_t\in \mathcal{V}$ is a sequence. All tokens in the input and output are from the vocabulary.
+
+\textbf{Input.} To map the input $x^i$ to a fixed size 
+$d$-dimensional (in our work, $d=512$) vector to feed the network, we use a feature function $\phi$, which embeds semantic and knowledge representation. We consider three knowledge representations: (i)
 a conventional bag of words representation that explains product attributes from associated tags, (ii) a
 hierarchical representation that explains product attributes from a taxonomy, and (iii) a meta path explanation from more complex knowledge graphs. This component will be described in detail in Section.~\ref{sec:knowledge}.
 
-\textbf{Encoder.}  The embedding vectors then flows through the encoder layer, which is a Multi-Layer Perceptron (MLP) unit that captures dependencies among the input segments (i.e. consumption context v.s. product attributes). We utilize a global-local component to overcome incompleteness of supervision and structural dependency among context and product attributes. The output of the encoder layer is the hidden states of each input segment. More details will be given in Section~\ref{sec:global}.  
+As with most data-to-document systems, our work follows the encoder-decoder architecture. 
+The encoder in our work is responsible for reading the input one token at a time and encoding it to an internal hidden state. The decoder is responsible for generating a token based on the previous output and the current encoding state.
+
+
+\textbf{Encoder.}  The embedding vectors then flows through the encoder layer, which is a Multi-Layer Perceptron (MLP) unit that captures dependencies among the input segments (i.e. consumption context v.s. product attributes). We utilize a global-local component to overcome incompleteness of supervision and structural dependency among context and product attributes. More details will be given in Section~\ref{sec:global}.  
 
 
 \textbf{Decoder.} Transformer~\cite{vaswani2017attention} is a network architecture based solely on an attention mechanism, dispensing with recurrence and convolutions entirely. The decoder layer follows the Transformer framework, which is composed of a stack of $N = 6$ identical layers. In each layer, there are three sublayers.  The first sublayer is a masked multi-head self-attention mechanism, which encoders one word in the output by looking to earlier positions in the output. The second sublayer performs multi-head attention over the output to the hidden states produced by the encoder layer.  The third sublayer is a fully connected feed-forward network.
@@ -239,15 +245,32 @@ hierarchical representation that explains product attributes from a taxonomy, an
 
 The knowledge base is constructed based on search logs on the whole E-commerce platform. We believe that search keywords reflect human knowledge and interpretations of consumption contexts. Therefore, incorporating such knowledge brings in information that is not available in the training corpus. However, the construction and representation of knowledge is still an issue. We explore three knowledge representations.
 
-\textbf{Bag of tag representation.} In this approach we associate each input unit (i.e. either a consumption context or a product attribute) with $n$ tags. Each tag is a keyword that is frequently associated with the input unit in the search logs. Moreover, to perform soft matching between semantically similar tags, tags are not treated as discrete units. Instead, we rely on word embeddings to obtain semantics of tags. The representation function $\phi$ is defined as follows.
-
-
+\textbf{Bag of tag representation.} In this approach we associate each input token with $n$ tags. Each tag is a token $t_j\in\mathcal{V}$ that is frequently associated with the input token in the search logs. Moreover, to perform soft matching between semantically similar tags, tags are not treated as discrete units. Instead, we rely on word embeddings to obtain semantics of tags. The representation function $\phi$ is defined as follows.
 
 \begin{equation}
-\phi(x_i) = [\varepsilon (x_i)\|\{\mathcal{\Epsilon(t_{i,j})\}_{1\leq j \leq n}}],
+\phi(x_i) = [\varepsilon (x_i)\|\{\varepsilon(t_{i,j})\}_{1\leq j \leq n}],
 \end{equation}
 
-%where $\mathcal{\Epsilon}: \mathcal{V} \leftarrow \mathcal{R}^d$ is the embedding function that projects $\mathcal{V}$ the vocabulary set to the embedding space with dimension $d$. 
+where $varepsilon: \mathcal{V} \leftarrow \mathcal{R}^d$ is the embedding function that projects $\mathcal{V}$ the vocabulary set to the embedding space with dimension $d$. 
+
+
+\textbf{Hierarchical representation.} In this approach,we aim to incorporate knowledge that is beyond a flat set representation. 
+We build a taxonomy of consumption contexts and product attributes. 
+Then for each input token $x_i$, we can locate the path $\mathcal{P}:r\leftarrow\cdots\leftarrow x_i $ in the taxonomy from root.
+The representation function is a concatenation ($\|$) of embedding vectors in the path.
+
+\begin{equation}
+\phi(x_i) = [\varepsilon (x_i)\|\{\varepsilon(x'_{i,j})|x'_{i,j}\in \mathcal{P}\}],
+\end{equation}
+
+\textbf{Structural representation.} In this approach,we move to a more structural representation from a high level abstract of taxonomy. 
+We build a heterogenious graph of consumption contexts, products and attributes. 
+For each input token $x_i$, we find the most probable tokens in traversing through the network using LexRank.
+The representation function is a concatenation ($\|$) of embedding vectors of the top $n$ probable locations $x'_{i,j}$.
+
+\begin{equation}
+\phi(x_i) = [\varepsilon (x_i)\|\{\varepsilon(x'_{i,1}),\cdots,\varepsilon(x'_{i,n})\}],
+\end{equation}
 
 \subsection{Global-Local-Copy Model}\label{sec:global}
 Global-Local-Copy model is comprised of three modules which is based on Transformer architecture. Fig.~\ref{fig:model} illustrates the detailed model structure. Global-Local-Copy model is also with encoder-decoder structure. The encoder consists of global module and local module and the copy module is in decoder part. 
